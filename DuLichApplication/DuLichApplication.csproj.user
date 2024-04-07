@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="All user control\ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="All user control\UC_Addroom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="All user control\UC_ChonPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="All user control\UC_CustomerInfor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="All user control\Uc_itemGioHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="All user control\UC_itemPhong1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GioHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControlSignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
