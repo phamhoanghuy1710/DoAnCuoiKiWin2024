@@ -286,7 +286,7 @@
             txtGiaTien.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtGiaTien.ForeColor = Color.DimGray;
             txtGiaTien.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGiaTien.Location = new Point(615, 48);
+            txtGiaTien.Location = new Point(615, 8);
             txtGiaTien.Margin = new Padding(5);
             txtGiaTien.Name = "txtGiaTien";
             txtGiaTien.PasswordChar = '\0';
@@ -302,7 +302,7 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.DimGray;
-            guna2HtmlLabel1.Location = new Point(740, 48);
+            guna2HtmlLabel1.Location = new Point(740, 8);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(47, 30);
             guna2HtmlLabel1.TabIndex = 28;
@@ -321,7 +321,7 @@
             txtTenKS.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtTenKS.ForeColor = Color.Black;
             txtTenKS.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKS.Location = new Point(293, 2);
+            txtTenKS.Location = new Point(293, 0);
             txtTenKS.Margin = new Padding(2, 4, 2, 4);
             txtTenKS.Name = "txtTenKS";
             txtTenKS.PasswordChar = '\0';

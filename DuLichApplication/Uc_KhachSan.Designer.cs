@@ -304,7 +304,7 @@
             // 
             flowLayoutPanel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flowLayoutPanel1.AutoScroll = true;
-            flowLayoutPanel1.Location = new Point(173, 145);
+            flowLayoutPanel1.Location = new Point(43, 145);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(833, 651);
             flowLayoutPanel1.TabIndex = 32;
@@ -326,7 +326,7 @@
             btnTim.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnTim.ForeColor = Color.Black;
             btnTim.Image = (Image)resources.GetObject("btnTim.Image");
-            btnTim.Location = new Point(538, 54);
+            btnTim.Location = new Point(448, 44);
             btnTim.Name = "btnTim";
             btnTim.PressedColor = Color.Transparent;
             btnTim.ShadowDecoration.CustomizableEdges = customizableEdges14;
@@ -347,7 +347,7 @@
             txtDiaChi.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtDiaChi.ForeColor = Color.Black;
             txtDiaChi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDiaChi.Location = new Point(173, 63);
+            txtDiaChi.Location = new Point(43, 54);
             txtDiaChi.Margin = new Padding(4, 4, 4, 4);
             txtDiaChi.Name = "txtDiaChi";
             txtDiaChi.PasswordChar = '\0';

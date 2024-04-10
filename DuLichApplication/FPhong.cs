@@ -26,6 +26,8 @@ namespace DuLichApplication
             InitializeComponent (); 
             this.ds = ds;
             this.taiKhoan = taiKhoan;
+            this.ucUpdateks1.getMaKhachSan(ds.Tables[0].Rows[0]["Mã khách sạn"].ToString());
+            this.ucUpdateks1.btnChinhSua.Click += LoadLaiKs;
         }
         public FPhong(DataSet ds, string taiKhoan, DateTime ngayNhanPhong, DateTime ngayTraPhong)
         {
@@ -37,6 +39,16 @@ namespace DuLichApplication
             this.uC_ChonPhong1.btnGioHang.Click += MoGioHang;
         }
 
+
+        public void LoadLaiKs (object sender , EventArgs e)
+        {
+            if (this.ucUpdateks1.isLuu == true)
+            {
+                string query = string.Format("select * from KhachSan where [Mã khách sạn] = '{0}'", ds.Tables[0].Rows[0]["Mã khách sạn"].ToString());
+                this.ds = fn.getData (query);
+                FPhong_Load(sender, e);
+            }
+        }
 
         private void MoGioHang(object sender, EventArgs e)
         {
@@ -82,7 +94,7 @@ namespace DuLichApplication
             this.ucUpdateks1.txtTenKhachSan.Text = ds.Tables[0].Rows[0]["Tên khách sạn"].ToString();
             this.ucUpdateks1.txtDiaChiKs.Text = ds.Tables[0].Rows[0]["Địa chỉ"].ToString();
             this.ucUpdateks1.txtGia.Text = ds.Tables[0].Rows[0]["Giá"].ToString() + "VND";
-            this.ucUpdateks1.guna2TextBox2.Text = ds.Tables[0].Rows[0]["Review"].ToString();
+            this.ucUpdateks1.txtGioiThieuKhachSan.Text = ds.Tables[0].Rows[0]["Review"].ToString();
 
             int number;
             int soSao;

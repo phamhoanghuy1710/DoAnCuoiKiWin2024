@@ -38,7 +38,7 @@ namespace DuLichApplication
                     item.Ten = row["Tên khách sạn"].ToString();
                     item.DiaChi = row["Địa chỉ"].ToString();
                     item.Gia = row["Giá"].ToString();
-                    item.ID = Convert.ToInt32(row["Số sao"].ToString());
+                    item.ID = Convert.ToInt32(row["Mã khách sạn"].ToString());
                     int soSao;
                     if (int.TryParse(row["Số sao"].ToString(),out soSao))
                     {
