@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,9 +31,18 @@ namespace DuLichApplication
             if (ds.Tables[0].Rows.Count > 0)
             {
                 lblError.Visible = false;
-                Form2 form2 = new Form2(ds);
-                this.Hide();
-                form2.Show();
+                if (ds.Tables[0].Rows[0]["TaiKhoan"].ToString() == "chu")
+                {
+                    FKhachSan form = new FKhachSan();
+                    this.Hide();
+                    form.Show();
+                }
+                else
+                {
+                    Form2 form2 = new Form2(ds);
+                    this.Hide();
+                    form2.Show();
+                }
             }
             else
             {

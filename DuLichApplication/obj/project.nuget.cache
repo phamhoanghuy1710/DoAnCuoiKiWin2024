@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7eHFLjMZTuuVBWat+32hKKlx61HlCMlXHje7nKignJAeQTkV/m/KxhR2yhDU/80C/qnnEv8DMlITy26EFcQL8w==",
+  "dgSpecHash": "wi6F4yPzvo17WbAH0zd370z0ZFulBBjEIiqnsftrDJd3DaYK7fYK5GUJfvUyM+gyvGcAqEdnKKPxtkso2NAyAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HUY\\Desktop\\Lol\\Đồ Án Cuối Kì Win\\DuLichApplication\\DuLichApplication\\DuLichApplication.csproj",
+  "projectFilePath": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HUY\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\HUY\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

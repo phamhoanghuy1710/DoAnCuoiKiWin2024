@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HUY\\Desktop\\Lol\\Đồ Án Cuối Kì Win\\DuLichApplication\\DuLichApplication\\DuLichApplication.csproj": {}
+    "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HUY\\Desktop\\Lol\\Đồ Án Cuối Kì Win\\DuLichApplication\\DuLichApplication\\DuLichApplication.csproj": {
+    "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HUY\\Desktop\\Lol\\Đồ Án Cuối Kì Win\\DuLichApplication\\DuLichApplication\\DuLichApplication.csproj",
+        "projectUniqueName": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj",
         "projectName": "DuLichApplication",
-        "projectPath": "C:\\Users\\HUY\\Desktop\\Lol\\Đồ Án Cuối Kì Win\\DuLichApplication\\DuLichApplication\\DuLichApplication.csproj",
+        "projectPath": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj",
         "packagesPath": "C:\\Users\\HUY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HUY\\Desktop\\Lol\\Đồ Án Cuối Kì Win\\DuLichApplication\\DuLichApplication\\obj\\",
+        "outputPath": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",

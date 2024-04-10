@@ -4,6 +4,9 @@
     <Compile Update="All user control\ListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="All user control\UcItemUpdatePhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="All user control\UC_Addroom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -16,8 +19,14 @@
     <Compile Update="All user control\Uc_itemGioHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="All user control\Uc_ItemKScs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="All user control\UC_itemPhong1.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FKhachSan.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
@@ -36,6 +45,12 @@
     </Compile>
     <Compile Update="ThanhToan.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UcUpdateKS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Uc_KhachSan.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControlSignUp.cs">
       <SubType>UserControl</SubType>

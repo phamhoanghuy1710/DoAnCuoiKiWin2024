@@ -99,7 +99,7 @@
             // 
             panelMoving.BackColor = Color.White;
             panelMoving.CustomizableEdges = customizableEdges2;
-            panelMoving.Location = new Point(44, 122);
+            panelMoving.Location = new Point(34, 108);
             panelMoving.Name = "panelMoving";
             panelMoving.ShadowDecoration.CustomizableEdges = customizableEdges3;
             panelMoving.Size = new Size(260, 83);
