@@ -37,6 +37,9 @@
     <Compile Update="FPhong.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FThemPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GioHang.cs">
       <SubType>Form</SubType>
     </Compile>

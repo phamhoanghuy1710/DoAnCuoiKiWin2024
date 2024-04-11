@@ -128,7 +128,7 @@ namespace DuLichApplication
             // lấy mã khách sạn để truyền
             this.uC_ChonPhong1.lblTenKS.Text = ds.Tables[0].Rows[0]["Tên khách sạn"].ToString();
             this.uC_ChonPhong1.lblDiaChi.Text = "Địa chỉ: " + ds.Tables[0].Rows[0]["Địa chỉ"].ToString();
-            this.uC_ChonPhong1.lblGia.Text = "Giá: " + ds.Tables[0].Rows[0]["Giá"].ToString() + " VND";
+            this.uC_ChonPhong1.lblGia.Text = "Giá: " + ds.Tables[0].Rows[0]["Giá"].ToString() + "VND";  // fix sau
             this.uC_ChonPhong1.guna2TextBox2.Text = ds.Tables[0].Rows[0]["Review"].ToString();
             int number;
             int soSao;

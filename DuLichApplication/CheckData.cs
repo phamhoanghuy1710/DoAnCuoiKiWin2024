@@ -14,6 +14,43 @@ namespace DuLichApplication
         static string patternEmail = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
         static string patternPhone = @"^\d{10}$";
 
+        static public bool KiemTraMaPhong (Guna2TextBox maPhong)
+        {
+            if (string.IsNullOrEmpty(maPhong.Text))
+            {
+                MessageBox.Show("Mã Phòng không được trống");
+                maPhong.Focus();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        static public bool KiemTraPhong (Guna2TextBox loaiPhong, Guna2TextBox giaTien, Guna2TextBox tienNghi)
+        {
+            if (string.IsNullOrEmpty(loaiPhong.Text))
+            {
+                MessageBox.Show("Loại phòng không được trống");
+                loaiPhong.Focus();
+                return false;
+            }
+            else if (string.IsNullOrEmpty(tienNghi.Text))
+            {
+                MessageBox.Show("Tiện nghi không được trống");
+                tienNghi.Focus(); return false;
+            }
+            else if (IsMoneyValid(giaTien.Text.ToString()) == false)
+            {
+                MessageBox.Show("Giá tiền chỉ chấp nhận kiểu số");
+                giaTien.Focus();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
         static public bool KiemTraKhachSan (Guna2TextBox tenKS , Guna2TextBox diaChi, Guna2TextBox Gia , Guna2TextBox gioiThieu)
         {
             if (string.IsNullOrEmpty (tenKS.Text))

@@ -34,7 +34,7 @@ namespace DuLichApplication
             {
                 // mo ra cho nguoi dung nhap vao
                 this.btnChinhSua.Text = "Lưu Thông Tin";
-                this.isLuu = false ; 
+                this.isLuu = false;
                 this.txtTenKhachSan.ReadOnly = false;
                 this.txtDiaChiKs.ReadOnly = false;
                 this.txtGia.ReadOnly = false;
@@ -44,14 +44,14 @@ namespace DuLichApplication
             }
             else
             {
-                this.btnChinhSua.Text = "Chỉnh sửa thông tin";
                 this.numericUpDown1.Visible = false;
-                this.isLuu = true ; 
+                this.isLuu = true;
                 // kiem tra thong tin nguoi dung nhap vao
                 if (CheckData.KiemTraKhachSan(this.txtTenKhachSan, this.txtDiaChiKs, this.txtGia, this.txtGioiThieuKhachSan) == true)
                 {
                     // chinh sua trong data base
-                    string query = string.Format("update KhachSan  set [Tên khách sạn] = '{0}', [Địa chỉ] = '{1}',  [Giá] = '{2}', [Review] = '{3}' , [Số sao] = '{4}' where [Mã khách sạn] = '{5}' ",txtTenKhachSan.Text,txtDiaChiKs.Text,Convert.ToInt32(txtGia.Text),txtGioiThieuKhachSan.Text,Convert.ToInt32(numericUpDown1.Value) , maKS);
+                    this.btnChinhSua.Text = "Chỉnh sửa thông tin";
+                    string query = string.Format("update KhachSan  set [Tên khách sạn] = '{0}', [Địa chỉ] = '{1}',  [Giá] = '{2}', [Review] = '{3}' , [Số sao] = '{4}' where [Mã khách sạn] = '{5}' ", txtTenKhachSan.Text, txtDiaChiKs.Text, Convert.ToInt32(txtGia.Text), txtGioiThieuKhachSan.Text, Convert.ToInt32(numericUpDown1.Value), maKS);
                     fn.setData(query, "Đã chỉnh sửa thành công");
                     this.txtTenKhachSan.ReadOnly = true;
                     this.txtDiaChiKs.ReadOnly = true;
@@ -66,6 +66,12 @@ namespace DuLichApplication
         private void ucUpdateKS_Load(object sender, EventArgs e)
         {
             //MessageBox.Show(maKS);
+        }
+
+        private void btnThemPhong_Click(object sender, EventArgs e)
+        {
+            FThemPhong fThem = new FThemPhong (maKS);
+            fThem.Show();
         }
     }
 }

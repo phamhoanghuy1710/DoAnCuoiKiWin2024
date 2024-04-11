@@ -420,3 +420,4 @@ C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-window
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.All_user_control.Uc_ItemKScs.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.ucUpdateKS.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.All_user_control.UcItemUpdatePhong.resources
+C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.FThemPhong.resources

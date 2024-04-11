@@ -45,6 +45,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             picHinhAnh = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -59,6 +61,7 @@
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             btnXoa = new Guna.UI2.WinForms.Guna2Button();
             txtGiaTien = new Guna.UI2.WinForms.Guna2TextBox();
+            btnCapNhat = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).BeginInit();
             SuspendLayout();
@@ -114,7 +117,7 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.DimGray;
-            guna2HtmlLabel4.Location = new Point(680, 51);
+            guna2HtmlLabel4.Location = new Point(743, 46);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(47, 30);
             guna2HtmlLabel4.TabIndex = 39;
@@ -137,6 +140,7 @@
             txtTrangThai.Name = "txtTrangThai";
             txtTrangThai.PasswordChar = '\0';
             txtTrangThai.PlaceholderText = "";
+            txtTrangThai.ReadOnly = true;
             txtTrangThai.SelectedText = "";
             txtTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtTrangThai.Size = new Size(117, 38);
@@ -160,6 +164,7 @@
             txtLoaiPhong.Name = "txtLoaiPhong";
             txtLoaiPhong.PasswordChar = '\0';
             txtLoaiPhong.PlaceholderText = "";
+            txtLoaiPhong.ReadOnly = true;
             txtLoaiPhong.SelectedText = "";
             txtLoaiPhong.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtLoaiPhong.Size = new Size(117, 39);
@@ -193,6 +198,7 @@
             txtTienIch.Name = "txtTienIch";
             txtTienIch.PasswordChar = '\0';
             txtTienIch.PlaceholderText = "";
+            txtTienIch.ReadOnly = true;
             txtTienIch.SelectedText = "";
             txtTienIch.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtTienIch.Size = new Size(216, 38);
@@ -226,6 +232,7 @@
             txtMaPhong.Name = "txtMaPhong";
             txtMaPhong.PasswordChar = '\0';
             txtMaPhong.PlaceholderText = "";
+            txtMaPhong.ReadOnly = true;
             txtMaPhong.SelectedText = "";
             txtMaPhong.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtMaPhong.Size = new Size(216, 38);
@@ -252,7 +259,7 @@
             btnXoa.FillColor = Color.FromArgb(255, 128, 0);
             btnXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(616, 104);
+            btnXoa.Location = new Point(588, 104);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnXoa.Size = new Size(98, 33);
@@ -274,20 +281,41 @@
             txtGiaTien.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtGiaTien.ForeColor = Color.DimGray;
             txtGiaTien.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGiaTien.Location = new Point(582, 51);
+            txtGiaTien.Location = new Point(597, 48);
             txtGiaTien.Margin = new Padding(4, 4, 4, 4);
             txtGiaTien.Name = "txtGiaTien";
             txtGiaTien.PasswordChar = '\0';
             txtGiaTien.PlaceholderText = "";
+            txtGiaTien.ReadOnly = true;
             txtGiaTien.SelectedText = "";
             txtGiaTien.ShadowDecoration.CustomizableEdges = customizableEdges16;
             txtGiaTien.Size = new Size(117, 30);
             txtGiaTien.TabIndex = 30;
             // 
+            // btnCapNhat
+            // 
+            btnCapNhat.BorderRadius = 5;
+            btnCapNhat.CustomizableEdges = customizableEdges17;
+            btnCapNhat.DisabledState.BorderColor = Color.DarkGray;
+            btnCapNhat.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCapNhat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCapNhat.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCapNhat.FillColor = Color.FromArgb(255, 128, 0);
+            btnCapNhat.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCapNhat.ForeColor = Color.White;
+            btnCapNhat.Location = new Point(692, 104);
+            btnCapNhat.Name = "btnCapNhat";
+            btnCapNhat.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnCapNhat.Size = new Size(98, 33);
+            btnCapNhat.TabIndex = 42;
+            btnCapNhat.Text = "Cập nhật";
+            btnCapNhat.Click += btnCapNhat_Click;
+            // 
             // UcItemUpdatePhong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(btnCapNhat);
             Controls.Add(guna2HtmlLabel7);
             Controls.Add(guna2HtmlLabel6);
             Controls.Add(guna2HtmlLabel4);
@@ -326,5 +354,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private Guna.UI2.WinForms.Guna2TextBox txtGiaTien;
+        private Guna.UI2.WinForms.Guna2Button btnCapNhat;
     }
 }

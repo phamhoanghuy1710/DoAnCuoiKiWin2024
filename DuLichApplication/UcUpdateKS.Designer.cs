@@ -510,6 +510,7 @@
             btnThemPhong.Size = new Size(225, 56);
             btnThemPhong.TabIndex = 37;
             btnThemPhong.Text = "Thêm Phòng";
+            btnThemPhong.Click += btnThemPhong_Click;
             // 
             // ucUpdateKS
             // 
