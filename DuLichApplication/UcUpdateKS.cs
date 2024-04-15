@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DuLichApplication.All_user_control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -65,13 +66,49 @@ namespace DuLichApplication
 
         private void ucUpdateKS_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show(maKS);
+            // không cần làm gì hết
+        }
+
+        public void LoadLaiPhong()
+        {
+            string query = string.Format("select * from [Phòng] where [Mã khách sạn] = '{0}'", this.maKS);
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                this.flowPanelPhong.Controls.Clear();
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    UcItemUpdatePhong it = new UcItemUpdatePhong();
+                    it.MaPhong = row["Mã phòng"].ToString();
+                    it.TienIch = row["Tiện ích"].ToString();
+                    it.GiaTien = row["Giá"].ToString();
+                    it.TrangThai = row["Trạng thái"].ToString();
+                    it.LoaiPhong = row["Loại giường"].ToString();
+                    this.flowPanelPhong.Controls.Add(it);
+                }
+            }
+        }
+        public void KiemTraDong(bool isDong)
+        {
+            if (isDong)
+            {
+                LoadLaiPhong();
+            }
         }
 
         private void btnThemPhong_Click(object sender, EventArgs e)
         {
-            FThemPhong fThem = new FThemPhong (maKS);
+            FThemPhong fThem = new FThemPhong(maKS);
+            fThem.truyenChoCha = new FThemPhong.TruyenChoCha(KiemTraDong);
             fThem.Show();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            // khi ấn nút xóa khách sạn này thì khách sạn sẽ cút  luôn
+            string query = string.Format("delete from KhachSan where [Mã khách sạn] = '{0}'", this.maKS);
+            fn.setData(query, "Đã xóa khách sạn thành công");
+            this.Dispose();
         }
     }
 }

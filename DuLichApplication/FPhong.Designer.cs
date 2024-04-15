@@ -36,11 +36,11 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FPhong));
             guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            ucUpdateks1 = new ucUpdateKS();
             btnReload = new Guna.UI2.WinForms.Guna2Button();
             uC_ChonPhong1 = new All_user_control.UC_ChonPhong();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
-            ucUpdateks1 = new ucUpdateKS();
             guna2Panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,6 +56,14 @@
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Panel1.Size = new Size(1831, 882);
             guna2Panel1.TabIndex = 0;
+            // 
+            // ucUpdateks1
+            // 
+            ucUpdateks1.BackColor = Color.Transparent;
+            ucUpdateks1.Location = new Point(3, 3);
+            ucUpdateks1.Name = "ucUpdateks1";
+            ucUpdateks1.Size = new Size(1852, 879);
+            ucUpdateks1.TabIndex = 2;
             // 
             // btnReload
             // 
@@ -108,14 +116,6 @@
             btnExit.Size = new Size(79, 49);
             btnExit.TabIndex = 1;
             btnExit.Click += btnExit_Click;
-            // 
-            // ucUpdateks1
-            // 
-            ucUpdateks1.BackColor = Color.Transparent;
-            ucUpdateks1.Location = new Point(3, 3);
-            ucUpdateks1.Name = "ucUpdateks1";
-            ucUpdateks1.Size = new Size(1852, 879);
-            ucUpdateks1.TabIndex = 2;
             // 
             // FPhong
             // 

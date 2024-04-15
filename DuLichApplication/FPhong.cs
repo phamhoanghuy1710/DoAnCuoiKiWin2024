@@ -21,13 +21,14 @@ namespace DuLichApplication
         DBFunction fn = new DBFunction();
 
 
-        public FPhong (DataSet ds,string taiKhoan)
+        public FPhong(DataSet ds, string taiKhoan)
         {
-            InitializeComponent (); 
+            InitializeComponent();
             this.ds = ds;
             this.taiKhoan = taiKhoan;
             this.ucUpdateks1.getMaKhachSan(ds.Tables[0].Rows[0]["Mã khách sạn"].ToString());
             this.ucUpdateks1.btnChinhSua.Click += LoadLaiKs;
+            
         }
         public FPhong(DataSet ds, string taiKhoan, DateTime ngayNhanPhong, DateTime ngayTraPhong)
         {
@@ -40,12 +41,12 @@ namespace DuLichApplication
         }
 
 
-        public void LoadLaiKs (object sender , EventArgs e)
+        public void LoadLaiKs(object sender, EventArgs e)
         {
             if (this.ucUpdateks1.isLuu == true)
             {
                 string query = string.Format("select * from KhachSan where [Mã khách sạn] = '{0}'", ds.Tables[0].Rows[0]["Mã khách sạn"].ToString());
-                this.ds = fn.getData (query);
+                this.ds = fn.getData(query);
                 FPhong_Load(sender, e);
             }
         }
@@ -89,7 +90,7 @@ namespace DuLichApplication
             }
         }
 
-        public void LoadGiaoDienChu ()
+        public void LoadGiaoDienChu()
         {
             this.ucUpdateks1.txtTenKhachSan.Text = ds.Tables[0].Rows[0]["Tên khách sạn"].ToString();
             this.ucUpdateks1.txtDiaChiKs.Text = ds.Tables[0].Rows[0]["Địa chỉ"].ToString();
@@ -120,7 +121,7 @@ namespace DuLichApplication
             }
 
         }
-        public void LoadGiaoDienCus ()
+        public void LoadGiaoDienCus()
         {
             // chuyen thong tin qua cho uControl
             this.uC_ChonPhong1.getMaKhachSan(ds.Tables[0].Rows[0]["Mã khách sạn"].ToString(), taiKhoan);
@@ -161,7 +162,7 @@ namespace DuLichApplication
             }
         }
 
-        public void LoadPhongChu (string  query)
+        public void LoadPhongChu(string query)
         {
             DataSet ds = fn.getData(query);
             this.ucUpdateks1.flowPanelPhong.Controls.Clear();
@@ -207,5 +208,6 @@ namespace DuLichApplication
         {
             this.FPhong_Load(sender, e);
         }
+
     }
 }

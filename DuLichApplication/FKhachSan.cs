@@ -35,5 +35,10 @@ namespace DuLichApplication
             Application.Exit();
 
         }
+
+        private void uc_KhachSan1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

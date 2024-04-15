@@ -45,6 +45,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
             txtLoaiPhong = new Guna.UI2.WinForms.Guna2TextBox();
@@ -59,6 +60,7 @@
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtGiaTien = new Guna.UI2.WinForms.Guna2TextBox();
             btnThemPhong = new Guna.UI2.WinForms.Guna2Button();
+            btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).BeginInit();
             SuspendLayout();
@@ -284,11 +286,36 @@
             btnThemPhong.Text = "Thêm Phòng";
             btnThemPhong.Click += btnThemPhong_Click;
             // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Transparent;
+            btnExit.BorderColor = Color.Transparent;
+            btnExit.CustomBorderColor = Color.Transparent;
+            btnExit.DisabledState.BorderColor = Color.DarkGray;
+            btnExit.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnExit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnExit.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExit.FillColor = Color.Transparent;
+            btnExit.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnExit.ForeColor = Color.Transparent;
+            btnExit.Image = (Image)resources.GetObject("btnExit.Image");
+            btnExit.ImageSize = new Size(30, 30);
+            btnExit.Location = new Point(610, 0);
+            btnExit.Name = "btnExit";
+            btnExit.PressedColor = Color.Transparent;
+            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges17;
+            btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btnExit.Size = new Size(61, 53);
+            btnExit.TabIndex = 55;
+            btnExit.Click += btnExit_Click;
+            // 
             // FThemPhong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(673, 420);
+            Controls.Add(btnExit);
             Controls.Add(btnThemPhong);
             Controls.Add(guna2HtmlLabel7);
             Controls.Add(guna2HtmlLabel4);
@@ -303,6 +330,7 @@
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(guna2PictureBox1);
             Controls.Add(picHinhAnh);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FThemPhong";
             Text = "FThemPhong";
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
@@ -326,5 +354,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2TextBox txtGiaTien;
         private Guna.UI2.WinForms.Guna2Button btnThemPhong;
+        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
     }
 }

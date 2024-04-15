@@ -404,6 +404,7 @@
             btnXoa.Size = new Size(225, 56);
             btnXoa.TabIndex = 32;
             btnXoa.Text = "Xóa khách sạn này";
+            btnXoa.Click += btnXoa_Click;
             // 
             // txtDiaChiKs
             // 

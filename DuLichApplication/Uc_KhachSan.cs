@@ -14,7 +14,7 @@ namespace DuLichApplication
 {
     public partial class Uc_KhachSan : UserControl
     {
-        DBFunction fn  = new DBFunction();
+        DBFunction fn = new DBFunction();
         public Uc_KhachSan()
         {
             InitializeComponent();
@@ -34,15 +34,15 @@ namespace DuLichApplication
             {
                 foreach (DataRow row in ds.Tables[0].Rows)
                 {
-                    Uc_ItemKScs item = new Uc_ItemKScs ();
+                    Uc_ItemKScs item = new Uc_ItemKScs();
                     item.Ten = row["Tên khách sạn"].ToString();
                     item.DiaChi = row["Địa chỉ"].ToString();
                     item.Gia = row["Giá"].ToString();
                     item.ID = Convert.ToInt32(row["Mã khách sạn"].ToString());
                     int soSao;
-                    if (int.TryParse(row["Số sao"].ToString(),out soSao))
+                    if (int.TryParse(row["Số sao"].ToString(), out soSao))
                     {
-                        item.Sao  = soSao;
+                        item.Sao = soSao;
                     }
                     else
                     {
@@ -52,5 +52,12 @@ namespace DuLichApplication
                 }
             }
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string query = string.Format("select * from KhachSan where [Tên khách sạn] like '%{0}%'", this.txtTenKhachSan.Text);
+            DataSet ds = fn.getData(query);
+            LoadThongTin(ds);
+        }   
     }
 }

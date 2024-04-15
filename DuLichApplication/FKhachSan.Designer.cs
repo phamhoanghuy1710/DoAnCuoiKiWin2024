@@ -164,6 +164,7 @@
             uc_KhachSan1.Name = "uc_KhachSan1";
             uc_KhachSan1.Size = new Size(1879, 891);
             uc_KhachSan1.TabIndex = 6;
+            uc_KhachSan1.Load += uc_KhachSan1_Load;
             // 
             // panelMoving
             // 

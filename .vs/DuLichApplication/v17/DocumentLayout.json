@@ -3,62 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\checkdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\checkdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|c:\\users\\huy\\desktop\\doancuoikiwin2024\\dulichapplication\\fthemphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\fthemphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|c:\\users\\huy\\desktop\\doancuoikiwin2024\\dulichapplication\\usercontrolsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\usercontrolsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\fthemphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\fthemphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\ucupdateks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|c:\\users\\huy\\desktop\\doancuoikiwin2024\\dulichapplication\\ucupdateks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\ucupdateks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\all user control\\ucitemupdatephong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\all user control\\ucitemupdatephong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\ucupdateks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\ucupdateks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\all user control\\uc_customerinfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\all user control\\uc_customerinfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\uc_khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\uc_khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\all user control\\ucitemupdatephong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\all user control\\ucitemupdatephong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\uc_khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\uc_khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\fphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\fphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\fkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\fkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\fphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\fphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/dbHotel/True/SqlTable/dbo.KhachSan.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\dbfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\dbfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\dulichapplication\\fkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97727B27-FCDA-43E9-BFEC-A884DCFDEA91}|DuLichApplication\\DuLichApplication.csproj|solutionrelative:dulichapplication\\fkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,183 +34,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserControlSignUp.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\UserControlSignUp.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\UserControlSignUp.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\UserControlSignUp.cs",
-              "RelativeToolTip": "DuLichApplication\\UserControlSignUp.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T17:21:11.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AQIAAHYUAAAAAAAAAAAhwIQUAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-04-11T17:12:12.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FThemPhong.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FThemPhong.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\FThemPhong.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FThemPhong.cs",
-              "RelativeToolTip": "DuLichApplication\\FThemPhong.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAqwB4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T16:44:48.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FThemPhong.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FThemPhong.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\FThemPhong.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FThemPhong.cs [Design]",
-              "RelativeToolTip": "DuLichApplication\\FThemPhong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T16:37:46.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UcItemUpdatePhong.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\All user control\\UcItemUpdatePhong.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\All user control\\UcItemUpdatePhong.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\All user control\\UcItemUpdatePhong.cs",
-              "RelativeToolTip": "DuLichApplication\\All user control\\UcItemUpdatePhong.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAwwF4AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:54:28.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UcItemUpdatePhong.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\All user control\\UcItemUpdatePhong.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\All user control\\UcItemUpdatePhong.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\All user control\\UcItemUpdatePhong.cs [Design]",
-              "RelativeToolTip": "DuLichApplication\\All user control\\UcItemUpdatePhong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:50:20.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FPhong.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FPhong.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\FPhong.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FPhong.cs",
-              "RelativeToolTip": "DuLichApplication\\FPhong.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAUwJMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:32:33.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\Form2.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\Form2.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\Form2.cs",
-              "RelativeToolTip": "DuLichApplication\\Form2.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T15:58:33.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UC_CustomerInfor.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\All user control\\UC_CustomerInfor.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\All user control\\UC_CustomerInfor.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\All user control\\UC_CustomerInfor.cs",
-              "RelativeToolTip": "DuLichApplication\\All user control\\UC_CustomerInfor.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T15:56:32.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UcUpdateKS.cs",
               "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\UcUpdateKS.cs",
               "RelativeDocumentMoniker": "DuLichApplication\\UcUpdateKS.cs",
               "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\UcUpdateKS.cs",
               "RelativeToolTip": "DuLichApplication\\UcUpdateKS.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEoAAAAJAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAArwG4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:44:57.484Z"
+              "WhenOpened": "2024-04-12T06:23:33.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FPhong.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FPhong.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\FPhong.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FPhong.cs [Design]",
-              "RelativeToolTip": "DuLichApplication\\FPhong.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T15:29:33.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DBFunction.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DBFunction.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\DBFunction.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DBFunction.cs",
-              "RelativeToolTip": "DuLichApplication\\DBFunction.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T15:24:05.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "UcUpdateKS.cs [Design]",
               "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\UcUpdateKS.cs",
               "RelativeDocumentMoniker": "DuLichApplication\\UcUpdateKS.cs",
               "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\UcUpdateKS.cs [Design]",
               "RelativeToolTip": "DuLichApplication\\UcUpdateKS.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T15:20:33.709Z"
+              "WhenOpened": "2024-04-12T06:21:05.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "dbo.KhachSan [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/dbHotel/True/SqlTable/dbo.KhachSan.sql",
-              "ToolTip": "dbo.KhachSan [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-10T14:54:09.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CheckData.cs",
-              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\CheckData.cs",
-              "RelativeDocumentMoniker": "DuLichApplication\\CheckData.cs",
-              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\CheckData.cs",
-              "RelativeToolTip": "DuLichApplication\\CheckData.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBYAAAAdAAAA",
+              "DocumentIndex": 3,
+              "Title": "Uc_KhachSan.cs",
+              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\Uc_KhachSan.cs",
+              "RelativeDocumentMoniker": "DuLichApplication\\Uc_KhachSan.cs",
+              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\Uc_KhachSan.cs",
+              "RelativeToolTip": "DuLichApplication\\Uc_KhachSan.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T14:52:54.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T06:12:50.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Uc_KhachSan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\Uc_KhachSan.cs",
+              "RelativeDocumentMoniker": "DuLichApplication\\Uc_KhachSan.cs",
+              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\Uc_KhachSan.cs [Design]",
+              "RelativeToolTip": "DuLichApplication\\Uc_KhachSan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:12:45.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FKhachSan.cs",
+              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FKhachSan.cs",
+              "RelativeDocumentMoniker": "DuLichApplication\\FKhachSan.cs",
+              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FKhachSan.cs",
+              "RelativeToolTip": "DuLichApplication\\FKhachSan.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAIA8wCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:11:22.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FKhachSan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FKhachSan.cs",
+              "RelativeDocumentMoniker": "DuLichApplication\\FKhachSan.cs",
+              "ToolTip": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\FKhachSan.cs [Design]",
+              "RelativeToolTip": "DuLichApplication\\FKhachSan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T06:11:11.123Z"
             }
           ]
         }
