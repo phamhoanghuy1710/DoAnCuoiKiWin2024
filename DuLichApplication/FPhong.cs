@@ -28,6 +28,7 @@ namespace DuLichApplication
             this.taiKhoan = taiKhoan;
             this.ucUpdateks1.getMaKhachSan(ds.Tables[0].Rows[0]["Mã khách sạn"].ToString());
             this.ucUpdateks1.btnChinhSua.Click += LoadLaiKs;
+            this.ucUpdateks1.btnXoa.Click += TatForm;
             
         }
         public FPhong(DataSet ds, string taiKhoan, DateTime ngayNhanPhong, DateTime ngayTraPhong)
@@ -40,7 +41,13 @@ namespace DuLichApplication
             this.uC_ChonPhong1.btnGioHang.Click += MoGioHang;
         }
 
-
+        public void TatForm (object sender , EventArgs e)
+        {
+            if (this.ucUpdateks1.isTatForm == true)
+            {
+                this.Dispose();
+            }
+        }
         public void LoadLaiKs(object sender, EventArgs e)
         {
             if (this.ucUpdateks1.isLuu == true)

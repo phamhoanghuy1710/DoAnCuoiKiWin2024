@@ -19,6 +19,7 @@ namespace DuLichApplication
         int trangThaiChinh = 0;
         string maKS;
         public bool isLuu = false;
+        public bool isTatForm = false;
         public ucUpdateKS()
         {
             InitializeComponent();
@@ -106,9 +107,13 @@ namespace DuLichApplication
         private void btnXoa_Click(object sender, EventArgs e)
         {
             // khi ấn nút xóa khách sạn này thì khách sạn sẽ cút  luôn
+            // trước khi xóa khách sạn là phải xóa phòng trước
+            string xoa_query = string.Format("delete from [Phòng] where [Mã khách sạn] = '{0}' ", this.maKS);
+            fn.setData (xoa_query,"Xóa hết các phòng ở khách sạn này");
             string query = string.Format("delete from KhachSan where [Mã khách sạn] = '{0}'", this.maKS);
             fn.setData(query, "Đã xóa khách sạn thành công");
-            this.Dispose();
+            this.isTatForm = true;
+
         }
     }
 }

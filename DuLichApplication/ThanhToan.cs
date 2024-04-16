@@ -24,12 +24,20 @@ namespace DuLichApplication
             this.maKS = maKS;
             this.cbbHInhThuc.SelectedIndex = 1;
         }
+        public void LoadVoucher   (DataSet ds)
+        {
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                string vc = ds.Tables[0].Rows[0]["Voucher"].ToString();
+                string[] list_vc = vc.Split(",");
+                this.cbbVoucher.DataSource = list_vc;
+            }
+        }
         public void ThanhToan_Load_2(object sender, EventArgs e)
         {
-            /*
-            this.cbbHInhThuc.SelectedIndex = 0;
-            this.cbbVoucher.SelectedIndex = 0;
-            */
+            // Load thông tin voucher
+      
+
             this.lableTenKS.Text = this.maKS;
             string layTen = string.Format("select * from KhachSan where [Mã khách sạn] = '{0}'", maKS);
             DataSet ks = fn.getData(layTen);
@@ -42,8 +50,12 @@ namespace DuLichApplication
             string query = string.Format("select sum([Giá]) as Gia from [Phòng] where MaKhach = '{0}' and [Mã khách sạn] = '{1}'", maKhach, maKS);
             DataSet ds = fn.getData(query);
             txtGiaGoc.Text = ds.Tables[0].Rows[0]["Gia"].ToString();
+            txtTongGia.Text = txtGiaGoc.Text;
+
             string query2 = string.Format("select * from KhachHang where TaiKhoan = '{0}'", maKhach);
             DataSet ttKhach = fn.getData(query2);
+            LoadVoucher(ttKhach);
+
             string query3 = string.Format("select * from DatPhong where TaiKhoan = '{0}' and MaKS = '{1}'", maKhach, maKS);
             DataSet phong = fn.getData(query3);
             LoadThongTin(ttKhach);
@@ -76,6 +88,10 @@ namespace DuLichApplication
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
+            // khi mà ấn dô đây thì tongtien sẽ được cộng vào tổng giá
+            string query = string.Format("UPDATE KhachHang SET TongChi = TongChi + {0}", Convert.ToInt32(this.txtTongGia.Text));
+            fn.setData(query, "Thêm vào tổng chi thành công");
+
             if (this.cbbHInhThuc.Text.ToLower() == "online")
             {
                 this.pictureQR.Visible = true;
