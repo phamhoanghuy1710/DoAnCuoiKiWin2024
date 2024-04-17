@@ -40,5 +40,10 @@ namespace DuLichApplication
         {
 
         }
+
+        private void panelMoving_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

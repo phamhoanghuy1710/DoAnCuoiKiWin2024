@@ -88,16 +88,26 @@ namespace DuLichApplication.All_user_control
             }
             else
             {
-               if (CheckData.KiemTraPhong(this.txtLoaiPhong ,this.txtGiaTien, this.txtTienIch) == true)
-               {
+                if (CheckData.KiemTraPhong(this.txtLoaiPhong, this.txtGiaTien, this.txtTienIch) == true)
+                {
                     string query = string.Format("update [Phòng] set [Loại giường] = '{0}', [Giá] = '{1}', [Tiện ích] = '{2}' where [Mã phòng] = '{3}'", txtLoaiPhong.Text, Convert.ToInt32(txtGiaTien.Text), txtTienIch.Text, txtMaPhong.Text);
                     fn.setData(query, "Cập nhật thành công");
                     txtGiaTien.ReadOnly = true;
                     txtLoaiPhong.ReadOnly = true;
                     txtTienIch.ReadOnly = true;
                     isLuu = 0;
-               }
+                }
             }
+
+        }
+
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UcItemUpdatePhong_Load(object sender, EventArgs e)
+        {
 
         }
     }

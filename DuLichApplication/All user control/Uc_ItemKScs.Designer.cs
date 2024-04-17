@@ -112,6 +112,7 @@
             // 
             // txtDiaChiKs
             // 
+            txtDiaChiKs.BackColor = Color.Transparent;
             txtDiaChiKs.BorderThickness = 0;
             txtDiaChiKs.CustomizableEdges = customizableEdges5;
             txtDiaChiKs.DefaultText = "";
@@ -263,7 +264,7 @@
             btnChonKS.FillColor = Color.Gainsboro;
             btnChonKS.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnChonKS.ForeColor = Color.Black;
-            btnChonKS.Location = new Point(642, 92);
+            btnChonKS.Location = new Point(615, 94);
             btnChonKS.Name = "btnChonKS";
             btnChonKS.ShadowDecoration.CustomizableEdges = customizableEdges24;
             btnChonKS.Size = new Size(145, 45);
@@ -273,6 +274,7 @@
             // 
             // txtGiaTien
             // 
+            txtGiaTien.BackColor = Color.Transparent;
             txtGiaTien.BackgroundImageLayout = ImageLayout.None;
             txtGiaTien.BorderColor = Color.DimGray;
             txtGiaTien.BorderThickness = 0;
@@ -286,7 +288,7 @@
             txtGiaTien.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtGiaTien.ForeColor = Color.DimGray;
             txtGiaTien.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGiaTien.Location = new Point(615, 8);
+            txtGiaTien.Location = new Point(615, 29);
             txtGiaTien.Margin = new Padding(5);
             txtGiaTien.Name = "txtGiaTien";
             txtGiaTien.PasswordChar = '\0';
@@ -302,7 +304,7 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel1.ForeColor = Color.DimGray;
-            guna2HtmlLabel1.Location = new Point(740, 8);
+            guna2HtmlLabel1.Location = new Point(714, 29);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(47, 30);
             guna2HtmlLabel1.TabIndex = 28;
@@ -310,6 +312,7 @@
             // 
             // txtTenKS
             // 
+            txtTenKS.BackColor = Color.Transparent;
             txtTenKS.BorderThickness = 0;
             txtTenKS.CustomizableEdges = customizableEdges27;
             txtTenKS.DefaultText = "";
@@ -321,14 +324,14 @@
             txtTenKS.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtTenKS.ForeColor = Color.Black;
             txtTenKS.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKS.Location = new Point(293, 0);
+            txtTenKS.Location = new Point(293, 15);
             txtTenKS.Margin = new Padding(2, 4, 2, 4);
             txtTenKS.Name = "txtTenKS";
             txtTenKS.PasswordChar = '\0';
             txtTenKS.PlaceholderText = "";
             txtTenKS.SelectedText = "";
             txtTenKS.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            txtTenKS.Size = new Size(304, 49);
+            txtTenKS.Size = new Size(280, 34);
             txtTenKS.TabIndex = 29;
             // 
             // guna2Elipse1
@@ -340,6 +343,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(txtTenKS);
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(txtGiaTien);

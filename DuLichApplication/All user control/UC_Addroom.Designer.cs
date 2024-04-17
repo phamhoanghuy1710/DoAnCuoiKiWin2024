@@ -461,7 +461,8 @@
             // 
             // guna2Panel1
             // 
-            guna2Panel1.BackColor = Color.White;
+            guna2Panel1.BackColor = Color.Transparent;
+            guna2Panel1.BackgroundImage = (Image)resources.GetObject("guna2Panel1.BackgroundImage");
             guna2Panel1.BorderRadius = 10;
             guna2Panel1.Controls.Add(guna2Panel2);
             guna2Panel1.Controls.Add(guna2Button1);
@@ -477,7 +478,7 @@
             // 
             // guna2Panel2
             // 
-            guna2Panel2.BackColor = Color.White;
+            guna2Panel2.BackColor = Color.Transparent;
             guna2Panel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             guna2Panel2.Controls.Add(numGia);
             guna2Panel2.Controls.Add(guna2HtmlLabel11);
@@ -494,7 +495,7 @@
             numGia.BorderStyle = BorderStyle.None;
             numGia.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             numGia.Increment = new decimal(new int[] { 100000, 0, 0, 0 });
-            numGia.Location = new Point(0, 55);
+            numGia.Location = new Point(9, 55);
             numGia.Maximum = new decimal(new int[] { 30000000, 0, 0, 0 });
             numGia.Name = "numGia";
             numGia.Size = new Size(116, 23);
@@ -527,16 +528,16 @@
             guna2Button1.FillColor = Color.White;
             guna2Button1.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             guna2Button1.ForeColor = Color.Black;
-            guna2Button1.Location = new Point(8, 661);
+            guna2Button1.Location = new Point(20, 662);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button1.Size = new Size(194, 56);
+            guna2Button1.Size = new Size(171, 50);
             guna2Button1.TabIndex = 0;
             guna2Button1.Text = "Đặt lại";
             // 
             // panelTienIch
             // 
-            panelTienIch.BackColor = Color.White;
+            panelTienIch.BackColor = Color.Transparent;
             panelTienIch.Controls.Add(guna2CheckBox5);
             panelTienIch.Controls.Add(guna2CheckBox4);
             panelTienIch.Controls.Add(guna2CheckBox3);
@@ -663,7 +664,7 @@
             // 
             // panelSoSao
             // 
-            panelSoSao.BackColor = Color.White;
+            panelSoSao.BackColor = Color.Transparent;
             panelSoSao.Controls.Add(guna2PictureBox14);
             panelSoSao.Controls.Add(guna2PictureBox13);
             panelSoSao.Controls.Add(guna2PictureBox12);
@@ -699,7 +700,7 @@
             guna2PictureBox14.CustomizableEdges = customizableEdges15;
             guna2PictureBox14.Image = (Image)resources.GetObject("guna2PictureBox14.Image");
             guna2PictureBox14.ImageRotate = 0F;
-            guna2PictureBox14.Location = new Point(174, 180);
+            guna2PictureBox14.Location = new Point(173, 180);
             guna2PictureBox14.Name = "guna2PictureBox14";
             guna2PictureBox14.ShadowDecoration.CustomizableEdges = customizableEdges16;
             guna2PictureBox14.Size = new Size(25, 25);
@@ -881,7 +882,7 @@
             picSao4.CustomizableEdges = customizableEdges43;
             picSao4.Image = (Image)resources.GetObject("picSao4.Image");
             picSao4.ImageRotate = 0F;
-            picSao4.Location = new Point(35, 39);
+            picSao4.Location = new Point(35, 36);
             picSao4.Name = "picSao4";
             picSao4.ShadowDecoration.CustomizableEdges = customizableEdges44;
             picSao4.Size = new Size(25, 25);
@@ -1008,7 +1009,7 @@
             guna2HtmlLabel8.BackColor = Color.Transparent;
             guna2HtmlLabel8.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel8.ForeColor = Color.Black;
-            guna2HtmlLabel8.Location = new Point(73, 8);
+            guna2HtmlLabel8.Location = new Point(73, 13);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             guna2HtmlLabel8.Size = new Size(72, 35);
             guna2HtmlLabel8.TabIndex = 25;

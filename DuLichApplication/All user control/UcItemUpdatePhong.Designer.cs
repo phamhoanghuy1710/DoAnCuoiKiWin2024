@@ -71,10 +71,10 @@
             guna2PictureBox1.CustomizableEdges = customizableEdges1;
             guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
             guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(137, 51);
+            guna2PictureBox1.Location = new Point(137, 48);
             guna2PictureBox1.Name = "guna2PictureBox1";
             guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2PictureBox1.Size = new Size(55, 60);
+            guna2PictureBox1.Size = new Size(62, 63);
             guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             guna2PictureBox1.TabIndex = 27;
             guna2PictureBox1.TabStop = false;
@@ -96,7 +96,7 @@
             // 
             guna2HtmlLabel7.BackColor = Color.Transparent;
             guna2HtmlLabel7.Font = new Font("Calibri", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel7.Location = new Point(597, 18);
+            guna2HtmlLabel7.Location = new Point(630, 18);
             guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             guna2HtmlLabel7.Size = new Size(117, 23);
             guna2HtmlLabel7.TabIndex = 41;
@@ -117,11 +117,12 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.DimGray;
-            guna2HtmlLabel4.Location = new Point(743, 46);
+            guna2HtmlLabel4.Location = new Point(729, 48);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(47, 30);
             guna2HtmlLabel4.TabIndex = 39;
             guna2HtmlLabel4.Text = "VND";
+            guna2HtmlLabel4.Click += guna2HtmlLabel4_Click;
             // 
             // txtTrangThai
             // 
@@ -174,7 +175,7 @@
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Calibri", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel5.Location = new Point(430, 82);
+            guna2HtmlLabel5.Location = new Point(430, 76);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(79, 23);
             guna2HtmlLabel5.TabIndex = 36;
@@ -194,21 +195,21 @@
             txtTienIch.Font = new Font("Calibri", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtTienIch.ForeColor = Color.Black;
             txtTienIch.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTienIch.Location = new Point(208, 105);
+            txtTienIch.Location = new Point(229, 99);
             txtTienIch.Name = "txtTienIch";
             txtTienIch.PasswordChar = '\0';
             txtTienIch.PlaceholderText = "";
             txtTienIch.ReadOnly = true;
             txtTienIch.SelectedText = "";
             txtTienIch.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtTienIch.Size = new Size(216, 38);
+            txtTienIch.Size = new Size(176, 38);
             txtTienIch.TabIndex = 35;
             // 
             // guna2HtmlLabel2
             // 
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Calibri", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel2.Location = new Point(208, 82);
+            guna2HtmlLabel2.Location = new Point(229, 76);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(67, 23);
             guna2HtmlLabel2.TabIndex = 34;
@@ -228,21 +229,21 @@
             txtMaPhong.Font = new Font("Calibri", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txtMaPhong.ForeColor = Color.Black;
             txtMaPhong.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaPhong.Location = new Point(208, 40);
+            txtMaPhong.Location = new Point(229, 40);
             txtMaPhong.Name = "txtMaPhong";
             txtMaPhong.PasswordChar = '\0';
             txtMaPhong.PlaceholderText = "";
             txtMaPhong.ReadOnly = true;
             txtMaPhong.SelectedText = "";
             txtMaPhong.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtMaPhong.Size = new Size(216, 38);
+            txtMaPhong.Size = new Size(176, 38);
             txtMaPhong.TabIndex = 33;
             // 
             // guna2HtmlLabel8
             // 
             guna2HtmlLabel8.BackColor = Color.Transparent;
             guna2HtmlLabel8.Font = new Font("Calibri", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel8.Location = new Point(208, 18);
+            guna2HtmlLabel8.Location = new Point(229, 18);
             guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             guna2HtmlLabel8.Size = new Size(74, 23);
             guna2HtmlLabel8.TabIndex = 32;
@@ -259,10 +260,10 @@
             btnXoa.FillColor = Color.FromArgb(255, 128, 0);
             btnXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(588, 104);
+            btnXoa.Location = new Point(599, 104);
             btnXoa.Name = "btnXoa";
             btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnXoa.Size = new Size(98, 33);
+            btnXoa.Size = new Size(58, 33);
             btnXoa.TabIndex = 31;
             btnXoa.Text = "Xóa";
             btnXoa.Click += btnXoa_Click;
@@ -281,7 +282,7 @@
             txtGiaTien.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtGiaTien.ForeColor = Color.DimGray;
             txtGiaTien.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGiaTien.Location = new Point(597, 48);
+            txtGiaTien.Location = new Point(599, 48);
             txtGiaTien.Margin = new Padding(4, 4, 4, 4);
             txtGiaTien.Name = "txtGiaTien";
             txtGiaTien.PasswordChar = '\0';
@@ -303,10 +304,10 @@
             btnCapNhat.FillColor = Color.FromArgb(255, 128, 0);
             btnCapNhat.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnCapNhat.ForeColor = Color.White;
-            btnCapNhat.Location = new Point(692, 104);
+            btnCapNhat.Location = new Point(668, 104);
             btnCapNhat.Name = "btnCapNhat";
             btnCapNhat.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btnCapNhat.Size = new Size(98, 33);
+            btnCapNhat.Size = new Size(108, 33);
             btnCapNhat.TabIndex = 42;
             btnCapNhat.Text = "Cập nhật";
             btnCapNhat.Click += btnCapNhat_Click;
@@ -315,6 +316,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(btnCapNhat);
             Controls.Add(guna2HtmlLabel7);
             Controls.Add(guna2HtmlLabel6);
@@ -332,6 +335,7 @@
             Controls.Add(picHinhAnh);
             Name = "UcItemUpdatePhong";
             Size = new Size(804, 154);
+            Load += UcItemUpdatePhong_Load;
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).EndInit();
             ResumeLayout(false);

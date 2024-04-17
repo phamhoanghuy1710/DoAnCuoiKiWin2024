@@ -41,6 +41,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             btnThemKhachSan = new Guna.UI2.WinForms.Guna2Button();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -49,6 +51,7 @@
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             uc_KhachSan1 = new Uc_KhachSan();
             panelMoving = new Guna.UI2.WinForms.Guna2Panel();
+            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
             // btnExit
@@ -63,7 +66,7 @@
             btnExit.ForeColor = Color.White;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
             btnExit.ImageSize = new Size(35, 35);
-            btnExit.Location = new Point(1831, 28);
+            btnExit.Location = new Point(1848, 17);
             btnExit.Name = "btnExit";
             btnExit.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -73,7 +76,10 @@
             // 
             // btnThemKhachSan
             // 
+            btnThemKhachSan.BackColor = Color.FromArgb(0, 0, 0, 22);
+            btnThemKhachSan.BorderColor = Color.White;
             btnThemKhachSan.BorderRadius = 18;
+            btnThemKhachSan.BorderThickness = 1;
             btnThemKhachSan.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             btnThemKhachSan.CustomizableEdges = customizableEdges2;
             btnThemKhachSan.DisabledState.BorderColor = Color.DarkGray;
@@ -85,17 +91,20 @@
             btnThemKhachSan.ForeColor = Color.White;
             btnThemKhachSan.Image = (Image)resources.GetObject("btnThemKhachSan.Image");
             btnThemKhachSan.ImageSize = new Size(40, 40);
-            btnThemKhachSan.Location = new Point(43, 49);
+            btnThemKhachSan.Location = new Point(408, 52);
             btnThemKhachSan.Name = "btnThemKhachSan";
             btnThemKhachSan.ShadowDecoration.CustomizableEdges = customizableEdges3;
-            btnThemKhachSan.Size = new Size(311, 87);
+            btnThemKhachSan.Size = new Size(322, 75);
             btnThemKhachSan.TabIndex = 2;
             btnThemKhachSan.Text = "Cập nhật khách sạn";
             btnThemKhachSan.Click += btnThemKhachSan_Click;
             // 
             // guna2Button1
             // 
+            guna2Button1.BackColor = Color.Transparent;
+            guna2Button1.BorderColor = Color.White;
             guna2Button1.BorderRadius = 18;
+            guna2Button1.BorderThickness = 1;
             guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             guna2Button1.CustomizableEdges = customizableEdges4;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
@@ -107,16 +116,19 @@
             guna2Button1.ForeColor = Color.White;
             guna2Button1.Image = (Image)resources.GetObject("guna2Button1.Image");
             guna2Button1.ImageSize = new Size(40, 40);
-            guna2Button1.Location = new Point(462, 49);
+            guna2Button1.Location = new Point(816, 52);
             guna2Button1.Name = "guna2Button1";
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges5;
-            guna2Button1.Size = new Size(311, 87);
+            guna2Button1.Size = new Size(316, 75);
             guna2Button1.TabIndex = 3;
             guna2Button1.Text = "Quản lý phòng";
             // 
             // guna2Button2
             // 
+            guna2Button2.BackColor = Color.Transparent;
+            guna2Button2.BorderColor = Color.White;
             guna2Button2.BorderRadius = 18;
+            guna2Button2.BorderThickness = 1;
             guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             guna2Button2.CustomizableEdges = customizableEdges6;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
@@ -128,16 +140,19 @@
             guna2Button2.ForeColor = Color.White;
             guna2Button2.Image = (Image)resources.GetObject("guna2Button2.Image");
             guna2Button2.ImageSize = new Size(40, 40);
-            guna2Button2.Location = new Point(920, 49);
+            guna2Button2.Location = new Point(1217, 52);
             guna2Button2.Name = "guna2Button2";
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            guna2Button2.Size = new Size(311, 87);
+            guna2Button2.Size = new Size(265, 75);
             guna2Button2.TabIndex = 4;
             guna2Button2.Text = "Ưu đãi";
             // 
             // guna2Button3
             // 
+            guna2Button3.BackColor = Color.Transparent;
+            guna2Button3.BorderColor = Color.White;
             guna2Button3.BorderRadius = 18;
+            guna2Button3.BorderThickness = 1;
             guna2Button3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             guna2Button3.CustomizableEdges = customizableEdges8;
             guna2Button3.DisabledState.BorderColor = Color.DarkGray;
@@ -149,20 +164,20 @@
             guna2Button3.ForeColor = Color.White;
             guna2Button3.Image = (Image)resources.GetObject("guna2Button3.Image");
             guna2Button3.ImageSize = new Size(40, 40);
-            guna2Button3.Location = new Point(1452, 40);
+            guna2Button3.Location = new Point(1552, 52);
             guna2Button3.Name = "guna2Button3";
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges9;
-            guna2Button3.Size = new Size(311, 87);
+            guna2Button3.Size = new Size(270, 75);
             guna2Button3.TabIndex = 5;
             guna2Button3.Text = "Doanh thu";
             // 
             // uc_KhachSan1
             // 
-            uc_KhachSan1.BackColor = Color.DimGray;
+            uc_KhachSan1.BackColor = Color.Transparent;
             uc_KhachSan1.BorderStyle = BorderStyle.FixedSingle;
-            uc_KhachSan1.Location = new Point(12, 133);
+            uc_KhachSan1.Location = new Point(12, 144);
             uc_KhachSan1.Name = "uc_KhachSan1";
-            uc_KhachSan1.Size = new Size(1879, 891);
+            uc_KhachSan1.Size = new Size(1896, 899);
             uc_KhachSan1.TabIndex = 6;
             uc_KhachSan1.Load += uc_KhachSan1_Load;
             // 
@@ -170,18 +185,40 @@
             // 
             panelMoving.BackColor = Color.White;
             panelMoving.CustomizableEdges = customizableEdges10;
-            panelMoving.Location = new Point(72, 116);
+            panelMoving.Location = new Point(441, 130);
             panelMoving.Name = "panelMoving";
             panelMoving.ShadowDecoration.CustomizableEdges = customizableEdges11;
             panelMoving.Size = new Size(260, 20);
             panelMoving.TabIndex = 7;
+            panelMoving.Paint += panelMoving_Paint;
+            // 
+            // guna2Button4
+            // 
+            guna2Button4.BackColor = Color.Transparent;
+            guna2Button4.CustomizableEdges = customizableEdges12;
+            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button4.FillColor = Color.Transparent;
+            guna2Button4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button4.ForeColor = Color.White;
+            guna2Button4.Image = (Image)resources.GetObject("guna2Button4.Image");
+            guna2Button4.ImageSize = new Size(500, 400);
+            guna2Button4.Location = new Point(-71, 17);
+            guna2Button4.Name = "guna2Button4";
+            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges13;
+            guna2Button4.Size = new Size(423, 152);
+            guna2Button4.TabIndex = 8;
             // 
             // FKhachSan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1924, 1055);
+            Controls.Add(guna2Button4);
             Controls.Add(panelMoving);
             Controls.Add(uc_KhachSan1);
             Controls.Add(guna2Button3);
@@ -207,5 +244,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Uc_KhachSan uc_KhachSan1;
         private Guna.UI2.WinForms.Guna2Panel panelMoving;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }

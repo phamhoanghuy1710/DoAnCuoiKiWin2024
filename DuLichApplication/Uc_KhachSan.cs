@@ -58,6 +58,11 @@ namespace DuLichApplication
             string query = string.Format("select * from KhachSan where [Tên khách sạn] like '%{0}%'", this.txtTenKhachSan.Text);
             DataSet ds = fn.getData(query);
             LoadThongTin(ds);
-        }   
+        }
+
+        private void panelTienIch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
