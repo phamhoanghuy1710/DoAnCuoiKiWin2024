@@ -333,6 +333,7 @@
             Controls.Add(picHinhAnh);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FThemPhong";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FThemPhong";
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).EndInit();
             ResumeLayout(false);

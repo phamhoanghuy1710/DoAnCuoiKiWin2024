@@ -36,5 +36,29 @@ namespace DuLichApplication.All_user_control
         {
             btnGioHangCliked = true;
         }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            // nut chuyen from danh gia 
+            FDanhGia fdanhGia = new FDanhGia(maKS, maKhach);
+            fdanhGia.ShowDialog();
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+            FChonDichVu form = new FChonDichVu(maKS, maKhach);
+            form.ShowDialog();
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            FDanhGia form = new FDanhGia(maKS, maKhach);
+            form.ShowDialog();
+        }
     }
 }

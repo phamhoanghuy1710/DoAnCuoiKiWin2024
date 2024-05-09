@@ -22,10 +22,12 @@ namespace DuLichApplication.All_user_control
         public DateTime ngayNhanPhong;
         public DateTime ngayTraPhong;
         DBFunction fn = new DBFunction();
+        bool dv;
 
-        public UC_itemPhong1()
+        public UC_itemPhong1(bool dv)
         {
             InitializeComponent();
+            this.dv = dv;
         }
 
         public string MaKS
@@ -101,10 +103,10 @@ namespace DuLichApplication.All_user_control
             // thêm phòng đó vào danh sách phòng đã chọn
             if (trangThai == "Yes")
             {
-                string query = string.Format("update [Phòng] set [Trạng thái] = 'wait' , MaKhach = '{0}' where [Mã phòng] = '{1}'", maKhach, maPhong);
-                string query2 = string.Format("insert into DatPhong (TaiKhoan,NgayNhanPhong,NgayTraPhong,MaKS,MaPhong,TrangThai) values ('{0}','{1}','{2}','{3}','{4}','No')", maKhach, ngayNhanPhong, ngayTraPhong, maKS, maPhong);
-                fn.setData(query, "Chọn phòng thành công");
-                fn.setData(query2, "oke");
+                string query = string.Format("update [Phòng] set [Trạng thái] = 'wait' , MaKhach = '{0}' where [Mã phòng] = '{1}'", maKhach, maPhong);                // no la trang thai chua thanh toan
+                string query2 = string.Format("insert into DatPhong (TaiKhoan,NgayNhanPhong,NgayTraPhong,MaKS,MaPhong,TrangThai,GiaPhong) values ('{0}','{1}','{2}','{3}','{4}','No','{5}')", maKhach, ngayNhanPhong, ngayTraPhong, maKS, maPhong,Convert.ToInt32(this.GiaTien));
+                fn.setData(query, "Chọn phòng thành công", true);
+                fn.setData(query2, "oke", false);
                 trangThai = "wait";
                 txtTrangThai.Text = trangThai;
             }
@@ -112,6 +114,25 @@ namespace DuLichApplication.All_user_control
             {
                 MessageBox.Show("Không thể chọn");
             }
+        }
+
+        private void UC_itemPhong1_Load(object sender, EventArgs e)
+        {
+            if (this.dv == true)
+            {
+                this.btnChon.Visible = false;
+                this.btnDichVu.Visible = true;
+            }
+            else
+            {
+                this.btnChon.Visible = true;
+                this.btnDichVu.Visible = false;
+            }
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -20,6 +20,7 @@ namespace DuLichApplication
         private void FKhachSan_Load(object sender, EventArgs e)
         {
             this.uc_KhachSan1.Visible = true;
+            this.uC_UuDai1.Visible = false;
             btnThemKhachSan.PerformClick();
         }
 
@@ -44,6 +45,19 @@ namespace DuLichApplication
         private void panelMoving_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.panelMoving.Left = this.btnUuDai.Left + 20;
+            this.uC_UuDai1.Visible = true;
+            this.uC_UuDai1.BringToFront();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            FDichVu form = new FDichVu();
+            form.ShowDialog();
         }
     }
 }

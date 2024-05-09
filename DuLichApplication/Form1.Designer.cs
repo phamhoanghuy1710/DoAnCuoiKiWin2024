@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -66,6 +67,7 @@
             lblError = new Label();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -384,6 +386,11 @@
             guna2HtmlLabel2.TabIndex = 6;
             guna2HtmlLabel2.Text = null;
             // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 40;
+            guna2Elipse1.TargetControl = this;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -421,5 +428,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

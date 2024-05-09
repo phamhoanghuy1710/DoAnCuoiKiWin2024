@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,8 +30,15 @@ namespace DuLichApplication
         {
             if (CheckData.KiemTraPhong(this.txtLoaiPhong, this.txtGiaTien, this.txtTienIch) == true && CheckData.KiemTraMaPhong(this.txtMaPhong) == true)
             {
-                string query = string.Format("insert into [Phòng] ([Mã phòng],[Loại giường],[Giá],[Trạng thái],[Tiện ích],[Mã khách sạn]) values ('{0}','{1}','{2}','{3}','{4}','{5}')", txtMaPhong.Text, txtLoaiPhong.Text, txtGiaTien.Text, txtTrangThai.Text, txtTienIch.Text, maKS);
-                fn.setData(query, "Thêm phòng thành công");
+                string query = string.Format("insert into [Phòng] ([Mã phòng],[Loại giường],[Giá],[Trạng thái],[Tiện ích],[Mã khách sạn]) values (@MaPhong,@LoaiGiuong,@Gia,@TrangThai,@TienIch,@MaKS)");
+                SqlCommand cmd = new SqlCommand(query);
+                cmd.Parameters.AddWithValue("@MaPhong", this.txtMaPhong.Text);
+                cmd.Parameters.AddWithValue("@LoaiGiuong", this.txtLoaiPhong.Text);
+                cmd.Parameters.AddWithValue("@Gia", Convert.ToInt32(this.txtGiaTien.Text));
+                cmd.Parameters.AddWithValue("@TrangThai", "Yes");
+                cmd.Parameters.AddWithValue("@TienIch", this.txtTienIch.Text);
+                cmd.Parameters.AddWithValue("@MaKS", this.maKS);
+                fn.themDBCoHinhAnh(cmd, "Thêm phòng thành công");
             }
         }
 

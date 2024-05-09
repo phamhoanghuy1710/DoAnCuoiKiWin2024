@@ -51,6 +51,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThanhToan));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             cbbHInhThuc = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -76,6 +77,7 @@
             lblDiaChi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             lblHinhThuc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)cbbKhachSan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureQR).BeginInit();
             SuspendLayout();
@@ -94,6 +96,8 @@
             // cbbHInhThuc
             // 
             cbbHInhThuc.BackColor = Color.Transparent;
+            cbbHInhThuc.BorderRadius = 15;
+            cbbHInhThuc.BorderThickness = 0;
             cbbHInhThuc.CustomizableEdges = customizableEdges1;
             cbbHInhThuc.DrawMode = DrawMode.OwnerDrawFixed;
             cbbHInhThuc.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -102,7 +106,7 @@
             cbbHInhThuc.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             cbbHInhThuc.ForeColor = Color.FromArgb(68, 88, 112);
             cbbHInhThuc.ItemHeight = 30;
-            cbbHInhThuc.Items.AddRange(new object[] { "Trực Tiếp", "Online" });
+            cbbHInhThuc.Items.AddRange(new object[] { "Online" });
             cbbHInhThuc.Location = new Point(864, 220);
             cbbHInhThuc.Name = "cbbHInhThuc";
             cbbHInhThuc.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -123,6 +127,8 @@
             // cbbVoucher
             // 
             cbbVoucher.BackColor = Color.Transparent;
+            cbbVoucher.BorderRadius = 15;
+            cbbVoucher.BorderThickness = 0;
             cbbVoucher.CustomizableEdges = customizableEdges3;
             cbbVoucher.DrawMode = DrawMode.OwnerDrawFixed;
             cbbVoucher.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -150,7 +156,7 @@
             btnThanhToan.FillColor = Color.White;
             btnThanhToan.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThanhToan.ForeColor = Color.Black;
-            btnThanhToan.Location = new Point(987, 685);
+            btnThanhToan.Location = new Point(1037, 700);
             btnThanhToan.Name = "btnThanhToan";
             btnThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnThanhToan.Size = new Size(174, 57);
@@ -171,6 +177,9 @@
             // 
             // txtGiaGoc
             // 
+            txtGiaGoc.BackColor = Color.Transparent;
+            txtGiaGoc.BorderRadius = 20;
+            txtGiaGoc.BorderThickness = 0;
             txtGiaGoc.CustomizableEdges = customizableEdges7;
             txtGiaGoc.DefaultText = "";
             txtGiaGoc.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -192,11 +201,11 @@
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel4.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
             guna2HtmlLabel4.ForeColor = Color.White;
             guna2HtmlLabel4.Location = new Point(545, 35);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(243, 43);
+            guna2HtmlLabel4.Size = new Size(265, 47);
             guna2HtmlLabel4.TabIndex = 7;
             guna2HtmlLabel4.Text = "Thông tin liên hệ";
             // 
@@ -235,6 +244,10 @@
             // 
             // txtHoTen
             // 
+            txtHoTen.BackColor = Color.Transparent;
+            txtHoTen.BorderColor = Color.Transparent;
+            txtHoTen.BorderRadius = 20;
+            txtHoTen.BorderThickness = 0;
             txtHoTen.CustomizableEdges = customizableEdges9;
             txtHoTen.DefaultText = "";
             txtHoTen.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -243,10 +256,12 @@
             txtHoTen.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtHoTen.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtHoTen.ForeColor = Color.Transparent;
             txtHoTen.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Location = new Point(79, 104);
             txtHoTen.Name = "txtHoTen";
             txtHoTen.PasswordChar = '\0';
+            txtHoTen.PlaceholderForeColor = Color.Transparent;
             txtHoTen.PlaceholderText = "";
             txtHoTen.SelectedText = "";
             txtHoTen.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -255,6 +270,9 @@
             // 
             // txtEmail
             // 
+            txtEmail.BackColor = Color.Transparent;
+            txtEmail.BorderRadius = 20;
+            txtEmail.BorderThickness = 0;
             txtEmail.CustomizableEdges = customizableEdges11;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -275,6 +293,9 @@
             // 
             // txtDienThoai
             // 
+            txtDienThoai.BackColor = Color.Transparent;
+            txtDienThoai.BorderRadius = 20;
+            txtDienThoai.BorderThickness = 0;
             txtDienThoai.CustomizableEdges = customizableEdges13;
             txtDienThoai.DefaultText = "";
             txtDienThoai.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -306,6 +327,9 @@
             // 
             // txtTongGia
             // 
+            txtTongGia.BackColor = Color.Transparent;
+            txtTongGia.BorderRadius = 20;
+            txtTongGia.BorderThickness = 0;
             txtTongGia.CustomizableEdges = customizableEdges15;
             txtTongGia.DefaultText = "";
             txtTongGia.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -327,11 +351,11 @@
             // lableTenKS
             // 
             lableTenKS.BackColor = Color.Transparent;
-            lableTenKS.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lableTenKS.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lableTenKS.ForeColor = Color.White;
             lableTenKS.Location = new Point(279, 404);
             lableTenKS.Name = "lableTenKS";
-            lableTenKS.Size = new Size(158, 26);
+            lableTenKS.Size = new Size(175, 30);
             lableTenKS.TabIndex = 16;
             lableTenKS.Text = "Tóm tắt khách sạn";
             // 
@@ -390,28 +414,30 @@
             // pictureQR
             // 
             pictureQR.Image = (Image)resources.GetObject("pictureQR.Image");
-            pictureQR.Location = new Point(889, 464);
+            pictureQR.Location = new Point(807, 466);
             pictureQR.Name = "pictureQR";
             pictureQR.Size = new Size(251, 215);
             pictureQR.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureQR.TabIndex = 18;
             pictureQR.TabStop = false;
-            pictureQR.Visible = false;
             // 
             // lblMaGiaoDich
             // 
             lblMaGiaoDich.BackColor = Color.Transparent;
             lblMaGiaoDich.Font = new Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             lblMaGiaoDich.ForeColor = Color.White;
-            lblMaGiaoDich.Location = new Point(783, 425);
+            lblMaGiaoDich.Location = new Point(1109, 512);
             lblMaGiaoDich.Name = "lblMaGiaoDich";
             lblMaGiaoDich.Size = new Size(205, 35);
             lblMaGiaoDich.TabIndex = 19;
             lblMaGiaoDich.Text = "Nhập mã giao dịch";
-            lblMaGiaoDich.Visible = false;
             // 
             // txtMaGiaoDich
             // 
+            txtMaGiaoDich.BackColor = Color.Transparent;
+            txtMaGiaoDich.BorderColor = Color.White;
+            txtMaGiaoDich.BorderRadius = 10;
+            txtMaGiaoDich.BorderThickness = 0;
             txtMaGiaoDich.CustomizableEdges = customizableEdges17;
             txtMaGiaoDich.DefaultText = "";
             txtMaGiaoDich.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -421,7 +447,7 @@
             txtMaGiaoDich.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMaGiaoDich.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtMaGiaoDich.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaGiaoDich.Location = new Point(1098, 425);
+            txtMaGiaoDich.Location = new Point(1109, 587);
             txtMaGiaoDich.Name = "txtMaGiaoDich";
             txtMaGiaoDich.PasswordChar = '\0';
             txtMaGiaoDich.PlaceholderText = "";
@@ -429,7 +455,6 @@
             txtMaGiaoDich.ShadowDecoration.CustomizableEdges = customizableEdges18;
             txtMaGiaoDich.Size = new Size(178, 45);
             txtMaGiaoDich.TabIndex = 20;
-            txtMaGiaoDich.Visible = false;
             // 
             // lblThoiGian
             // 
@@ -471,12 +496,33 @@
             // 
             guna2Elipse1.BorderRadius = 20;
             // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Transparent;
+            btnExit.DisabledState.BorderColor = Color.DarkGray;
+            btnExit.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnExit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnExit.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExit.FillColor = Color.Transparent;
+            btnExit.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnExit.ForeColor = Color.White;
+            btnExit.Image = (Image)resources.GetObject("btnExit.Image");
+            btnExit.ImageSize = new Size(35, 35);
+            btnExit.Location = new Point(1295, 34);
+            btnExit.Name = "btnExit";
+            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btnExit.Size = new Size(78, 64);
+            btnExit.TabIndex = 25;
+            btnExit.Click += btnExit_Click;
+            // 
             // ThanhToan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1407, 800);
+            Controls.Add(btnExit);
             Controls.Add(lblHinhThuc);
             Controls.Add(lblDiaChi);
             Controls.Add(lblThoiGian);
@@ -503,6 +549,7 @@
             Controls.Add(guna2HtmlLabel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ThanhToan";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "v";
             Load += ThanhToan_Load_2;
             ((System.ComponentModel.ISupportInitialize)cbbKhachSan).EndInit();
@@ -538,5 +585,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDiaChi;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHinhThuc;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
     }
 }

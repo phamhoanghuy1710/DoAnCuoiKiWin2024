@@ -25,7 +25,22 @@
     <Compile Update="All user control\UC_itemPhong1.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="FChiTietGiaoDich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FChonDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FDanhGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FKhachSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FLichSu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
@@ -40,8 +55,17 @@
     <Compile Update="FThemPhong.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GioHang.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ItemDichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ItemKhachOrder.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="SignUp.cs">
       <SubType>Form</SubType>
@@ -49,10 +73,25 @@
     <Compile Update="ThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UcDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UcItemKhach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UcItemLichSu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UCItemThongTB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UcUpdateKS.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Uc_KhachSan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UC_UuDai.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UserControlSignUp.cs">

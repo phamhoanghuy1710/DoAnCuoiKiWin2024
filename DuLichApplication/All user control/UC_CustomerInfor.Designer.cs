@@ -41,6 +41,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -67,6 +69,7 @@
             dtNgaySinh = new Guna.UI2.WinForms.Guna2DateTimePicker();
             pictureBox1 = new PictureBox();
             label7 = new Label();
+            btnLichSu = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -103,6 +106,7 @@
             txtHoTen.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtHoTen.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txtHoTen.ForeColor = Color.Gray;
             txtHoTen.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Location = new Point(38, 165);
             txtHoTen.Name = "txtHoTen";
@@ -299,7 +303,7 @@
             // 
             // txtGioiTinh
             // 
-            txtGioiTinh.CustomizableEdges = customizableEdges17;
+            txtGioiTinh.CustomizableEdges = customizableEdges19;
             txtGioiTinh.DefaultText = "";
             txtGioiTinh.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtGioiTinh.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -314,7 +318,7 @@
             txtGioiTinh.PlaceholderText = "";
             txtGioiTinh.ReadOnly = true;
             txtGioiTinh.SelectedText = "";
-            txtGioiTinh.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtGioiTinh.ShadowDecoration.CustomizableEdges = customizableEdges20;
             txtGioiTinh.Size = new Size(504, 72);
             txtGioiTinh.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             txtGioiTinh.TabIndex = 18;
@@ -326,7 +330,7 @@
             btnLuu.BorderThickness = 1;
             btnLuu.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
             btnLuu.CheckedState.ForeColor = Color.White;
-            btnLuu.CustomizableEdges = customizableEdges15;
+            btnLuu.CustomizableEdges = customizableEdges17;
             btnLuu.DisabledState.BorderColor = Color.DarkGray;
             btnLuu.DisabledState.CustomBorderColor = Color.DarkGray;
             btnLuu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -336,7 +340,7 @@
             btnLuu.ForeColor = Color.Black;
             btnLuu.Location = new Point(1095, 711);
             btnLuu.Name = "btnLuu";
-            btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges18;
             btnLuu.Size = new Size(282, 56);
             btnLuu.TabIndex = 20;
             btnLuu.Text = "Lưu Thông Tin";
@@ -346,7 +350,7 @@
             // dtNgaySinh
             // 
             dtNgaySinh.Checked = true;
-            dtNgaySinh.CustomizableEdges = customizableEdges13;
+            dtNgaySinh.CustomizableEdges = customizableEdges15;
             dtNgaySinh.FillColor = Color.White;
             dtNgaySinh.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dtNgaySinh.Format = DateTimePickerFormat.Long;
@@ -354,7 +358,7 @@
             dtNgaySinh.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtNgaySinh.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtNgaySinh.Name = "dtNgaySinh";
-            dtNgaySinh.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            dtNgaySinh.ShadowDecoration.CustomizableEdges = customizableEdges16;
             dtNgaySinh.Size = new Size(504, 72);
             dtNgaySinh.TabIndex = 21;
             dtNgaySinh.Value = new DateTime(2024, 3, 15, 8, 59, 50, 320);
@@ -380,11 +384,35 @@
             label7.TabIndex = 23;
             label7.Text = "Hình Ảnh";
             // 
+            // btnLichSu
+            // 
+            btnLichSu.BorderRadius = 18;
+            btnLichSu.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            btnLichSu.BorderThickness = 1;
+            btnLichSu.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
+            btnLichSu.CheckedState.ForeColor = Color.White;
+            btnLichSu.CustomizableEdges = customizableEdges13;
+            btnLichSu.DisabledState.BorderColor = Color.DarkGray;
+            btnLichSu.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLichSu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLichSu.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLichSu.FillColor = Color.White;
+            btnLichSu.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLichSu.ForeColor = Color.Black;
+            btnLichSu.Location = new Point(1519, 30);
+            btnLichSu.Name = "btnLichSu";
+            btnLichSu.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnLichSu.Size = new Size(282, 56);
+            btnLichSu.TabIndex = 24;
+            btnLichSu.Text = "Lịch sử giao dịch";
+            btnLichSu.Click += btnLichSu_Click;
+            // 
             // UC_CustomerInfor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(btnLichSu);
             Controls.Add(label7);
             Controls.Add(pictureBox1);
             Controls.Add(dtNgaySinh);
@@ -433,5 +461,6 @@
         public Guna.UI2.WinForms.Guna2DateTimePicker dtNgaySinh;
         public PictureBox pictureBox1;
         private Label label7;
+        private Guna.UI2.WinForms.Guna2Button btnLichSu;
     }
 }

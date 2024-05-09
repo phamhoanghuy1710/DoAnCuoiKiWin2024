@@ -27,6 +27,7 @@ namespace DuLichApplication
             this.matKhau = ds.Tables[0].Rows[0]["MatKhau"].ToString();
             this.uC_CustomerInfor2.btnLuu.Click += ThucHienChinhSua;
             this.uC_Addroom1.layTaiKhoan(taiKhoan);
+            this.uC_CustomerInfor2.getTaiKhoan(taiKhoan);
 
         }
 
@@ -37,14 +38,14 @@ namespace DuLichApplication
                 if (CheckData.KiemTraDuLieu(this.uC_CustomerInfor2.txtHoTen, this.uC_CustomerInfor2.txtDiaChi, this.uC_CustomerInfor2.txtChungMinh, this.uC_CustomerInfor2.txtEmail, this.uC_CustomerInfor2.txtDienThoai, this.uC_CustomerInfor2.dtNgaySinh) == true)
                 {
                     string query = string.Format("update KhachHang set HoTen = '{0}', ChungMinh = '{1}', DiaChi = '{2}', Email = '{3}', Sdt = '{4}', GioiTinh = '{5}', NgaySinh = '{6}' where TaiKhoan = '{7}'", this.uC_CustomerInfor2.txtHoTen.Text, this.uC_CustomerInfor2.txtChungMinh.Text, this.uC_CustomerInfor2.txtDiaChi.Text, this.uC_CustomerInfor2.txtEmail.Text, this.uC_CustomerInfor2.txtDienThoai.Text, this.uC_CustomerInfor2.txtGioiTinh.Text, this.uC_CustomerInfor2.dtNgaySinh.Value, taiKhoan);
-                    fn.setData(query, "Chỉnh sửa thành công");
+                    fn.setData(query, "Chỉnh sửa thành công", true);
                 }
             }
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            uC_Addroom1.Visible = true;
+            uC_Addroom1.Visible = true;  // tim khach san 
             uC_CustomerInfor2.Visible = false;
             btnTimPhong.PerformClick();
         }
@@ -89,6 +90,32 @@ namespace DuLichApplication
                     this.uC_CustomerInfor2.pictureBox1.Image = Image.FromStream(ms);
                 }
             }
+        }
+
+        private void btnTraPhong_Click(object sender, EventArgs e)
+        {
+            // vua load phong het han . vua load phong chua dc thanh toan theo dung han
+            // Them du lieu cho cot thong bao truoc
+            DateTime toDay = DateTime.Now;
+            string query = string.Format("select * from DatPhong where [NgayTraPhong] <= '{0}'", toDay);
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach(DataRow row in ds.Tables[0].Rows)
+                {
+                    string maKS = row["MaKS"].ToString();
+                    string maPhong = row["MaPhong"].ToString();
+                    DateTime ngayTraPhong = Convert.ToDateTime(row["NgayTraPhong"]);
+                    // lenh de them tu bang DatPhong qua cai bang LSDatPhong
+                    string query_them = string.Format("insert into LSDatPhong (MaKs,MaPhong,NgayTraPhong,NgayThongBao,ThongBao) values ('{0}','{1}','{2}','{3}',N'{4}')", maKS, maPhong, ngayTraPhong, toDay,"Phòng đã hết hạn");
+                    fn.setData(query_them,"oke",false);
+                    // lenh de xoa cac phong het han trong ban dat phong
+                    string query_xoa = string.Format("delete from DatPhong where MaPhong = '{0}' and TrangThai = 'Yes' and NgayTraPhong = '{1}'", maPhong,ngayTraPhong);
+                    fn.setData(query_xoa, "oke", false);
+                }
+            }
+            FThongBao formtb = new FThongBao(taiKhoan);
+            formtb.ShowDialog();    
         }
     }
 }

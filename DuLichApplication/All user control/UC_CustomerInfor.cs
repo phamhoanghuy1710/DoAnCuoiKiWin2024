@@ -11,17 +11,21 @@ using System.Windows.Forms;
 
 namespace DuLichApplication.All_user_control
 {
+
     public partial class UC_CustomerInfor : UserControl
     {
         public bool isButonLuuClicked = false;
-
+        string taiKhoan = "";
         public UC_CustomerInfor()
         {
             InitializeComponent();
 
         }
 
-
+        public void getTaiKhoan (string tk)
+        {
+            this.taiKhoan = tk;
+        }
 
         private void btnChinhSua_Click(object sender, EventArgs e)
         {
@@ -50,6 +54,13 @@ namespace DuLichApplication.All_user_control
                     txt.ReadOnly = true;
                 }
             }
+        }
+
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
+            FLichSu fLichSu = new FLichSu(taiKhoan);
+            fLichSu.ShowDialog();
+            
         }
     }
 }

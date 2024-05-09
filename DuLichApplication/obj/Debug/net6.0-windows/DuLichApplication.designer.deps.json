@@ -40,6 +40,28 @@
           }
         }
       },
+      "DocumentFormat.OpenXml/3.0.1": {
+        "dependencies": {
+          "DocumentFormat.OpenXml.Framework": "3.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml.Framework/3.0.1": {
+        "dependencies": {
+          "System.IO.Packaging": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/DocumentFormat.OpenXml.Framework.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
       "Guna.UI2.WinForms/2.0.4.6": {
         "dependencies": {
           "System.Management": "6.0.0"
@@ -328,6 +350,25 @@
           }
         }
       },
+      "MiniExcel/1.31.3": {
+        "runtime": {
+          "lib/netstandard2.0/MiniExcel.dll": {
+            "assemblyVersion": "1.31.3.0",
+            "fileVersion": "1.31.3.0"
+          }
+        }
+      },
+      "MiniWord/0.8.0": {
+        "dependencies": {
+          "DocumentFormat.OpenXml": "3.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MiniWord.dll": {
+            "assemblyVersion": "0.8.0.0",
+            "fileVersion": "0.8.0.0"
+          }
+        }
+      },
       "System.CodeDom/6.0.0": {
         "runtime": {
           "lib/net6.0/System.CodeDom.dll": {
@@ -413,6 +454,14 @@
             "assetType": "runtime",
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.IO.Packaging/8.0.0": {
+        "runtime": {
+          "lib/net6.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
           }
         }
       },
@@ -624,6 +673,20 @@
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
     },
+    "DocumentFormat.OpenXml/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DCK1cwFUJ1FGGyYyo++HWl9H1RkqMWIu+FGOLRy6E4L4y0/HIhlJ7N/n1HKboFfOwKn1cMBRxt1RCuDbIEy5YQ==",
+      "path": "documentformat.openxml/3.0.1",
+      "hashPath": "documentformat.openxml.3.0.1.nupkg.sha512"
+    },
+    "DocumentFormat.OpenXml.Framework/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ifyI7OW7sggz7LQMIAD2aUsY/zVUON9QaHrpZ4MK33iVMeHlTG4uhUE2aLWb31nry+LCs2ALDAwf8OfUJGjgBg==",
+      "path": "documentformat.openxml.framework/3.0.1",
+      "hashPath": "documentformat.openxml.framework.3.0.1.nupkg.sha512"
+    },
     "Guna.UI2.WinForms/2.0.4.6": {
       "type": "package",
       "serviceable": true,
@@ -757,6 +820,20 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "MiniExcel/1.31.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XnGF7oq3bFAzvvZrAiAPtpeQxWkFy7Xk/Vaom97bnj8hlF5TcP6rxS43RdO5wA8nUkRYfBmQe9chhhv0jwwj4A==",
+      "path": "miniexcel/1.31.3",
+      "hashPath": "miniexcel.1.31.3.nupkg.sha512"
+    },
+    "MiniWord/0.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9HvIvgYNCrXk+9xIi3c7HhJSyNdd8oObYkwx+HID+WEcNfNS17EbLOkNEvSVcjTWfwtskc5eECpigidu8ujkjg==",
+      "path": "miniword/0.8.0",
+      "hashPath": "miniword.0.8.0.nupkg.sha512"
+    },
     "System.CodeDom/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -798,6 +875,13 @@
       "sha512": "sha512-SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==",
       "path": "system.io.filesystem.accesscontrol/5.0.0",
       "hashPath": "system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512"
+    },
+    "System.IO.Packaging/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8g1V4YRpdGAxFcK8v9OjuMdIOJSpF30Zb1JGicwVZhly3I994WFyBdV6mQEo8d3T+URQe55/M0U0eIH0Hts1bg==",
+      "path": "system.io.packaging/8.0.0",
+      "hashPath": "system.io.packaging.8.0.0.nupkg.sha512"
     },
     "System.Management/6.0.0": {
       "type": "package",

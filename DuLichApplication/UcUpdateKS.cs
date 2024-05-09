@@ -42,6 +42,8 @@ namespace DuLichApplication
                 this.txtGia.ReadOnly = false;
                 this.txtGioiThieuKhachSan.ReadOnly = false;
                 this.numericUpDown1.Visible = true;
+                // tat vnd trong txt Gia.Tex
+                this.txtGia.Text = this.txtGia.Text.ToString().Replace("VND", "");
                 trangThaiChinh = 1;
             }
             else
@@ -54,7 +56,7 @@ namespace DuLichApplication
                     // chinh sua trong data base
                     this.btnChinhSua.Text = "Chỉnh sửa thông tin";
                     string query = string.Format("update KhachSan  set [Tên khách sạn] = '{0}', [Địa chỉ] = '{1}',  [Giá] = '{2}', [Review] = '{3}' , [Số sao] = '{4}' where [Mã khách sạn] = '{5}' ", txtTenKhachSan.Text, txtDiaChiKs.Text, Convert.ToInt32(txtGia.Text), txtGioiThieuKhachSan.Text, Convert.ToInt32(numericUpDown1.Value), maKS);
-                    fn.setData(query, "Đã chỉnh sửa thành công");
+                    fn.setData(query, "Đã chỉnh sửa thành công",true);
                     this.txtTenKhachSan.ReadOnly = true;
                     this.txtDiaChiKs.ReadOnly = true;
                     this.txtGia.ReadOnly = true;
@@ -109,9 +111,9 @@ namespace DuLichApplication
             // khi ấn nút xóa khách sạn này thì khách sạn sẽ cút  luôn
             // trước khi xóa khách sạn là phải xóa phòng trước
             string xoa_query = string.Format("delete from [Phòng] where [Mã khách sạn] = '{0}' ", this.maKS);
-            fn.setData (xoa_query,"Xóa hết các phòng ở khách sạn này");
+            fn.setData (xoa_query,"Xóa hết các phòng ở khách sạn này",false);
             string query = string.Format("delete from KhachSan where [Mã khách sạn] = '{0}'", this.maKS);
-            fn.setData(query, "Đã xóa khách sạn thành công");
+            fn.setData(query, "Đã xóa khách sạn thành công", true);
             this.isTatForm = true;
 
         }

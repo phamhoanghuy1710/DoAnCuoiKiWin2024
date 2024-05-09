@@ -132,6 +132,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Location = new Point(452, 232);
             Name = "GioHang";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "GioHang";
             TransparencyKey = Color.IndianRed;
             Load += GioHang_Load;

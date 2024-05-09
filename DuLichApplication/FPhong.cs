@@ -126,6 +126,16 @@ namespace DuLichApplication
                     this.ucUpdateks1.panelSao.Controls[i].Visible = false;
                 }
             }
+            byte[] pic = (byte[])ds.Tables[0].Rows[0]["HinhAnh"];
+            MemoryStream ms = new MemoryStream(pic);
+            if (pic == null)
+            {
+                MessageBox.Show("Không hợp lệ");
+            }
+            else
+            {
+                this.ucUpdateks1.pictureKS.Image = Image.FromStream(ms);
+            }
 
         }
         public void LoadGiaoDienCus()
@@ -158,6 +168,16 @@ namespace DuLichApplication
                 {
                     this.uC_ChonPhong1.panelSao.Controls[i].Visible = false;
                 }
+            }
+            byte[] pic = (byte[])ds.Tables[0].Rows[0]["HinhAnh"];
+            MemoryStream ms = new MemoryStream(pic);
+            if (pic == null)
+            {
+                MessageBox.Show("Không hợp lệ");
+            }
+            else
+            {
+                this.uC_ChonPhong1.pictureKS.Image = Image.FromStream(ms);
             }
         }
         public void XacNhanLoad(bool isLose)
@@ -195,7 +215,7 @@ namespace DuLichApplication
             {
                 foreach (DataRow row in ds.Tables[0].Rows)
                 {
-                    UC_itemPhong1 it = new UC_itemPhong1();
+                    UC_itemPhong1 it = new UC_itemPhong1(false);
                     it.MaPhong = row["Mã phòng"].ToString();
                     it.TienIch = row["Tiện ích"].ToString();
                     it.GiaTien = row["Giá"].ToString();

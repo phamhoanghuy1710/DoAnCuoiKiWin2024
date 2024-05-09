@@ -66,7 +66,7 @@ namespace DuLichApplication.All_user_control
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string query = string.Format("delete from [Phòng] where [Mã phòng] = '{0}' ", maPhong);
-            fn.setData(query, "Đã xóa phòng thành công");
+            fn.setData(query, "Đã xóa phòng thành công", true);
             this.Dispose();
         }
 
@@ -91,7 +91,7 @@ namespace DuLichApplication.All_user_control
                 if (CheckData.KiemTraPhong(this.txtLoaiPhong, this.txtGiaTien, this.txtTienIch) == true)
                 {
                     string query = string.Format("update [Phòng] set [Loại giường] = '{0}', [Giá] = '{1}', [Tiện ích] = '{2}' where [Mã phòng] = '{3}'", txtLoaiPhong.Text, Convert.ToInt32(txtGiaTien.Text), txtTienIch.Text, txtMaPhong.Text);
-                    fn.setData(query, "Cập nhật thành công");
+                    fn.setData(query, "Cập nhật thành công", true);
                     txtGiaTien.ReadOnly = true;
                     txtLoaiPhong.ReadOnly = true;
                     txtTienIch.ReadOnly = true;

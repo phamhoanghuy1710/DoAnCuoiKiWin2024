@@ -28,9 +28,9 @@ namespace DuLichApplication.All_user_control
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string query = string.Format("update [Phòng] set [Trạng thái] = 'Yes' , [MaKhach] = 'null' where [Mã phòng] = '{0}'", maPhong);
-            fn.setData(query, "Đã xóa phòng thành công");
+            fn.setData(query, "Đã xóa phòng thành công",true);
             string query2 = string.Format("delete from DatPhong where MaPhong = '{0}'", this.maPhong);
-            fn.setData(query2, "oke");
+            fn.setData(query2, "oke", false);
             this.Dispose();
 
         }

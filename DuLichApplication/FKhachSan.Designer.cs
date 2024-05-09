@@ -46,12 +46,14 @@
             btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             btnThemKhachSan = new Guna.UI2.WinForms.Guna2Button();
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            btnUuDai = new Guna.UI2.WinForms.Guna2Button();
             guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             uc_KhachSan1 = new Uc_KhachSan();
             panelMoving = new Guna.UI2.WinForms.Guna2Panel();
             guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            uC_UuDai1 = new UC_UuDai();
             SuspendLayout();
             // 
             // btnExit
@@ -121,31 +123,33 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges5;
             guna2Button1.Size = new Size(316, 75);
             guna2Button1.TabIndex = 3;
-            guna2Button1.Text = "Quản lý phòng";
+            guna2Button1.Text = "Dịch vụ";
+            guna2Button1.Click += guna2Button1_Click;
             // 
-            // guna2Button2
+            // btnUuDai
             // 
-            guna2Button2.BackColor = Color.Transparent;
-            guna2Button2.BorderColor = Color.White;
-            guna2Button2.BorderRadius = 18;
-            guna2Button2.BorderThickness = 1;
-            guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            guna2Button2.CustomizableEdges = customizableEdges6;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.FillColor = Color.Transparent;
-            guna2Button2.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Image = (Image)resources.GetObject("guna2Button2.Image");
-            guna2Button2.ImageSize = new Size(40, 40);
-            guna2Button2.Location = new Point(1217, 52);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            guna2Button2.Size = new Size(265, 75);
-            guna2Button2.TabIndex = 4;
-            guna2Button2.Text = "Ưu đãi";
+            btnUuDai.BackColor = Color.Transparent;
+            btnUuDai.BorderColor = Color.White;
+            btnUuDai.BorderRadius = 18;
+            btnUuDai.BorderThickness = 1;
+            btnUuDai.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnUuDai.CustomizableEdges = customizableEdges6;
+            btnUuDai.DisabledState.BorderColor = Color.DarkGray;
+            btnUuDai.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnUuDai.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnUuDai.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnUuDai.FillColor = Color.Transparent;
+            btnUuDai.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUuDai.ForeColor = Color.White;
+            btnUuDai.Image = (Image)resources.GetObject("btnUuDai.Image");
+            btnUuDai.ImageSize = new Size(40, 40);
+            btnUuDai.Location = new Point(1217, 52);
+            btnUuDai.Name = "btnUuDai";
+            btnUuDai.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            btnUuDai.Size = new Size(265, 75);
+            btnUuDai.TabIndex = 4;
+            btnUuDai.Text = "Ưu đãi";
+            btnUuDai.Click += guna2Button2_Click;
             // 
             // guna2Button3
             // 
@@ -211,23 +215,38 @@
             guna2Button4.Size = new Size(423, 152);
             guna2Button4.TabIndex = 8;
             // 
+            // guna2Elipse2
+            // 
+            guna2Elipse2.BorderRadius = 30;
+            guna2Elipse2.TargetControl = this;
+            // 
+            // uC_UuDai1
+            // 
+            uC_UuDai1.BackColor = Color.Transparent;
+            uC_UuDai1.Location = new Point(12, 144);
+            uC_UuDai1.Name = "uC_UuDai1";
+            uC_UuDai1.Size = new Size(1896, 913);
+            uC_UuDai1.TabIndex = 9;
+            uC_UuDai1.Visible = false;
+            // 
             // FKhachSan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.AppWorkspace;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.DodgerBlue;
             ClientSize = new Size(1924, 1055);
+            Controls.Add(uC_UuDai1);
             Controls.Add(guna2Button4);
             Controls.Add(panelMoving);
             Controls.Add(uc_KhachSan1);
             Controls.Add(guna2Button3);
-            Controls.Add(guna2Button2);
+            Controls.Add(btnUuDai);
             Controls.Add(guna2Button1);
             Controls.Add(btnThemKhachSan);
             Controls.Add(btnExit);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FKhachSan";
+            StartPosition = FormStartPosition.Manual;
             Text = "FKhachSan";
             WindowState = FormWindowState.Maximized;
             Load += FKhachSan_Load;
@@ -239,11 +258,13 @@
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
         private Guna.UI2.WinForms.Guna2Button btnThemKhachSan;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnUuDai;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Uc_KhachSan uc_KhachSan1;
         private Guna.UI2.WinForms.Guna2Panel panelMoving;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private UC_UuDai uC_UuDai1;
     }
 }

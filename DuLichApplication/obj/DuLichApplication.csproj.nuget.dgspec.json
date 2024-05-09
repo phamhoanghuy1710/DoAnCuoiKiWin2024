@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ACER\\Downloads\\Vienfinn_Floder\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj": {}
+    "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ACER\\Downloads\\Vienfinn_Floder\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj": {
+    "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ACER\\Downloads\\Vienfinn_Floder\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj",
+        "projectUniqueName": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj",
         "projectName": "DuLichApplication",
-        "projectPath": "C:\\Users\\ACER\\Downloads\\Vienfinn_Floder\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ACER\\Downloads\\Vienfinn_Floder\\DoAnCuoiKiWin2024\\DuLichApplication\\obj\\",
+        "projectPath": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\DuLichApplication.csproj",
+        "packagesPath": "C:\\Users\\HUY\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HUY\\Desktop\\DoAnCuoiKiWin2024\\DuLichApplication\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,6 +52,14 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.0, )"
+            },
+            "MiniExcel": {
+              "target": "Package",
+              "version": "[1.31.3, )"
+            },
+            "MiniWord": {
+              "target": "Package",
+              "version": "[0.8.0, )"
             }
           },
           "imports": [
@@ -66,24 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.27, 6.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -92,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

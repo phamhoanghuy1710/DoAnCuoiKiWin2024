@@ -150,6 +150,7 @@
             btnTraPhong.Size = new Size(309, 87);
             btnTraPhong.TabIndex = 1;
             btnTraPhong.Text = "Sports and entertainment";
+            btnTraPhong.Click += btnTraPhong_Click;
             // 
             // btnDichVu
             // 
@@ -259,8 +260,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(0, 192, 192);
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.DodgerBlue;
             ClientSize = new Size(1942, 1100);
             Controls.Add(guna2Button1);
             Controls.Add(panel2);
@@ -268,7 +268,7 @@
             Controls.Add(btnExit);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
-            StartPosition = FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.Manual;
             Text = "Form2";
             WindowState = FormWindowState.Maximized;
             Load += Form2_Load;

@@ -86,8 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(132, 122, 255);
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.DodgerBlue;
             ClientSize = new Size(1942, 1100);
             Controls.Add(panel2);
             Controls.Add(btnExit);

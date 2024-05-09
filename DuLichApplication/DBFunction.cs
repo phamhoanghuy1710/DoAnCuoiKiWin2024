@@ -31,23 +31,61 @@ namespace DuLichApplication
             adt.Fill (ds); 
             return ds; 
         }
-
-        public void setData (String query,String message)
+        public bool setGiaoDich (String query, String message, bool isMessage)
         {
-            SqlConnection conn = getConnection ();
+            SqlConnection conn = getConnection();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             conn.Open();
             cmd.CommandText = query;
-            if (cmd.ExecuteNonQuery() > 0)
+            bool ok = false;
+            try
             {
-                conn.Close();
-                MessageBox.Show(message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    conn.Close();
+                    if (isMessage == true)
+                        MessageBox.Show(message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ok =  true;
+                }
+            }
+            catch (Exception EX)
+            {
+                MessageBox.Show("Không thể thực thi");
+                MessageBox.Show(EX.Message);
+            }
+   
+            if (ok == true)
+            {
+                return true;
             }
             else
             {
-                MessageBox.Show("Không thể thực thi");
+                return false;
             }
+            
+        }
+        public void setData (String query,String message, bool isMessage)
+        {
+                SqlConnection conn = getConnection();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                conn.Open();
+                cmd.CommandText = query;
+                try
+                {
+                    if (cmd.ExecuteNonQuery() > 0)
+                    {
+                        conn.Close();
+                        if (isMessage == true)
+                            MessageBox.Show(message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception EX)
+                {
+                    MessageBox.Show("Không thể thực thi");
+                    MessageBox.Show(EX.Message);
+                }
         }
         public SqlDataReader getForCombo (String query)
         {
@@ -87,5 +125,23 @@ namespace DuLichApplication
             }
             conn.Close ();
         }
+
+        public void themDBCoHinhAnh (SqlCommand cmd,string mess)
+        {
+            SqlConnection conn = getConnection();
+            conn.Open ();
+            cmd.Connection = conn;
+            if (cmd.ExecuteNonQuery() > 0)
+            {
+                conn.Close ();
+                MessageBox.Show(mess, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Không thể thực thi");
+            }
+        }
+
+
     }
 }

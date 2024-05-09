@@ -35,7 +35,7 @@ namespace DuLichApplication.All_user_control
         private void btnTim_Click(object sender, EventArgs e)
         {
 
-            string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ]  LIKE '%{0}%'  AND [Thể Loại] LIKE '%{1}%'", txtDiaChi.Text, cbbLoaiPhong.Text);
+            string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ]  LIKE N'%{0}%'  AND [Thể Loại] LIKE '%{1}%'", txtDiaChi.Text, cbbLoaiPhong.Text);
             LoadDS(query);
         }
 
@@ -98,7 +98,7 @@ namespace DuLichApplication.All_user_control
             }
         }
 
-        private void guna2RadioButton5_CheckedChanged(object sender, EventArgs e)
+        private void guna2RadioButton5_CheckedChanged(object sender, EventArgs e) // tim theo so sao 
         {
             RadioButton radio = sender as RadioButton;
             if (radio.Checked)
@@ -117,7 +117,7 @@ namespace DuLichApplication.All_user_control
             }
         }
 
-        private void guna2CheckBox5_CheckedChanged(object sender, EventArgs e)
+        private void guna2CheckBox5_CheckedChanged(object sender, EventArgs e)  // tim theo tien ich 
         {
             Guna2CheckBox checkbox = sender as Guna2CheckBox;
             tienIch = "";
@@ -137,18 +137,21 @@ namespace DuLichApplication.All_user_control
                 if (tienIch != "")
                 {
                     // lấy ra các tiện ích
+                    tienIch = tienIch.Remove(tienIch.Length-1);
                     condition = "";
                     string[] Ti = tienIch.Split(',');
                     // Tạo danh sách điều kiện cho các phần tử trong mảng Ti
                     foreach (string item in Ti)
                     {
-                        condition += "[TienNghiPhong] LIKE '%" + item.Trim() + "%' AND ";  // item.trim() tuc la lay chuoi do ra khoi mang
+                        string tmp = "'" + item.Trim() + "'";
+                        condition += "[TienNghiPhong]  Like N'%" + item.Trim() + "%' AND ";  // item.trim() tuc la lay chuoi do ra khoi mang
                     }
                     // Loại bỏ dấu "AND" cuối cùng
                     if (!string.IsNullOrEmpty(condition))
                     {
                         condition = condition.Remove(condition.Length - 5);
                     }
+                    MessageBox.Show(condition);
                 }
 
                 /// khúc này là lấy ra từ database
@@ -169,7 +172,7 @@ namespace DuLichApplication.All_user_control
 
 
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e) // tim theo gia
         {
             if (Sao == 0 && tienIch == "")
             {
@@ -194,6 +197,11 @@ namespace DuLichApplication.All_user_control
         }
 
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelTienIch_Paint(object sender, PaintEventArgs e)
         {
 
         }

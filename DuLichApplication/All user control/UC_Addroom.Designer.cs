@@ -550,6 +550,7 @@
             panelTienIch.ShadowDecoration.CustomizableEdges = customizableEdges14;
             panelTienIch.Size = new Size(207, 198);
             panelTienIch.TabIndex = 1;
+            panelTienIch.Paint += panelTienIch_Paint;
             // 
             // guna2CheckBox5
             // 
