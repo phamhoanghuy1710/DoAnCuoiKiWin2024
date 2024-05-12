@@ -115,6 +115,7 @@
             txtDanhGia.ForeColor = Color.Black;
             txtDanhGia.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDanhGia.Location = new Point(435, 38);
+            txtDanhGia.Margin = new Padding(4, 4, 4, 4);
             txtDanhGia.Name = "txtDanhGia";
             txtDanhGia.PasswordChar = '\0';
             txtDanhGia.PlaceholderText = "";
@@ -157,10 +158,10 @@
             picHinhAnh.CustomizableEdges = customizableEdges5;
             picHinhAnh.Image = (Image)resources.GetObject("picHinhAnh.Image");
             picHinhAnh.ImageRotate = 0F;
-            picHinhAnh.Location = new Point(26, 28);
+            picHinhAnh.Location = new Point(26, 27);
             picHinhAnh.Name = "picHinhAnh";
             picHinhAnh.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            picHinhAnh.Size = new Size(168, 112);
+            picHinhAnh.Size = new Size(189, 113);
             picHinhAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             picHinhAnh.TabIndex = 26;
             picHinhAnh.TabStop = false;
@@ -299,7 +300,7 @@
             txtNgayThang.ForeColor = Color.Black;
             txtNgayThang.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNgayThang.Location = new Point(435, 103);
-            txtNgayThang.Margin = new Padding(4);
+            txtNgayThang.Margin = new Padding(4, 4, 4, 4);
             txtNgayThang.Name = "txtNgayThang";
             txtNgayThang.PasswordChar = '\0';
             txtNgayThang.PlaceholderText = "";

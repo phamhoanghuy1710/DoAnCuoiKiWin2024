@@ -48,6 +48,32 @@ namespace DuLichApplication
             uC_Addroom1.Visible = true;  // tim khach san 
             uC_CustomerInfor2.Visible = false;
             btnTimPhong.PerformClick();
+            KiemTraPhongHetHan();
+        }
+
+        public void KiemTraPhongHetHan ()
+        {
+            // vua load phong het han . vua load phong chua dc thanh toan theo dung han
+            // Them du lieu cho cot thong bao truoc
+            DateTime toDay = DateTime.Now;
+            string query = string.Format("select * from DatPhong where [NgayTraPhong] <= '{0}'", toDay);
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    string maKS = row["MaKS"].ToString();
+                    string maPhong = row["MaPhong"].ToString();
+                    DateTime ngayTraPhong = Convert.ToDateTime(row["NgayTraPhong"]);
+                    DateTime ngayNhanPhong = Convert.ToDateTime(row["NgayNhanPhong"]);
+                    // lenh de them tu bang DatPhong qua cai bang LSDatPhong
+                    string query_them = string.Format("insert into LSDatPhong (MaKs,MaPhong,NgayTraPhong,NgayThongBao,ThongBao) values ('{0}','{1}','{2}','{3}',N'{4}')", maKS, maPhong, ngayTraPhong, toDay, "Phòng đã hết hạn");
+                    fn.setData(query_them, "oke", false);
+                    // lenh de xoa cac phong het han trong ban dat phong
+                    string query_xoa = string.Format("delete from DatPhong where MaPhong = '{0}' and TrangThai = 'Yes' and NgayTraPhong = '{1}' and NgayNhanPhong = '{2}'", maPhong, ngayTraPhong, ngayNhanPhong);
+                    fn.setData(query_xoa, "oke", false);
+                }
+            }
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -94,26 +120,6 @@ namespace DuLichApplication
 
         private void btnTraPhong_Click(object sender, EventArgs e)
         {
-            // vua load phong het han . vua load phong chua dc thanh toan theo dung han
-            // Them du lieu cho cot thong bao truoc
-            DateTime toDay = DateTime.Now;
-            string query = string.Format("select * from DatPhong where [NgayTraPhong] <= '{0}'", toDay);
-            DataSet ds = fn.getData(query);
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                foreach(DataRow row in ds.Tables[0].Rows)
-                {
-                    string maKS = row["MaKS"].ToString();
-                    string maPhong = row["MaPhong"].ToString();
-                    DateTime ngayTraPhong = Convert.ToDateTime(row["NgayTraPhong"]);
-                    // lenh de them tu bang DatPhong qua cai bang LSDatPhong
-                    string query_them = string.Format("insert into LSDatPhong (MaKs,MaPhong,NgayTraPhong,NgayThongBao,ThongBao) values ('{0}','{1}','{2}','{3}',N'{4}')", maKS, maPhong, ngayTraPhong, toDay,"Phòng đã hết hạn");
-                    fn.setData(query_them,"oke",false);
-                    // lenh de xoa cac phong het han trong ban dat phong
-                    string query_xoa = string.Format("delete from DatPhong where MaPhong = '{0}' and TrangThai = 'Yes' and NgayTraPhong = '{1}'", maPhong,ngayTraPhong);
-                    fn.setData(query_xoa, "oke", false);
-                }
-            }
             FThongBao formtb = new FThongBao(taiKhoan);
             formtb.ShowDialog();    
         }

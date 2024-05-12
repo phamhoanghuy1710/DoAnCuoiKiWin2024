@@ -30,7 +30,7 @@ namespace DuLichApplication
             LoadTB(ds);
         }
 
-        public void LoadTB (DataSet ds)
+        public void LoadTB(DataSet ds)
         {
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -50,6 +50,15 @@ namespace DuLichApplication
             }
         }
 
+        private void dtNgayThongBao_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime ngayThonBao = this.dtNgayThongBao.Value;
+            FThongBao_Load(sender, e);
+        }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

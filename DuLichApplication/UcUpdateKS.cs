@@ -71,7 +71,7 @@ namespace DuLichApplication
         {
             // không cần làm gì hết
         }
-
+       
         public void LoadLaiPhong()
         {
             string query = string.Format("select * from [Phòng] where [Mã khách sạn] = '{0}'", this.maKS);
@@ -85,8 +85,9 @@ namespace DuLichApplication
                     it.MaPhong = row["Mã phòng"].ToString();
                     it.TienIch = row["Tiện ích"].ToString();
                     it.GiaTien = row["Giá"].ToString();
-                    it.TrangThai = row["Trạng thái"].ToString();
                     it.LoaiPhong = row["Loại giường"].ToString();
+                    byte[] pic = (byte[])row["HinhAnh"];
+                    it.HinhAnh = pic;
                     this.flowPanelPhong.Controls.Add(it);
                 }
             }

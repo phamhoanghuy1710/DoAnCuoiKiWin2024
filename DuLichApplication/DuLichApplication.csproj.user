@@ -37,6 +37,9 @@
     <Compile Update="FDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FHuyPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FKhachSan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,9 +61,6 @@
     <Compile Update="FThongBao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GioHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="ItemDichVu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -74,6 +74,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UcDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UcItemHuyPhong.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="UcItemKhach.cs">

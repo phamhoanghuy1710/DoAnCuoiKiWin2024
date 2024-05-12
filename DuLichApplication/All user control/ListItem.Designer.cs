@@ -52,8 +52,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -73,7 +71,6 @@
             guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picSao1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picSao2).BeginInit();
@@ -81,7 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)picSao4).BeginInit();
             panelSao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).BeginInit();
             SuspendLayout();
             // 
             // picHinhAnh
@@ -89,10 +85,10 @@
             picHinhAnh.CustomizableEdges = customizableEdges1;
             picHinhAnh.Image = (Image)resources.GetObject("picHinhAnh.Image");
             picHinhAnh.ImageRotate = 0F;
-            picHinhAnh.Location = new Point(120, 30);
+            picHinhAnh.Location = new Point(51, 29);
             picHinhAnh.Name = "picHinhAnh";
             picHinhAnh.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            picHinhAnh.Size = new Size(105, 100);
+            picHinhAnh.Size = new Size(184, 100);
             picHinhAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             picHinhAnh.TabIndex = 0;
             picHinhAnh.TabStop = false;
@@ -110,14 +106,14 @@
             txtTenKS.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             txtTenKS.ForeColor = Color.Black;
             txtTenKS.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKS.Location = new Point(255, 16);
+            txtTenKS.Location = new Point(241, 13);
             txtTenKS.Margin = new Padding(2, 4, 2, 4);
             txtTenKS.Name = "txtTenKS";
             txtTenKS.PasswordChar = '\0';
             txtTenKS.PlaceholderText = "";
             txtTenKS.SelectedText = "";
             txtTenKS.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtTenKS.Size = new Size(304, 49);
+            txtTenKS.Size = new Size(331, 49);
             txtTenKS.TabIndex = 1;
             // 
             // txtDiaChiKs
@@ -278,7 +274,7 @@
             // 
             // guna2Button1
             // 
-            guna2Button1.CustomizableEdges = customizableEdges27;
+            guna2Button1.CustomizableEdges = customizableEdges25;
             guna2Button1.DisabledState.BorderColor = Color.DarkGray;
             guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -290,7 +286,7 @@
             guna2Button1.ImageSize = new Size(25, 25);
             guna2Button1.Location = new Point(256, 95);
             guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges26;
             guna2Button1.Size = new Size(36, 34);
             guna2Button1.TabIndex = 16;
             // 
@@ -307,7 +303,7 @@
             // 
             // guna2Button2
             // 
-            guna2Button2.CustomizableEdges = customizableEdges25;
+            guna2Button2.CustomizableEdges = customizableEdges23;
             guna2Button2.DisabledState.BorderColor = Color.DarkGray;
             guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -319,22 +315,9 @@
             guna2Button2.ImageSize = new Size(25, 25);
             guna2Button2.Location = new Point(256, 56);
             guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges24;
             guna2Button2.Size = new Size(36, 34);
             guna2Button2.TabIndex = 18;
-            // 
-            // guna2PictureBox2
-            // 
-            guna2PictureBox2.CustomizableEdges = customizableEdges23;
-            guna2PictureBox2.Image = (Image)resources.GetObject("guna2PictureBox2.Image");
-            guna2PictureBox2.ImageRotate = 0F;
-            guna2PictureBox2.Location = new Point(47, 29);
-            guna2PictureBox2.Name = "guna2PictureBox2";
-            guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            guna2PictureBox2.Size = new Size(105, 100);
-            guna2PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            guna2PictureBox2.TabIndex = 19;
-            guna2PictureBox2.TabStop = false;
             // 
             // ListItem
             // 
@@ -342,7 +325,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            Controls.Add(guna2PictureBox2);
             Controls.Add(guna2Button2);
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(guna2Button1);
@@ -362,7 +344,6 @@
             ((System.ComponentModel.ISupportInitialize)picSao4).EndInit();
             panelSao.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -384,6 +365,5 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

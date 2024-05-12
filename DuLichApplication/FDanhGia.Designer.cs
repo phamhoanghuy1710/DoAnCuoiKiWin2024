@@ -69,6 +69,7 @@
             flowLayoutPanel1 = new FlowLayoutPanel();
             btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            lblTenKS = new Label();
             ((System.ComponentModel.ISupportInitialize)numSao).BeginInit();
             panelSao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
@@ -304,7 +305,7 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoScroll = true;
-            flowLayoutPanel1.Location = new Point(45, 321);
+            flowLayoutPanel1.Location = new Point(45, 353);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(1106, 410);
             flowLayoutPanel1.TabIndex = 25;
@@ -334,12 +335,24 @@
             guna2Elipse1.BorderRadius = 50;
             guna2Elipse1.TargetControl = this;
             // 
+            // lblTenKS
+            // 
+            lblTenKS.AutoSize = true;
+            lblTenKS.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTenKS.ForeColor = Color.White;
+            lblTenKS.Location = new Point(466, 304);
+            lblTenKS.Name = "lblTenKS";
+            lblTenKS.Size = new Size(181, 37);
+            lblTenKS.TabIndex = 27;
+            lblTenKS.Text = "Viết đánh giá";
+            // 
             // FDanhGia
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SteelBlue;
-            ClientSize = new Size(1202, 755);
+            ClientSize = new Size(1202, 793);
+            Controls.Add(lblTenKS);
             Controls.Add(btnExit);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(btnDanhGia);
@@ -390,5 +403,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Label lblTenKS;
     }
 }

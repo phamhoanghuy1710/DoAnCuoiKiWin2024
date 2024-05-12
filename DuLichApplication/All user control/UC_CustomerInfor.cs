@@ -22,7 +22,7 @@ namespace DuLichApplication.All_user_control
 
         }
 
-        public void getTaiKhoan (string tk)
+        public void getTaiKhoan(string tk)
         {
             this.taiKhoan = tk;
         }
@@ -60,7 +60,13 @@ namespace DuLichApplication.All_user_control
         {
             FLichSu fLichSu = new FLichSu(taiKhoan);
             fLichSu.ShowDialog();
-            
+
+        }
+
+        private void btnPhongDangDat_Click(object sender, EventArgs e)
+        {
+            FHuyPhong form = new FHuyPhong(this.taiKhoan);
+            form.ShowDialog();
         }
     }
 }

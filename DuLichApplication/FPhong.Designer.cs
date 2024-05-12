@@ -38,6 +38,9 @@
             uC_ChonPhong1 = new All_user_control.UC_ChonPhong();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
+            guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(components);
             guna2Panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,10 +50,10 @@
             guna2Panel1.Controls.Add(ucUpdateks1);
             guna2Panel1.Controls.Add(uC_ChonPhong1);
             guna2Panel1.CustomizableEdges = customizableEdges1;
-            guna2Panel1.Location = new Point(44, 104);
+            guna2Panel1.Location = new Point(52, 31);
             guna2Panel1.Name = "guna2Panel1";
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel1.Size = new Size(1831, 882);
+            guna2Panel1.Size = new Size(1831, 975);
             guna2Panel1.TabIndex = 0;
             // 
             // ucUpdateks1
@@ -58,15 +61,15 @@
             ucUpdateks1.BackColor = Color.Transparent;
             ucUpdateks1.Location = new Point(0, 0);
             ucUpdateks1.Name = "ucUpdateks1";
-            ucUpdateks1.Size = new Size(1852, 879);
+            ucUpdateks1.Size = new Size(1831, 975);
             ucUpdateks1.TabIndex = 2;
             // 
             // uC_ChonPhong1
             // 
             uC_ChonPhong1.BackColor = Color.Transparent;
-            uC_ChonPhong1.Location = new Point(28, 3);
+            uC_ChonPhong1.Location = new Point(3, 3);
             uC_ChonPhong1.Name = "uC_ChonPhong1";
-            uC_ChonPhong1.Size = new Size(1800, 880);
+            uC_ChonPhong1.Size = new Size(1800, 969);
             uC_ChonPhong1.TabIndex = 0;
             // 
             // guna2Elipse1
@@ -86,13 +89,28 @@
             btnExit.ForeColor = Color.White;
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
             btnExit.ImageSize = new Size(35, 35);
-            btnExit.Location = new Point(1833, 12);
+            btnExit.Location = new Point(1843, -1);
             btnExit.Name = "btnExit";
             btnExit.ShadowDecoration.CustomizableEdges = customizableEdges3;
             btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             btnExit.Size = new Size(79, 49);
             btnExit.TabIndex = 1;
             btnExit.Click += btnExit_Click;
+            // 
+            // guna2Elipse2
+            // 
+            guna2Elipse2.BorderRadius = 30;
+            guna2Elipse2.TargetControl = this;
+            // 
+            // guna2Elipse3
+            // 
+            guna2Elipse3.BorderRadius = 30;
+            guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse4
+            // 
+            guna2Elipse4.BorderRadius = 30;
+            guna2Elipse4.TargetControl = this;
             // 
             // FPhong
             // 
@@ -119,5 +137,8 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
         private ucUpdateKS ucUpdateks1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        public Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
     }
 }

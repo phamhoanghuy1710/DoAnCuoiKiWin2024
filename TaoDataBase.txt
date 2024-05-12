@@ -1,0 +1,175 @@
+create table KhachSan (
+	[Mã khách sạn] int primary key not null,
+	[Tên khách sạn ] nvarchar(250) not null,
+	[Địa chỉ] nvarchar (250) not null,
+	[Giá]  bigint not null,
+	[Số sao] int  not null ,
+	[Review] nvarchar(2000) not null,
+	[Trạng thái] nvarchar(250) not null,
+	[TienNghiPhong] nvarchar(250) not null,
+	[DichVuKhachSan] nvarchar(250) not null,
+	[HinhAnh] image not null
+)
+create table [Phòng] (
+	[Mã khách sạn] int not null,
+	[Mã phòng]  nvarchar(250) not null,
+	[Loại giường] nvarchar(250) not null,
+	[Giá] bigint not null,
+	[Tiện ích] nvarchar(250) not null,
+	[HinhAnh] image not null
+) 
+create table LSDatPhong (
+	MaKs nvarchar(250) not null,
+	MaPhong nvarchar (250) not null,
+	NgayTraPhong date not null,
+	NgayThongBao date not null,
+	ThongBao nvarchar (250) not null
+)
+CREATE TABLE DanhGia (
+    MaKs int NOT NULL,
+    TenKhach NVARCHAR(225) NOT NULL,
+    SoSao INT NOT NULL,
+    NgayDanhGia DATE NOT NULL,
+    SoLike INT NOT NULL,
+    HinhAnh IMAGE NOT NULL,
+    DanhGia NVARCHAR(225) NOT NULL,
+    Id INT PRIMARY KEY IDENTITY(1,1),
+);
+CREATE TABLE DanhSachNguoiLike (
+    Id int  not null
+    TaiKhoan NVARCHAR(255) NOT NULL,
+    HoTen NVARCHAR(225) NOT NULL
+);
+CREATE TABLE DatPhong (
+    TaiKhoan NVARCHAR(225) NOT NULL,
+    NgayNhanPhong DATE NOT NULL,
+    NgayTraPhong DATE NOT NULL,
+    MaKS int NOT NULL,
+    MaPhong NVARCHAR(225) NOT NULL,
+    TrangThai NVARCHAR(225) NOT NULL,
+    DoanhThuPhong bigint NOT NULL,
+    GiaPhong bigint NOT NULL
+);
+CREATE TABLE DichVu (
+    MaDichVu NVARCHAR(255) PRIMARY KEY,
+    TenDichVu NVARCHAR(255) NOT NULL,
+    Gia INT NOT NULL
+);
+
+CREATE TABLE GiaoDich (
+    MaKS INT NOT NULL,
+    MaKhach NVARCHAR(255) NOT NULL,
+    TenKhach NVARCHAR(255) NOT NULL,
+    SoDT NVARCHAR(255) NOT NULL,
+    NgayThanhToan DATE NOT NULL,
+    GioThanhToan TIME NOT NULL,
+    SoTien BIGINT NOT NULL,
+    Email NVARCHAR(255) NOT NULL,
+    DSMaPhong NVARCHAR(255) NOT NULL,
+    MaGiaoDich NVARCHAR(255) NOT NULL,
+    PRIMARY KEY (MaKhach, NgayThanhToan,GioThanhToan)
+);
+CREATE TABLE KhachHang (
+   TaiKhoan NVARCHAR(255) PRIMARY KEY,
+   MatKhau NVARCHAR(255) NOT NULL,
+   HoTen NVARCHAR(255) NOT NULL,
+   ChungMinh NVARCHAR(255) NOT NULL,
+   DiaChi NVARCHAR(255) NOT NULL,
+   Email NVARCHAR(255) NOT NULL,
+   Sdt NVARCHAR(255) NOT NULL, 
+   GioiTinh NVARCHAR(255) NOT NULL, 
+   NgaySinh DATE NOT NULL, 
+   HinhAnh IMAGE NOT NULL, 
+   Voucher NVARCHAR(255) NOT NULL, 
+   TongChi bigint NOT NULL
+);
+
+// insert tài khoản :
+
+INSERT INTO KhachHang (
+    TaiKhoan,
+    MatKhau,
+    HoTen,
+    ChungMinh,
+    DiaChi,
+    Email,
+    Sdt,
+    GioiTinh,
+    NgaySinh,
+    HinhAnh,
+    Voucher,
+    TongChi
+) VALUES (
+    'huy',
+    '1',
+    'Huy',
+    '234567899876',
+    'Banh da',
+    'huy@gmail.com',
+    '1234567898',
+    'Khác',
+    '1988-12-26',
+    0x89504E470D0A1A0A0000000D49484452000002BB000002BB08020000007D01D0D50000000467414D410000B156F4F30B75000000206348524D0000871000008C120000FD590000813F00007D760000E99100003CE7000019CF82E9C3720000014B694343504943432050726F66696C65000028CF6360603C91939C5BCC24C0C0,
+    '10%,30%,',
+    1350000
+);
+
+INSERT INTO KhachHang (
+    TaiKhoan,
+    MatKhau,
+    HoTen,
+    ChungMinh,
+    DiaChi,
+    Email,
+    Sdt,
+    GioiTinh,
+    NgaySinh,
+    HinhAnh,
+    Voucher,
+    TongChi
+) VALUES (
+    'chu',
+    '1',
+    'Hotel''s Boss',
+    '1234567890',
+    'Not found',
+    'hhh.@gmail.com',
+    '0000000000',
+    'Nam',
+    '2000-05-03',
+    0x89504E470D0A1A0A0000000D49484452000002BB000002BB08020000007D01D0D50000000467414D410000B156F4F30B75000000206348524D0000871000008C120000FD590000813F00007D760000E99100003CE7000019CF82E9C3720000014B694343504943432050726F66696C65000028CF6360603C91939C5BCC24C0C0,
+    '20%',
+    0
+);
+
+// khách sạn
+INSERT INTO KhachSan (
+    [Mã khách sạn],
+    [Tên khách sạn],
+    [Địa chỉ],
+    [Giá],
+    [Số sao],
+    [Review],
+    [Trạng thái],
+    [Thể loại],
+    [TienNghiPhong],
+    [DichVuKhachSan],
+    [HinhAnh]
+)
+VALUES
+(3, N'Sheraton Hanoi Hotel', N'K5 Nghi Tàm, 11 Xuân Diệu, Tây Hồ, Hà Nội', 2000000, 4, N'Sheraton Hanoi Hotel là một trong những khách sạn hàng đầu tại Hà Nội, với vị trí thuận lợi ngay bên hồ Tây và các điểm du lịch nổi tiếng khác. Resort này cung cấp các dịch vụ sang trọng và phong cách.', N'Yes', N'Hotel', N'Wifi,Bàn làm việc,Máy giặt,', N'Hỗ trợ đặt tour,Phục vụ bữa ăn,Bảo quản hành lý,', 0x89504E470D0A1A0A0000000D4948445200000400000002C50802000000D28A06E9000000017352474200AECE1CE90000000467414D410000B18F0BFC6105000000097048597300000B1200000B1201D2DD7EFC0000000F74455874536F667477617265005069636173611791C0510000FF8A49444154785E94FD65941DD7D9AE);
+
+
+// insert Phòng 
+
+
+INSERT INTO Phòng (
+    [Mã khách sạn],
+    [Mã phòng],
+    [Loại giường],
+    [Giá],
+    [Tiện ích],
+    [HinhAnh]
+)
+VALUES
+(3, 'sh2', N'Giường đôi', 450000, N'Wifi, Máy giặt, Máy sưởi', 0x89504E470D0A1A0A0000000D49484452000004B0000002B50802000000575E8011000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000000970485973000024E8000024E8018263051C0000003874455874536F6674776172650041646F62652050686F746F73686F70204C69676874726F6F6D20436C)

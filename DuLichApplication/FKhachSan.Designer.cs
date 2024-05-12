@@ -194,6 +194,7 @@
             panelMoving.ShadowDecoration.CustomizableEdges = customizableEdges11;
             panelMoving.Size = new Size(260, 20);
             panelMoving.TabIndex = 7;
+            panelMoving.Visible = false;
             panelMoving.Paint += panelMoving_Paint;
             // 
             // guna2Button4

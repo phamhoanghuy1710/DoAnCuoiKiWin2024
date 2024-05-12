@@ -43,16 +43,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             picHinhAnh = new Guna.UI2.WinForms.Guna2PictureBox();
             guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtTrangThai = new Guna.UI2.WinForms.Guna2TextBox();
             txtLoaiPhong = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtTienIch = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,32 +55,18 @@
             btnXoa = new Guna.UI2.WinForms.Guna2Button();
             txtGiaTien = new Guna.UI2.WinForms.Guna2TextBox();
             btnCapNhat = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).BeginInit();
             SuspendLayout();
             // 
-            // guna2PictureBox1
-            // 
-            guna2PictureBox1.CustomizableEdges = customizableEdges1;
-            guna2PictureBox1.Image = (Image)resources.GetObject("guna2PictureBox1.Image");
-            guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(137, 48);
-            guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2PictureBox1.Size = new Size(62, 63);
-            guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            guna2PictureBox1.TabIndex = 27;
-            guna2PictureBox1.TabStop = false;
-            // 
             // picHinhAnh
             // 
-            picHinhAnh.CustomizableEdges = customizableEdges3;
+            picHinhAnh.CustomizableEdges = customizableEdges1;
             picHinhAnh.Image = (Image)resources.GetObject("picHinhAnh.Image");
             picHinhAnh.ImageRotate = 0F;
             picHinhAnh.Location = new Point(26, 38);
             picHinhAnh.Name = "picHinhAnh";
-            picHinhAnh.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            picHinhAnh.Size = new Size(105, 84);
+            picHinhAnh.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            picHinhAnh.Size = new Size(174, 84);
             picHinhAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             picHinhAnh.TabIndex = 26;
             picHinhAnh.TabStop = false;
@@ -102,16 +81,6 @@
             guna2HtmlLabel7.TabIndex = 41;
             guna2HtmlLabel7.Text = "Giá/phòng/đêm";
             // 
-            // guna2HtmlLabel6
-            // 
-            guna2HtmlLabel6.BackColor = Color.Transparent;
-            guna2HtmlLabel6.Font = new Font("Calibri", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel6.Location = new Point(430, 18);
-            guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            guna2HtmlLabel6.Size = new Size(73, 23);
-            guna2HtmlLabel6.TabIndex = 40;
-            guna2HtmlLabel6.Text = "Trạng thái";
-            // 
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
@@ -124,33 +93,10 @@
             guna2HtmlLabel4.Text = "VND";
             guna2HtmlLabel4.Click += guna2HtmlLabel4_Click;
             // 
-            // txtTrangThai
-            // 
-            txtTrangThai.BorderThickness = 0;
-            txtTrangThai.CustomizableEdges = customizableEdges5;
-            txtTrangThai.DefaultText = "";
-            txtTrangThai.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtTrangThai.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtTrangThai.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtTrangThai.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtTrangThai.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTrangThai.Font = new Font("Calibri", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTrangThai.ForeColor = Color.Black;
-            txtTrangThai.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTrangThai.Location = new Point(430, 38);
-            txtTrangThai.Name = "txtTrangThai";
-            txtTrangThai.PasswordChar = '\0';
-            txtTrangThai.PlaceholderText = "";
-            txtTrangThai.ReadOnly = true;
-            txtTrangThai.SelectedText = "";
-            txtTrangThai.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtTrangThai.Size = new Size(117, 38);
-            txtTrangThai.TabIndex = 38;
-            // 
             // txtLoaiPhong
             // 
             txtLoaiPhong.BorderThickness = 0;
-            txtLoaiPhong.CustomizableEdges = customizableEdges7;
+            txtLoaiPhong.CustomizableEdges = customizableEdges3;
             txtLoaiPhong.DefaultText = "";
             txtLoaiPhong.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtLoaiPhong.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -167,7 +113,7 @@
             txtLoaiPhong.PlaceholderText = "";
             txtLoaiPhong.ReadOnly = true;
             txtLoaiPhong.SelectedText = "";
-            txtLoaiPhong.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtLoaiPhong.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtLoaiPhong.Size = new Size(117, 39);
             txtLoaiPhong.TabIndex = 37;
             // 
@@ -185,7 +131,7 @@
             // 
             txtTienIch.BorderColor = Color.White;
             txtTienIch.BorderThickness = 0;
-            txtTienIch.CustomizableEdges = customizableEdges9;
+            txtTienIch.CustomizableEdges = customizableEdges5;
             txtTienIch.DefaultText = "";
             txtTienIch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTienIch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -201,7 +147,7 @@
             txtTienIch.PlaceholderText = "";
             txtTienIch.ReadOnly = true;
             txtTienIch.SelectedText = "";
-            txtTienIch.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtTienIch.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtTienIch.Size = new Size(176, 38);
             txtTienIch.TabIndex = 35;
             // 
@@ -219,7 +165,7 @@
             // 
             txtMaPhong.BorderColor = Color.White;
             txtMaPhong.BorderThickness = 0;
-            txtMaPhong.CustomizableEdges = customizableEdges11;
+            txtMaPhong.CustomizableEdges = customizableEdges7;
             txtMaPhong.DefaultText = "";
             txtMaPhong.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtMaPhong.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -235,7 +181,7 @@
             txtMaPhong.PlaceholderText = "";
             txtMaPhong.ReadOnly = true;
             txtMaPhong.SelectedText = "";
-            txtMaPhong.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtMaPhong.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtMaPhong.Size = new Size(176, 38);
             txtMaPhong.TabIndex = 33;
             // 
@@ -252,7 +198,7 @@
             // btnXoa
             // 
             btnXoa.BorderRadius = 5;
-            btnXoa.CustomizableEdges = customizableEdges13;
+            btnXoa.CustomizableEdges = customizableEdges9;
             btnXoa.DisabledState.BorderColor = Color.DarkGray;
             btnXoa.DisabledState.CustomBorderColor = Color.DarkGray;
             btnXoa.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -262,7 +208,7 @@
             btnXoa.ForeColor = Color.White;
             btnXoa.Location = new Point(599, 104);
             btnXoa.Name = "btnXoa";
-            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnXoa.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnXoa.Size = new Size(58, 33);
             btnXoa.TabIndex = 31;
             btnXoa.Text = "Xóa";
@@ -272,7 +218,7 @@
             // 
             txtGiaTien.BorderColor = Color.DimGray;
             txtGiaTien.BorderThickness = 0;
-            txtGiaTien.CustomizableEdges = customizableEdges15;
+            txtGiaTien.CustomizableEdges = customizableEdges11;
             txtGiaTien.DefaultText = "";
             txtGiaTien.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtGiaTien.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -289,14 +235,14 @@
             txtGiaTien.PlaceholderText = "";
             txtGiaTien.ReadOnly = true;
             txtGiaTien.SelectedText = "";
-            txtGiaTien.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtGiaTien.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtGiaTien.Size = new Size(117, 30);
             txtGiaTien.TabIndex = 30;
             // 
             // btnCapNhat
             // 
             btnCapNhat.BorderRadius = 5;
-            btnCapNhat.CustomizableEdges = customizableEdges17;
+            btnCapNhat.CustomizableEdges = customizableEdges13;
             btnCapNhat.DisabledState.BorderColor = Color.DarkGray;
             btnCapNhat.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCapNhat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -306,7 +252,7 @@
             btnCapNhat.ForeColor = Color.White;
             btnCapNhat.Location = new Point(668, 104);
             btnCapNhat.Name = "btnCapNhat";
-            btnCapNhat.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnCapNhat.ShadowDecoration.CustomizableEdges = customizableEdges14;
             btnCapNhat.Size = new Size(108, 33);
             btnCapNhat.TabIndex = 42;
             btnCapNhat.Text = "Cập nhật";
@@ -320,9 +266,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             Controls.Add(btnCapNhat);
             Controls.Add(guna2HtmlLabel7);
-            Controls.Add(guna2HtmlLabel6);
             Controls.Add(guna2HtmlLabel4);
-            Controls.Add(txtTrangThai);
             Controls.Add(txtLoaiPhong);
             Controls.Add(guna2HtmlLabel5);
             Controls.Add(txtTienIch);
@@ -331,25 +275,19 @@
             Controls.Add(guna2HtmlLabel8);
             Controls.Add(btnXoa);
             Controls.Add(txtGiaTien);
-            Controls.Add(guna2PictureBox1);
             Controls.Add(picHinhAnh);
             Name = "UcItemUpdatePhong";
             Size = new Size(804, 154);
             Load += UcItemUpdatePhong_Load;
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox picHinhAnh;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2TextBox txtTrangThai;
         private Guna.UI2.WinForms.Guna2TextBox txtLoaiPhong;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2TextBox txtTienIch;

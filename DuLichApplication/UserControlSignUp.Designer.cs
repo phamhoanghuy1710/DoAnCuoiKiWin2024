@@ -509,6 +509,7 @@
             guna2Button1.Size = new Size(225, 56);
             guna2Button1.TabIndex = 41;
             guna2Button1.Text = "btn_Save";
+            guna2Button1.Visible = false;
             guna2Button1.Click += guna2Button1_Click;
             // 
             // UserControlSignUp

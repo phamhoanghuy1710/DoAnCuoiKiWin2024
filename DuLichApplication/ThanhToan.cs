@@ -19,6 +19,10 @@ namespace DuLichApplication
         DBFunction fn = new DBFunction();
         string giaGoc;
         List<string> listMaPhong = new List<string> { };
+        DateTime ngayNhanPhong;
+        DateTime ngayTraPhong;
+        int min = 5;
+        int sec = 60;
         public ThanhToan(string maKhach, string maKS)
         {
             InitializeComponent();
@@ -40,6 +44,7 @@ namespace DuLichApplication
         }
         public void ThanhToan_Load_2(object sender, EventArgs e)
         {
+            this.timer.Start();
             // Load thông tin voucher
             string query2 = string.Format("select * from KhachHang where TaiKhoan = '{0}'", maKhach);
             DataSet ttKhach = fn.getData(query2);
@@ -72,10 +77,10 @@ namespace DuLichApplication
             this.cbbKhachSan.DataSource = ds.Tables[0];
             if (ds.Tables[0].Rows.Count > 0)
             {
-                foreach (DataRow row in ds.Tables[0].Rows)
-                {
-                    listMaPhong.Add(row["MaPhong"].ToString());
-                }
+                
+                  listMaPhong.Add(ds.Tables[0].Rows[0]["MaPhong"].ToString());
+                  ngayNhanPhong = Convert.ToDateTime(ds.Tables[0].Rows[0]["NgayNhanPhong"]);
+                  ngayTraPhong = Convert.ToDateTime(ds.Tables[0].Rows[0]["NgayTraPhong"]);
             }
         }
         public void LoadThongTin(DataSet ds)
@@ -93,7 +98,7 @@ namespace DuLichApplication
             TinhTienVoiVoucher();
         }
 
-        public void TinhTienVoiVoucher ()
+        public void TinhTienVoiVoucher()
         {
             int giamGia;
             if (cbbVoucher.Text == "")
@@ -149,12 +154,6 @@ namespace DuLichApplication
 
                     string query1 = string.Format("update DatPhong set TrangThai = 'Yes' where  TaiKhoan = '{0}' and MaKS = '{1}'", maKhach, maKS);
                     fn.setData(query1, "Oke", false);
-                    if (listMaPhong.Count > 0)
-                    {
-                        string listMaPhongString = string.Join(",", listMaPhong.Select(p => "'" + p + "'"));
-                        string queryx = string.Format("UPDATE [Phòng] SET [Trạng thái] = 'No'  WHERE [Mã khách sạn] = '{0}' AND [Mã phòng] IN ({1})", maKS, listMaPhongString);
-                        fn.setData(queryx, "Oke", false);
-                    }
                     string query = string.Format("UPDATE KhachHang SET TongChi = TongChi + {0} where TaiKhoan = '{1}' ", Convert.ToInt32(this.txtTongGia.Text), maKhach);
                     fn.setData(query, "Thanh toán thành công", true);
                     this.Dispose();
@@ -164,13 +163,40 @@ namespace DuLichApplication
                     MessageBox.Show("Vui lòng nhập lại thông tin");
                     this.txtMaGiaoDich.Focus();
                 }
-              
+
             }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            Xoa();
             this.Dispose();
+        }
+        public void Xoa ()
+        {
+            string query = string.Format("delete from DatPhong where MaPhong = '{0}'  and NgayNhanPhong = '{1}' and NgayTraPhong = '{2}' and TrangThai = 'No'", this.listMaPhong[0], ngayNhanPhong, ngayTraPhong);
+            fn.setData(query, "Phòng đã bị hủy do không thanh toán", true);
+        }
+        private void timer_Tick (object sender, EventArgs e)
+        {
+            this.lblSec.Text = sec.ToString();
+            this.lblMin.Text = min.ToString(); 
+            if (min ==0 && sec == 0)
+            {
+                // xoa phong  do kho bang
+                Xoa();
+                this.Dispose();
+            }
+            if (sec == 0)
+            {
+                min--;
+                sec = 59;
+
+            }
+            else
+            {
+                sec--;
+            }
         }
     }
 }

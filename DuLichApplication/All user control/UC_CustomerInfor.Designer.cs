@@ -41,6 +41,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -70,6 +72,7 @@
             pictureBox1 = new PictureBox();
             label7 = new Label();
             btnLichSu = new Guna.UI2.WinForms.Guna2Button();
+            btnPhongDangDat = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -303,7 +306,7 @@
             // 
             // txtGioiTinh
             // 
-            txtGioiTinh.CustomizableEdges = customizableEdges19;
+            txtGioiTinh.CustomizableEdges = customizableEdges21;
             txtGioiTinh.DefaultText = "";
             txtGioiTinh.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtGioiTinh.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -318,7 +321,7 @@
             txtGioiTinh.PlaceholderText = "";
             txtGioiTinh.ReadOnly = true;
             txtGioiTinh.SelectedText = "";
-            txtGioiTinh.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            txtGioiTinh.ShadowDecoration.CustomizableEdges = customizableEdges22;
             txtGioiTinh.Size = new Size(504, 72);
             txtGioiTinh.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             txtGioiTinh.TabIndex = 18;
@@ -330,7 +333,7 @@
             btnLuu.BorderThickness = 1;
             btnLuu.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
             btnLuu.CheckedState.ForeColor = Color.White;
-            btnLuu.CustomizableEdges = customizableEdges17;
+            btnLuu.CustomizableEdges = customizableEdges19;
             btnLuu.DisabledState.BorderColor = Color.DarkGray;
             btnLuu.DisabledState.CustomBorderColor = Color.DarkGray;
             btnLuu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -340,7 +343,7 @@
             btnLuu.ForeColor = Color.Black;
             btnLuu.Location = new Point(1095, 711);
             btnLuu.Name = "btnLuu";
-            btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnLuu.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btnLuu.Size = new Size(282, 56);
             btnLuu.TabIndex = 20;
             btnLuu.Text = "Lưu Thông Tin";
@@ -350,7 +353,7 @@
             // dtNgaySinh
             // 
             dtNgaySinh.Checked = true;
-            dtNgaySinh.CustomizableEdges = customizableEdges15;
+            dtNgaySinh.CustomizableEdges = customizableEdges17;
             dtNgaySinh.FillColor = Color.White;
             dtNgaySinh.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             dtNgaySinh.Format = DateTimePickerFormat.Long;
@@ -358,7 +361,7 @@
             dtNgaySinh.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
             dtNgaySinh.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
             dtNgaySinh.Name = "dtNgaySinh";
-            dtNgaySinh.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            dtNgaySinh.ShadowDecoration.CustomizableEdges = customizableEdges18;
             dtNgaySinh.Size = new Size(504, 72);
             dtNgaySinh.TabIndex = 21;
             dtNgaySinh.Value = new DateTime(2024, 3, 15, 8, 59, 50, 320);
@@ -391,7 +394,7 @@
             btnLichSu.BorderThickness = 1;
             btnLichSu.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
             btnLichSu.CheckedState.ForeColor = Color.White;
-            btnLichSu.CustomizableEdges = customizableEdges13;
+            btnLichSu.CustomizableEdges = customizableEdges15;
             btnLichSu.DisabledState.BorderColor = Color.DarkGray;
             btnLichSu.DisabledState.CustomBorderColor = Color.DarkGray;
             btnLichSu.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -399,19 +402,43 @@
             btnLichSu.FillColor = Color.White;
             btnLichSu.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             btnLichSu.ForeColor = Color.Black;
-            btnLichSu.Location = new Point(1519, 30);
+            btnLichSu.Location = new Point(1698, 39);
             btnLichSu.Name = "btnLichSu";
-            btnLichSu.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnLichSu.Size = new Size(282, 56);
+            btnLichSu.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnLichSu.Size = new Size(184, 56);
             btnLichSu.TabIndex = 24;
             btnLichSu.Text = "Lịch sử giao dịch";
             btnLichSu.Click += btnLichSu_Click;
+            // 
+            // btnPhongDangDat
+            // 
+            btnPhongDangDat.BorderRadius = 18;
+            btnPhongDangDat.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            btnPhongDangDat.BorderThickness = 1;
+            btnPhongDangDat.CheckedState.FillColor = Color.FromArgb(0, 118, 221);
+            btnPhongDangDat.CheckedState.ForeColor = Color.White;
+            btnPhongDangDat.CustomizableEdges = customizableEdges13;
+            btnPhongDangDat.DisabledState.BorderColor = Color.DarkGray;
+            btnPhongDangDat.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnPhongDangDat.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnPhongDangDat.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnPhongDangDat.FillColor = Color.White;
+            btnPhongDangDat.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPhongDangDat.ForeColor = Color.Black;
+            btnPhongDangDat.Location = new Point(1430, 39);
+            btnPhongDangDat.Name = "btnPhongDangDat";
+            btnPhongDangDat.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnPhongDangDat.Size = new Size(178, 56);
+            btnPhongDangDat.TabIndex = 25;
+            btnPhongDangDat.Text = "Phòng đang đặt";
+            btnPhongDangDat.Click += btnPhongDangDat_Click;
             // 
             // UC_CustomerInfor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(btnPhongDangDat);
             Controls.Add(btnLichSu);
             Controls.Add(label7);
             Controls.Add(pictureBox1);
@@ -462,5 +489,6 @@
         public PictureBox pictureBox1;
         private Label label7;
         private Guna.UI2.WinForms.Guna2Button btnLichSu;
+        private Guna.UI2.WinForms.Guna2Button btnPhongDangDat;
     }
 }

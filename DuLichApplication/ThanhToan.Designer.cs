@@ -78,6 +78,12 @@
             lblHinhThuc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
+            lblMin = new Label();
+            lblSec = new Label();
+            label3 = new Label();
+            guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            timer = new System.Windows.Forms.Timer(components);
+            guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)cbbKhachSan).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureQR).BeginInit();
             SuspendLayout();
@@ -156,7 +162,7 @@
             btnThanhToan.FillColor = Color.White;
             btnThanhToan.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThanhToan.ForeColor = Color.Black;
-            btnThanhToan.Location = new Point(1037, 700);
+            btnThanhToan.Location = new Point(1121, 664);
             btnThanhToan.Name = "btnThanhToan";
             btnThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnThanhToan.Size = new Size(174, 57);
@@ -256,7 +262,7 @@
             txtHoTen.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtHoTen.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtHoTen.ForeColor = Color.Transparent;
+            txtHoTen.ForeColor = Color.Black;
             txtHoTen.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtHoTen.Location = new Point(79, 104);
             txtHoTen.Name = "txtHoTen";
@@ -351,11 +357,11 @@
             // lableTenKS
             // 
             lableTenKS.BackColor = Color.Transparent;
-            lableTenKS.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lableTenKS.Font = new Font("Calibri", 24F, FontStyle.Bold, GraphicsUnit.Point);
             lableTenKS.ForeColor = Color.White;
-            lableTenKS.Location = new Point(279, 404);
+            lableTenKS.Location = new Point(41, 425);
             lableTenKS.Name = "lableTenKS";
-            lableTenKS.Size = new Size(175, 30);
+            lableTenKS.Size = new Size(308, 51);
             lableTenKS.TabIndex = 16;
             lableTenKS.Text = "Tóm tắt khách sạn";
             // 
@@ -382,12 +388,12 @@
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             cbbKhachSan.DefaultCellStyle = dataGridViewCellStyle3;
             cbbKhachSan.GridColor = Color.FromArgb(231, 229, 255);
-            cbbKhachSan.Location = new Point(32, 436);
+            cbbKhachSan.Location = new Point(41, 485);
             cbbKhachSan.Name = "cbbKhachSan";
             cbbKhachSan.RowHeadersVisible = false;
             cbbKhachSan.RowHeadersWidth = 51;
             cbbKhachSan.RowTemplate.Height = 29;
-            cbbKhachSan.Size = new Size(704, 312);
+            cbbKhachSan.Size = new Size(704, 241);
             cbbKhachSan.TabIndex = 17;
             cbbKhachSan.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White;
             cbbKhachSan.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -414,9 +420,9 @@
             // pictureQR
             // 
             pictureQR.Image = (Image)resources.GetObject("pictureQR.Image");
-            pictureQR.Location = new Point(807, 466);
+            pictureQR.Location = new Point(795, 485);
             pictureQR.Name = "pictureQR";
-            pictureQR.Size = new Size(251, 215);
+            pictureQR.Size = new Size(237, 236);
             pictureQR.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureQR.TabIndex = 18;
             pictureQR.TabStop = false;
@@ -426,7 +432,7 @@
             lblMaGiaoDich.BackColor = Color.Transparent;
             lblMaGiaoDich.Font = new Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
             lblMaGiaoDich.ForeColor = Color.White;
-            lblMaGiaoDich.Location = new Point(1109, 512);
+            lblMaGiaoDich.Location = new Point(1107, 530);
             lblMaGiaoDich.Name = "lblMaGiaoDich";
             lblMaGiaoDich.Size = new Size(205, 35);
             lblMaGiaoDich.TabIndex = 19;
@@ -447,7 +453,7 @@
             txtMaGiaoDich.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtMaGiaoDich.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtMaGiaoDich.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaGiaoDich.Location = new Point(1109, 587);
+            txtMaGiaoDich.Location = new Point(1121, 571);
             txtMaGiaoDich.Name = "txtMaGiaoDich";
             txtMaGiaoDich.PasswordChar = '\0';
             txtMaGiaoDich.PlaceholderText = "";
@@ -461,11 +467,11 @@
             lblThoiGian.BackColor = Color.Transparent;
             lblThoiGian.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lblThoiGian.ForeColor = Color.White;
-            lblThoiGian.Location = new Point(841, 496);
+            lblThoiGian.Location = new Point(460, 404);
             lblThoiGian.Name = "lblThoiGian";
-            lblThoiGian.Size = new Size(446, 30);
+            lblThoiGian.Size = new Size(3, 2);
             lblThoiGian.TabIndex = 22;
-            lblThoiGian.Text = "Thời gian: 7h-11h hằng ngày từ thứ 2 đến thứ 7\r\n\r\n";
+            lblThoiGian.Text = null;
             lblThoiGian.Visible = false;
             // 
             // lblDiaChi
@@ -473,11 +479,11 @@
             lblDiaChi.BackColor = Color.Transparent;
             lblDiaChi.Font = new Font("Calibri", 18F, FontStyle.Regular, GraphicsUnit.Point);
             lblDiaChi.ForeColor = Color.White;
-            lblDiaChi.Location = new Point(948, 553);
+            lblDiaChi.Location = new Point(508, 395);
             lblDiaChi.Name = "lblDiaChi";
-            lblDiaChi.Size = new Size(228, 39);
+            lblDiaChi.Size = new Size(3, 2);
             lblDiaChi.TabIndex = 23;
-            lblDiaChi.Text = "Tóm tắt khách sạn";
+            lblDiaChi.Text = null;
             lblDiaChi.Visible = false;
             // 
             // lblHinhThuc
@@ -485,11 +491,11 @@
             lblHinhThuc.BackColor = Color.Transparent;
             lblHinhThuc.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lblHinhThuc.ForeColor = Color.White;
-            lblHinhThuc.Location = new Point(907, 623);
+            lblHinhThuc.Location = new Point(495, 400);
             lblHinhThuc.Name = "lblHinhThuc";
-            lblHinhThuc.Size = new Size(292, 30);
+            lblHinhThuc.Size = new Size(3, 2);
             lblHinhThuc.TabIndex = 24;
-            lblHinhThuc.Text = "Hình thức : thanh toán tại sảnh";
+            lblHinhThuc.Text = null;
             lblHinhThuc.Visible = false;
             // 
             // guna2Elipse1
@@ -516,12 +522,80 @@
             btnExit.TabIndex = 25;
             btnExit.Click += btnExit_Click;
             // 
+            // lblMin
+            // 
+            lblMin.AutoSize = true;
+            lblMin.BackColor = Color.Transparent;
+            lblMin.Font = new Font("Calibri", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblMin.ForeColor = Color.Red;
+            lblMin.Location = new Point(1133, 473);
+            lblMin.Name = "lblMin";
+            lblMin.Size = new Size(58, 45);
+            lblMin.TabIndex = 26;
+            lblMin.Text = "00";
+            // 
+            // lblSec
+            // 
+            lblSec.AutoSize = true;
+            lblSec.BackColor = Color.Transparent;
+            lblSec.Font = new Font("Calibri", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSec.ForeColor = Color.Red;
+            lblSec.Location = new Point(1212, 473);
+            lblSec.Name = "lblSec";
+            lblSec.Size = new Size(58, 45);
+            lblSec.TabIndex = 27;
+            lblSec.Text = "00";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Calibri", 22.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Red;
+            label3.Location = new Point(1187, 470);
+            label3.Name = "label3";
+            label3.Size = new Size(30, 45);
+            label3.TabIndex = 28;
+            label3.Text = ":";
+            // 
+            // guna2HtmlLabel9
+            // 
+            guna2HtmlLabel9.BackColor = Color.Transparent;
+            guna2HtmlLabel9.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel9.ForeColor = Color.White;
+            guna2HtmlLabel9.Location = new Point(1089, 425);
+            guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            guna2HtmlLabel9.Size = new Size(232, 33);
+            guna2HtmlLabel9.TabIndex = 29;
+            guna2HtmlLabel9.Text = "Thời gian đếm ngược";
+            // 
+            // timer
+            // 
+            timer.Interval = 1000;
+            timer.Tick += timer_Tick;
+            // 
+            // guna2HtmlLabel10
+            // 
+            guna2HtmlLabel10.BackColor = Color.Transparent;
+            guna2HtmlLabel10.Font = new Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2HtmlLabel10.ForeColor = Color.White;
+            guna2HtmlLabel10.Location = new Point(839, 423);
+            guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            guna2HtmlLabel10.Size = new Size(137, 35);
+            guna2HtmlLabel10.TabIndex = 30;
+            guna2HtmlLabel10.Text = "Quét mã QR ";
+            // 
             // ThanhToan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1407, 800);
+            ClientSize = new Size(1407, 787);
+            Controls.Add(guna2HtmlLabel10);
+            Controls.Add(guna2HtmlLabel9);
+            Controls.Add(label3);
+            Controls.Add(lblSec);
+            Controls.Add(lblMin);
             Controls.Add(btnExit);
             Controls.Add(lblHinhThuc);
             Controls.Add(lblDiaChi);
@@ -586,5 +660,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHinhThuc;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+        private Label lblMin;
+        private Label lblSec;
+        private Label label3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private System.Windows.Forms.Timer timer;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
     }
 }

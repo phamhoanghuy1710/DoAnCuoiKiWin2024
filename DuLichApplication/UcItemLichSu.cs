@@ -26,14 +26,14 @@ namespace DuLichApplication
         private string maGiaoDich;
 
 
-    
+
         public string MaKhach
         {
             get { return maKhach; }
-            set { this.maKhach = value;}
+            set { this.maKhach = value; }
         }
 
-     
+
         public string SDT
         {
             get { return SDT; }
@@ -52,14 +52,14 @@ namespace DuLichApplication
             get { return maKS; }
             set { this.maKS = value; this.txtMaKS.Text = value; }
         }
- 
+
         public int SoTien
         {
             get { return soTien; }
-            set { this.soTien = value;}
+            set { this.soTien = value; }
         }
 
-       
+
         public string DSPhong
         {
             get { return dsPhong; }
@@ -105,8 +105,14 @@ namespace DuLichApplication
 
         private void btnXem_Click(object sender, EventArgs e)
         {
-            FChiTietGiaoDich form = new FChiTietGiaoDich(this.maKS,this.maKhach,this.tenKhach,this.sdt,this.ngayThanhToan,this.gioThanhToan,this.soTien,this.email,this.dsPhong,this.maGiaoDich);
+            FChiTietGiaoDich form = new FChiTietGiaoDich(this.maKS, this.maKhach, this.tenKhach, this.sdt, this.ngayThanhToan, this.gioThanhToan, this.soTien, this.email, this.dsPhong, this.maGiaoDich);
             form.ShowDialog();
+        }
+
+        private void btnDanhGia_Click(object sender, EventArgs e)
+        {
+            FDanhGia f = new FDanhGia(this.maKS,this.maKhach);
+            f.ShowDialog();
         }
     }
 }

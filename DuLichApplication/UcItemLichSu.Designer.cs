@@ -37,8 +37,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcItemLichSu));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -54,6 +56,7 @@
             guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             picHinhAnh = new Guna.UI2.WinForms.Guna2PictureBox();
             btnXem = new Guna.UI2.WinForms.Guna2Button();
+            btnDanhGia = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).BeginInit();
             SuspendLayout();
             // 
@@ -164,7 +167,7 @@
             txtGioThanhToan.PlaceholderText = "";
             txtGioThanhToan.SelectedText = "";
             txtGioThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtGioThanhToan.Size = new Size(193, 50);
+            txtGioThanhToan.Size = new Size(212, 50);
             txtGioThanhToan.TabIndex = 54;
             // 
             // txtNgayThanhToan
@@ -187,7 +190,7 @@
             txtNgayThanhToan.PlaceholderText = "";
             txtNgayThanhToan.SelectedText = "";
             txtNgayThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtNgayThanhToan.Size = new Size(279, 48);
+            txtNgayThanhToan.Size = new Size(249, 48);
             txtNgayThanhToan.TabIndex = 55;
             // 
             // guna2HtmlLabel6
@@ -207,12 +210,12 @@
             // 
             // picHinhAnh
             // 
-            picHinhAnh.CustomizableEdges = customizableEdges11;
+            picHinhAnh.CustomizableEdges = customizableEdges13;
             picHinhAnh.Image = (Image)resources.GetObject("picHinhAnh.Image");
             picHinhAnh.ImageRotate = 0F;
             picHinhAnh.Location = new Point(23, 22);
             picHinhAnh.Name = "picHinhAnh";
-            picHinhAnh.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            picHinhAnh.ShadowDecoration.CustomizableEdges = customizableEdges14;
             picHinhAnh.Size = new Size(137, 125);
             picHinhAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             picHinhAnh.TabIndex = 45;
@@ -220,8 +223,8 @@
             // 
             // btnXem
             // 
-            btnXem.BorderRadius = 5;
-            btnXem.CustomizableEdges = customizableEdges9;
+            btnXem.BorderRadius = 20;
+            btnXem.CustomizableEdges = customizableEdges11;
             btnXem.DisabledState.BorderColor = Color.DarkGray;
             btnXem.DisabledState.CustomBorderColor = Color.DarkGray;
             btnXem.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -229,20 +232,41 @@
             btnXem.FillColor = Color.FromArgb(255, 128, 0);
             btnXem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnXem.ForeColor = Color.White;
-            btnXem.Location = new Point(604, 122);
+            btnXem.Location = new Point(659, 104);
             btnXem.Name = "btnXem";
-            btnXem.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnXem.Size = new Size(140, 44);
+            btnXem.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnXem.Size = new Size(92, 64);
             btnXem.TabIndex = 58;
-            btnXem.Text = "Xem Chi Tiết";
+            btnXem.Text = "Chi Tiết";
             btnXem.TextFormatNoPrefix = true;
             btnXem.Click += btnXem_Click;
+            // 
+            // btnDanhGia
+            // 
+            btnDanhGia.BorderRadius = 20;
+            btnDanhGia.CustomizableEdges = customizableEdges9;
+            btnDanhGia.DisabledState.BorderColor = Color.DarkGray;
+            btnDanhGia.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDanhGia.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDanhGia.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDanhGia.FillColor = Color.FromArgb(255, 128, 0);
+            btnDanhGia.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDanhGia.ForeColor = Color.White;
+            btnDanhGia.Location = new Point(659, 22);
+            btnDanhGia.Name = "btnDanhGia";
+            btnDanhGia.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnDanhGia.Size = new Size(92, 64);
+            btnDanhGia.TabIndex = 59;
+            btnDanhGia.Text = "Đánh giá";
+            btnDanhGia.TextFormatNoPrefix = true;
+            btnDanhGia.Click += btnDanhGia_Click;
             // 
             // UcItemLichSu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(btnDanhGia);
             Controls.Add(btnXem);
             Controls.Add(guna2HtmlLabel6);
             Controls.Add(txtNgayThanhToan);
@@ -275,5 +299,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2PictureBox picHinhAnh;
         private Guna.UI2.WinForms.Guna2Button btnXem;
+        private Guna.UI2.WinForms.Guna2Button btnDanhGia;
     }
 }

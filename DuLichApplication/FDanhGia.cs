@@ -30,8 +30,18 @@ namespace DuLichApplication
 
         private void FDanhGia_Load(object sender, EventArgs e)
         {
+            LayTenKS();
             LoadTenKhach();
             LoadDanhGia();
+        }
+        public void LayTenKS()
+        {
+            string query = string.Format("select * from KhachSan where [Mã khách sạn] = '{0}'", this.maKs);
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                this.lblTenKS.Text = ds.Tables[0].Rows[0]["Tên khách sạn"].ToString();
+            }
         }
         public void LoadTenKhach()
         {
@@ -106,48 +116,79 @@ namespace DuLichApplication
                 }
             }
         }
-
-        private void btnDanhGia_Click(object sender, EventArgs e)
+        public bool  KiemTraDanhGia ()
         {
-            // này là đưa vô nè
-            DateTime today = DateTime.Now;
-            int soSao = Convert.ToInt32(numSao.Value);
-            if (string.IsNullOrEmpty(this.txtDanhGia.Text) == true)
+            bool isHopLe = false;
+            string query = string.Format("select * from GiaoDich");
+            DataSet ds = fn.getData(query);
+            if (ds.Tables[0].Rows.Count > 0)
             {
-                MessageBox.Show("Hãy viết đánh giá");
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    if (row["MaKhach"].ToString().Contains(this.maKhach) && row["MaKS"].ToString().Contains(this.maKs))
+                    {
+                        isHopLe = true;
+                        break;
+                    }
+                }
+            }
+            if (isHopLe == true)
+            {
+                return true;
             }
             else
             {
-                // load ảnh 
-                MemoryStream ms = new MemoryStream();
-                pictureHinhAnh.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-                byte[] pic = ms.ToArray();
-                // cau lenh
+                return false;
+            }
+        }
+        private void btnDanhGia_Click(object sender, EventArgs e)
+        {
+            if (KiemTraDanhGia()==true)
+            {
+                // này là đưa vô nè
+                DateTime today = DateTime.Now;
+                int soSao = Convert.ToInt32(numSao.Value);
+                if (string.IsNullOrEmpty(this.txtDanhGia.Text) == true)
+                {
+                    MessageBox.Show("Hãy viết đánh giá");
+                }
+                else
+                {
+                    // load ảnh 
+                    MemoryStream ms = new MemoryStream();
+                    pictureHinhAnh.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    byte[] pic = ms.ToArray();
+                    // cau lenh
 
-                string query = "INSERT INTO DanhGia (MaKs, DanhGia, NgayDanhGIa, HinhAnh, SoSao, TenKhach,SoLike) VALUES (@MaKs, @DanhGia, @NgayDanhGia, @HinhAnh, @SoSao, @TenKhach,@SoLike)";
-                SqlCommand cmd = new SqlCommand(query);
-                cmd.Parameters.AddWithValue("@MaKs", this.maKs);
-                cmd.Parameters.AddWithValue("@DanhGia", this.txtDanhGia.Text);
-                cmd.Parameters.AddWithValue("@NgayDanhGia", today);
-                cmd.Parameters.AddWithValue("@HinhAnh", pic);
-                cmd.Parameters.AddWithValue("@SoSao", soSao);
-                cmd.Parameters.AddWithValue("@TenKhach", this.tenKhachDung);
-                cmd.Parameters.AddWithValue("@SoLike", 0);
-                fn.themDBCoHinhAnh(cmd, "Thêm đánh giá thanh công");
-                // tạo một cái item mới
-                UcDanhGia item = new UcDanhGia();
-                item.MaKS = this.maKs;
-                item.TenKhach = this.tenKhachDung;
-                item.SoSao = soSao;
-                item.DanhGia = this.txtDanhGia.Text;
-                item.NgayThang = today.ToString();
-                item.HinhAnh = pic;
-                item.SoLike = 0;
-                item.MaKhach = this.maKhach;
-                item.ID = id;
-                item.TenKhachDung = this.tenKhachDung;
-                id += 1;
-                flowLayoutPanel1.Controls.Add(item);
+                    string query = "INSERT INTO DanhGia (MaKs, DanhGia, NgayDanhGIa, HinhAnh, SoSao, TenKhach,SoLike) VALUES (@MaKs, @DanhGia, @NgayDanhGia, @HinhAnh, @SoSao, @TenKhach,@SoLike)";
+                    SqlCommand cmd = new SqlCommand(query);
+                    cmd.Parameters.AddWithValue("@MaKs", this.maKs);
+                    cmd.Parameters.AddWithValue("@DanhGia", this.txtDanhGia.Text);
+                    cmd.Parameters.AddWithValue("@NgayDanhGia", today);
+                    cmd.Parameters.AddWithValue("@HinhAnh", pic);
+                    cmd.Parameters.AddWithValue("@SoSao", soSao);
+                    cmd.Parameters.AddWithValue("@TenKhach", this.tenKhachDung);
+                    cmd.Parameters.AddWithValue("@SoLike", 0);
+                    fn.themDBCoHinhAnh(cmd, "Thêm đánh giá thanh công");
+                    // tạo một cái item mới
+                    UcDanhGia item = new UcDanhGia();
+                    item.MaKS = this.maKs;
+                    item.TenKhach = this.tenKhachDung;
+                    item.SoSao = soSao;
+                    item.DanhGia = this.txtDanhGia.Text;
+                    item.NgayThang = today.ToString();
+                    item.HinhAnh = pic;
+                    item.SoLike = 0;
+                    item.MaKhach = this.maKhach;
+                    item.ID = id;
+                    item.TenKhachDung = this.tenKhachDung;
+                    id += 1;
+                    flowLayoutPanel1.Controls.Add(item);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng đặt phòng để được đánh giá");
             }
         }
 

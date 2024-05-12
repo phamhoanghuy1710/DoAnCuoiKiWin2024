@@ -398,7 +398,6 @@ C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-window
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.Form1.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.Form2.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.FPhong.resources
-C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.GioHang.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.Properties.Resources.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.SignUp.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.ThanhToan.resources
@@ -525,3 +524,5 @@ C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\bin\Debug\net6.0-window
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\bin\Debug\net6.0-windows\System.IO.Packaging.dll
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.FThongBao.resources
 C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.UCItemThongTB.resources
+C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.FHuyPhong.resources
+C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\DuLichApplication\obj\Debug\net6.0-windows\DuLichApplication.UcItemHuyPhong.resources

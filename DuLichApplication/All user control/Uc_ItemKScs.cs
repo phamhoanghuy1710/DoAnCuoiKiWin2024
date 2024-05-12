@@ -26,7 +26,27 @@ namespace DuLichApplication.All_user_control
         private string gia;
         private int sao;
         private Image icon;
+        private byte[] hinhAnh;
 
+        [Category("Custom Props")]
+        public byte[] HinhAnh
+        {
+            get { return hinhAnh; }
+            set
+            {
+                this.hinhAnh = value;
+                // khi lấy lên dưới dạng byte , xài 1 cái ms truyen byte vao
+                MemoryStream ms = new MemoryStream(value);
+                if (value == null)
+                {
+                    MessageBox.Show("Không hợp lệ");
+                }
+                else
+                {
+                    this.picHinhAnh.Image = Image.FromStream(ms);
+                }
+            }
+        }
         private void btnChonKS_Click(object sender, EventArgs e)
         {
             string query = string.Format("select * from KhachSan where [Mã khách sạn] = '{0}'",this.id);

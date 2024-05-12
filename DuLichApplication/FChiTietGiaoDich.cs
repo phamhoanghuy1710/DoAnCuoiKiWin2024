@@ -30,7 +30,7 @@ namespace DuLichApplication
         string tenKS;
         string diaChi;
         string path_template = @"C:\Users\HUY\Desktop\DoAnCuoiKiWin2024\template_TT.docx";
-        
+
 
         DBFunction fn = new DBFunction();
         public FChiTietGiaoDich(string maKS, string maKhach, string tenKhach, string sdt, string ngayThanhToan, string gioThanhToan, int soTien, string email, string dsPhong, string maGiaoDich)
@@ -131,7 +131,7 @@ namespace DuLichApplication
                 gio_ThanhToan = this.txtGioThanhToan.Text,
                 gia_Tien = this.txtGiaTien.Text,
             };
-             MiniWord.SaveAsByTemplate(filename, path_template, value);
+            MiniWord.SaveAsByTemplate(filename, path_template, value);
         }
         private void btnXuatHoaDon_Click(object sender, EventArgs e)
         {
@@ -144,6 +144,11 @@ namespace DuLichApplication
                 Export_Data_To_Word(savefile.FileName);
                 MessageBox.Show("Lưu file thành công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

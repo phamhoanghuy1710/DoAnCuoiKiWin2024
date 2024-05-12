@@ -41,7 +41,6 @@ namespace DuLichApplication
                     it.MaPhong = row["Mã phòng"].ToString();
                     it.TienIch = row["Tiện ích"].ToString();
                     it.GiaTien = row["Giá"].ToString();
-                    it.TrangThai = row["Trạng thái"].ToString();
                     it.LoaiPhong = row["Loại giường"].ToString();
                     it.MaKS = ds.Tables[0].Rows[0]["Mã khách sạn"].ToString();
                     DanhSachPhong.Controls.Add(it);

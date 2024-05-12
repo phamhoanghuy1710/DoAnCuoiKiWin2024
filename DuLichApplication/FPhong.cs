@@ -1,9 +1,11 @@
-﻿using DuLichApplication.All_user_control;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using DuLichApplication.All_user_control;
 using Microsoft.IdentityModel.Logging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,6 +32,7 @@ namespace DuLichApplication
             this.ucUpdateks1.btnChinhSua.Click += LoadLaiKs;
             this.ucUpdateks1.btnXoa.Click += TatForm;
             
+
         }
         public FPhong(DataSet ds, string taiKhoan, DateTime ngayNhanPhong, DateTime ngayTraPhong)
         {
@@ -38,9 +41,7 @@ namespace DuLichApplication
             this.taiKhoan = taiKhoan;
             this.ngayNhanPhong = ngayNhanPhong;
             this.ngayTraPhong = ngayTraPhong;
-            this.uC_ChonPhong1.btnGioHang.Click += MoGioHang;
         }
-
         public void TatForm (object sender , EventArgs e)
         {
             if (this.ucUpdateks1.isTatForm == true)
@@ -55,16 +56,6 @@ namespace DuLichApplication
                 string query = string.Format("select * from KhachSan where [Mã khách sạn] = '{0}'", ds.Tables[0].Rows[0]["Mã khách sạn"].ToString());
                 this.ds = fn.getData(query);
                 FPhong_Load(sender, e);
-            }
-        }
-
-        private void MoGioHang(object sender, EventArgs e)
-        {
-            if (this.uC_ChonPhong1.btnGioHangCliked == true)
-            {
-                GioHang gh = new GioHang(ds.Tables[0].Rows[0]["Mã khách sạn"].ToString(), taiKhoan);
-                gh.yeuCauLoad = new GioHang.YeuCauLoad(XacNhanLoad);
-                gh.Show();
             }
         }
         private void btnExit_Click(object sender, EventArgs e)
@@ -142,8 +133,11 @@ namespace DuLichApplication
         {
             // chuyen thong tin qua cho uControl
             this.uC_ChonPhong1.getMaKhachSan(ds.Tables[0].Rows[0]["Mã khách sạn"].ToString(), taiKhoan);
-            this.uC_ChonPhong1.getThongTin(ngayNhanPhong, ngayTraPhong);
             // lấy mã khách sạn để truyền
+            this.uC_ChonPhong1.dtNgayNhanPhong.Value = this.ngayNhanPhong;
+            this.uC_ChonPhong1.dtNgayTraPhong.Value = this.ngayTraPhong;
+            this.uC_ChonPhong1.tmp = this.ngayNhanPhong;
+            this.uC_ChonPhong1.cbbSoDem.Text  = (ngayTraPhong - ngayNhanPhong).TotalDays.ToString() ;
             this.uC_ChonPhong1.lblTenKS.Text = ds.Tables[0].Rows[0]["Tên khách sạn"].ToString();
             this.uC_ChonPhong1.lblDiaChi.Text = "Địa chỉ: " + ds.Tables[0].Rows[0]["Địa chỉ"].ToString();
             this.uC_ChonPhong1.lblGia.Text = "Giá: " + ds.Tables[0].Rows[0]["Giá"].ToString() + "VND";  // fix sau
@@ -179,6 +173,32 @@ namespace DuLichApplication
             {
                 this.uC_ChonPhong1.pictureKS.Image = Image.FromStream(ms);
             }
+            string tienIch = ds.Tables[0].Rows[0]["TienNghiPhong"].ToString();
+            string dichVu =  ds.Tables[0].Rows[0]["DichVuKhachSan"].ToString();
+            string[] listTI = tienIch.Split(",");
+            string[] listDv = dichVu.Split(",");
+            for (int i = 0; i < this.uC_ChonPhong1.panelTienIch.Controls.Count; i++)
+            {
+                if (i < listTI.Length)
+                {
+                    this.uC_ChonPhong1.panelTienIch.Controls[i].Text = listTI[i];
+                }
+                else
+                {
+                    this.uC_ChonPhong1.panelTienIch.Controls[i].Text = "";
+                }
+            }
+            for (int i = 0; i < this.uC_ChonPhong1.panelDichVu.Controls.Count; i++)
+            {
+                if (i < listDv.Length)
+                {
+                    this.uC_ChonPhong1.panelDichVu.Controls[i].Text = listDv[i];
+                }
+                else
+                {
+                    this.uC_ChonPhong1.panelDichVu.Controls[i].Text = "";
+                }
+            }
         }
         public void XacNhanLoad(bool isLose)
         {
@@ -201,8 +221,9 @@ namespace DuLichApplication
                     it.MaPhong = row["Mã phòng"].ToString();
                     it.TienIch = row["Tiện ích"].ToString();
                     it.GiaTien = row["Giá"].ToString();
-                    it.TrangThai = row["Trạng thái"].ToString();
                     it.LoaiPhong = row["Loại giường"].ToString();
+                    byte[] pic = (byte[])row["HinhAnh"];
+                    it.HinhAnh = pic;
                     this.ucUpdateks1.flowPanelPhong.Controls.Add(it);
                 }
             }
@@ -219,12 +240,13 @@ namespace DuLichApplication
                     it.MaPhong = row["Mã phòng"].ToString();
                     it.TienIch = row["Tiện ích"].ToString();
                     it.GiaTien = row["Giá"].ToString();
-                    it.TrangThai = row["Trạng thái"].ToString();
                     it.LoaiPhong = row["Loại giường"].ToString();
                     it.MaKhach = taiKhoan;
                     it.MaKS = ds.Tables[0].Rows[0]["Mã khách sạn"].ToString();
                     it.NgayNhanPhong = ngayNhanPhong;
                     it.NgayTraPhong = ngayTraPhong;
+                    byte[] pic = (byte[])row["HinhAnh"];
+                    it.HinhAnh = pic;
                     this.uC_ChonPhong1.flowPanelPhong.Controls.Add(it);
                 }
             }

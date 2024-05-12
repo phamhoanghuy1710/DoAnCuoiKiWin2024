@@ -20,6 +20,7 @@ namespace DuLichApplication
 
         private void FDichVu_Load(object sender, EventArgs e)
         {
+        
             LoadDichVu();
         }
         public void LoadDichVu()
@@ -41,7 +42,7 @@ namespace DuLichApplication
 
         private void btnThemDichVu_Click(object sender, EventArgs e)
         {
-            string query = string.Format("insert into DichVu (MaDichVu,TenDichVu,Gia) values ('{0}','{1}','{2}')", this.txtMaDichVu.Text, this.txtTenDichVu.Text, Convert.ToInt32(this.txtGia.Text));
+            string query = string.Format("insert into DichVu (MaDichVu,TenDichVu,Gia) values (N'{0}',N'{1}','{2}')", this.txtMaDichVu.Text, this.txtTenDichVu.Text, Convert.ToInt32(this.txtGia.Text));
             fn.setData(query, "Thêm thành công", true);
             // them vao 
             ItemDichVu item = new ItemDichVu(false);

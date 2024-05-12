@@ -218,10 +218,10 @@
             pictureKS.CustomizableEdges = customizableEdges13;
             pictureKS.Image = (Image)resources.GetObject("pictureKS.Image");
             pictureKS.ImageRotate = 0F;
-            pictureKS.Location = new Point(29, 34);
+            pictureKS.Location = new Point(54, 29);
             pictureKS.Name = "pictureKS";
             pictureKS.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            pictureKS.Size = new Size(773, 423);
+            pictureKS.Size = new Size(722, 330);
             pictureKS.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureKS.TabIndex = 25;
             pictureKS.TabStop = false;
@@ -240,7 +240,7 @@
             txtGioiThieuKhachSan.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             txtGioiThieuKhachSan.ForeColor = Color.White;
             txtGioiThieuKhachSan.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGioiThieuKhachSan.Location = new Point(29, 510);
+            txtGioiThieuKhachSan.Location = new Point(29, 435);
             txtGioiThieuKhachSan.Margin = new Padding(4, 4, 4, 4);
             txtGioiThieuKhachSan.Multiline = true;
             txtGioiThieuKhachSan.Name = "txtGioiThieuKhachSan";
@@ -249,7 +249,7 @@
             txtGioiThieuKhachSan.ReadOnly = true;
             txtGioiThieuKhachSan.SelectedText = "";
             txtGioiThieuKhachSan.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtGioiThieuKhachSan.Size = new Size(773, 117);
+            txtGioiThieuKhachSan.Size = new Size(773, 184);
             txtGioiThieuKhachSan.TabIndex = 24;
             // 
             // txtGioiThieu
@@ -279,7 +279,7 @@
             label4.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
             label4.ImageAlign = ContentAlignment.MiddleRight;
-            label4.Location = new Point(29, 460);
+            label4.Location = new Point(29, 386);
             label4.Name = "label4";
             label4.Size = new Size(132, 35);
             label4.TabIndex = 20;
@@ -302,7 +302,7 @@
             flowPanelPhong.AutoScroll = true;
             flowPanelPhong.Location = new Point(978, 206);
             flowPanelPhong.Name = "flowPanelPhong";
-            flowPanelPhong.Size = new Size(840, 643);
+            flowPanelPhong.Size = new Size(840, 495);
             flowPanelPhong.TabIndex = 30;
             // 
             // btnChinhSua
@@ -417,7 +417,7 @@
             txtTenKhachSan.ReadOnly = true;
             txtTenKhachSan.SelectedText = "";
             txtTenKhachSan.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            txtTenKhachSan.Size = new Size(441, 52);
+            txtTenKhachSan.Size = new Size(835, 52);
             txtTenKhachSan.TabIndex = 35;
             // 
             // numericUpDown1

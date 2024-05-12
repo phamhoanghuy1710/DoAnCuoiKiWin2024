@@ -20,12 +20,14 @@ namespace DuLichApplication.All_user_control
         string tienIch = "";
         string condition = "";
         string taiKhoan = "";
+        DateTime tmp;
         public UC_Addroom()
         {
             InitializeComponent();
             cbbSoDem.SelectedIndex = 0;
             cbbLoaiPhong.SelectedIndex = 0;
-
+            this.dtNgayNhanPhong.Value = DateTime.Now.AddDays(1);
+            this.tmp = this.dtNgayNhanPhong.Value;
         }
         public void layTaiKhoan(string tk)
         {
@@ -34,7 +36,6 @@ namespace DuLichApplication.All_user_control
 
         private void btnTim_Click(object sender, EventArgs e)
         {
-
             string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ]  LIKE N'%{0}%'  AND [Thể Loại] LIKE '%{1}%'", txtDiaChi.Text, cbbLoaiPhong.Text);
             LoadDS(query);
         }
@@ -56,13 +57,29 @@ namespace DuLichApplication.All_user_control
         private void cbbSoDem_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadNgay();
+            AddNgay();
         }
 
         private void dtNgayNhanPhong_ValueChanged(object sender, EventArgs e)
         {
+            if (this.dtNgayNhanPhong.Value < DateTime.Now)
+            {
+                MessageBox.Show("Vui lòng chọn ngày hợp lệ");
+                this.dtNgayNhanPhong.Focus();
+                this.dtNgayNhanPhong.Value = tmp;
+            }
+            this.tmp = dtNgayNhanPhong.Value;
             LoadNgay();
+            AddNgay();
         }
-
+        public void AddNgay ()
+        {
+            foreach (ListItem it in this.flowLayoutPanel1.Controls)
+            {
+                it.NgayNhanPhong = this.dtNgayNhanPhong.Value;
+                it.NgayTraPhong = this.dtNgayTraPhong.Value;
+            }
+        }
         private void LoadDS(string query)
         {
             DataSet ds = fn.getData(query);
@@ -80,6 +97,8 @@ namespace DuLichApplication.All_user_control
                     it.taiKhoan = this.taiKhoan.ToString();
                     it.NgayNhanPhong = this.dtNgayNhanPhong.Value;
                     it.NgayTraPhong = this.dtNgayTraPhong.Value;
+                    byte[] pic = (byte[])row["HinhAnh"];
+                    it.HinhAnh = pic;
                     int soSao;
                     if (int.TryParse(row["Số Sao"].ToString(), out soSao))
                     {
@@ -112,7 +131,7 @@ namespace DuLichApplication.All_user_control
                     }
                 }
                 Sao = Convert.ToInt32(radio.Text);
-                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ]  LIKE '%{0}%'  AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, numGia.Value);
+                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ]  LIKE N'%{0}%'  AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, numGia.Value);
                 LoadDS(query);
             }
         }
@@ -151,19 +170,18 @@ namespace DuLichApplication.All_user_control
                     {
                         condition = condition.Remove(condition.Length - 5);
                     }
-                    MessageBox.Show(condition);
                 }
 
                 /// khúc này là lấy ra từ database
                 if (Sao == 0)
                 {
-                    string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE '%{0}%' AND [Thể Loại] LIKE '%{1}%' AND ({2}) AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, condition, numGia.Value);
+                    string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE N'%{0}%' AND [Thể Loại] LIKE '%{1}%' AND ({2}) AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, condition, numGia.Value);
                     LoadDS(query);
                 }
                 else
                 {
                     // Tạo truy vấn SQL với điều kiện đã tạo
-                    string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE '%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND ({3}) AND [Giá] <= '{4}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, condition, numGia.Value);
+                    string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE N'%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND ({3}) AND [Giá] <= '{4}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, condition, numGia.Value);
                     LoadDS(query);
                 }
             }
@@ -176,22 +194,22 @@ namespace DuLichApplication.All_user_control
         {
             if (Sao == 0 && tienIch == "")
             {
-                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE '%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Giá] <= '{2}'", txtDiaChi.Text, cbbLoaiPhong.Text, numGia.Value);
+                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE N'%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Giá] <= '{2}'", txtDiaChi.Text, cbbLoaiPhong.Text, numGia.Value);
                 LoadDS(query);
             }
             else if (Sao == 0 && tienIch != "")
             {
-                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE '%{0}%' AND [Thể Loại] LIKE '%{1}%' AND ({2}) AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, condition, numGia.Value);
+                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE N'%{0}%' AND [Thể Loại] LIKE '%{1}%' AND ({2}) AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, condition, numGia.Value);
                 LoadDS(query);
             }
             else if (Sao != 0 && tienIch != "")
             {
-                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE '%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND ({3}) AND [Giá] <= '{4}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, condition, numGia.Value);
+                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE N'%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND ({3}) AND [Giá] <= '{4}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, condition, numGia.Value);
                 LoadDS(query);
             }
             else if (Sao != 0 && tienIch == "")
             {
-                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE '%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, numGia.Value);
+                string query = string.Format("SELECT * FROM KhachSan WHERE [Địa chỉ] LIKE N'%{0}%' AND [Thể Loại] LIKE '%{1}%' AND [Số Sao] = '{2}' AND [Giá] <= '{3}'", txtDiaChi.Text, cbbLoaiPhong.Text, Sao, numGia.Value);
                 LoadDS(query);
             }
         }

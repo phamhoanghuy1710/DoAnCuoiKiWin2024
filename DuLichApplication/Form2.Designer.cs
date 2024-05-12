@@ -104,6 +104,7 @@
             panelMoving.ShadowDecoration.CustomizableEdges = customizableEdges3;
             panelMoving.Size = new Size(260, 83);
             panelMoving.TabIndex = 0;
+            panelMoving.Visible = false;
             // 
             // btnThongTin
             // 
@@ -147,9 +148,9 @@
             btnTraPhong.Location = new Point(839, 29);
             btnTraPhong.Name = "btnTraPhong";
             btnTraPhong.ShadowDecoration.CustomizableEdges = customizableEdges7;
-            btnTraPhong.Size = new Size(309, 87);
+            btnTraPhong.Size = new Size(279, 87);
             btnTraPhong.TabIndex = 1;
-            btnTraPhong.Text = "Sports and entertainment";
+            btnTraPhong.Text = "Messages";
             btnTraPhong.Click += btnTraPhong_Click;
             // 
             // btnDichVu

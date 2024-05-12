@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -46,6 +47,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FChiTietGiaoDich));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -67,16 +70,19 @@
             txtGioThanhToan = new Guna.UI2.WinForms.Guna2TextBox();
             txtGiaTien = new Guna.UI2.WinForms.Guna2TextBox();
             btnXuatHoaDon = new Guna.UI2.WinForms.Guna2Button();
+            btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(357, 21);
+            label1.Font = new Font("Calibri", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(350, 29);
             label1.Name = "label1";
-            label1.Size = new Size(206, 31);
+            label1.Size = new Size(266, 41);
             label1.TabIndex = 0;
             label1.Text = "Chi Tiết Giao Dịch";
             // 
@@ -84,7 +90,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(12, 77);
+            label2.Location = new Point(31, 95);
             label2.Name = "label2";
             label2.Size = new Size(146, 25);
             label2.TabIndex = 1;
@@ -94,7 +100,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(12, 127);
+            label3.Location = new Point(31, 217);
             label3.Name = "label3";
             label3.Size = new Size(132, 25);
             label3.TabIndex = 2;
@@ -104,7 +110,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(451, 127);
+            label4.Location = new Point(31, 631);
             label4.Name = "label4";
             label4.Size = new Size(70, 25);
             label4.TabIndex = 3;
@@ -114,7 +120,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(679, 77);
+            label6.Location = new Point(671, 95);
             label6.Name = "label6";
             label6.Size = new Size(58, 25);
             label6.TabIndex = 5;
@@ -124,7 +130,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(12, 173);
+            label7.Location = new Point(31, 348);
             label7.Name = "label7";
             label7.Size = new Size(156, 25);
             label7.TabIndex = 11;
@@ -134,7 +140,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(423, 173);
+            label8.Location = new Point(31, 490);
             label8.Name = "label8";
             label8.Size = new Size(140, 25);
             label8.TabIndex = 12;
@@ -144,7 +150,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(369, 239);
+            label10.Location = new Point(387, 217);
             label10.Name = "label10";
             label10.Size = new Size(213, 25);
             label10.TabIndex = 17;
@@ -152,19 +158,20 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(272, 276);
+            dataGridView1.Location = new Point(387, 264);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(437, 303);
+            dataGridView1.Size = new Size(487, 330);
             dataGridView1.TabIndex = 18;
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(573, 631);
+            label11.Location = new Point(387, 631);
             label11.Name = "label11";
             label11.Size = new Size(78, 25);
             label11.TabIndex = 19;
@@ -181,20 +188,20 @@
             txtTenKhach.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenKhach.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTenKhach.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKhach.Location = new Point(156, 75);
+            txtTenKhach.Location = new Point(31, 141);
             txtTenKhach.Name = "txtTenKhach";
             txtTenKhach.PasswordChar = '\0';
             txtTenKhach.PlaceholderText = "";
             txtTenKhach.SelectedText = "";
             txtTenKhach.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtTenKhach.Size = new Size(207, 37);
+            txtTenKhach.Size = new Size(265, 37);
             txtTenKhach.TabIndex = 21;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(369, 77);
+            label5.Location = new Point(387, 95);
             label5.Name = "label5";
             label5.Size = new Size(124, 25);
             label5.TabIndex = 4;
@@ -211,7 +218,7 @@
             txtSDt.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSDt.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtSDt.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSDt.Location = new Point(491, 73);
+            txtSDt.Location = new Point(387, 141);
             txtSDt.Name = "txtSDt";
             txtSDt.PasswordChar = '\0';
             txtSDt.PlaceholderText = "";
@@ -246,7 +253,7 @@
             txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmail.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmail.Location = new Point(743, 73);
+            txtEmail.Location = new Point(671, 141);
             txtEmail.Name = "txtEmail";
             txtEmail.PasswordChar = '\0';
             txtEmail.PlaceholderText = "";
@@ -266,7 +273,7 @@
             txtTenKhachSan.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTenKhachSan.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtTenKhachSan.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKhachSan.Location = new Point(156, 118);
+            txtTenKhachSan.Location = new Point(31, 264);
             txtTenKhachSan.Name = "txtTenKhachSan";
             txtTenKhachSan.PasswordChar = '\0';
             txtTenKhachSan.PlaceholderText = "";
@@ -286,13 +293,13 @@
             txtDiaChi.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDiaChi.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtDiaChi.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtDiaChi.Location = new Point(559, 118);
+            txtDiaChi.Location = new Point(31, 671);
             txtDiaChi.Name = "txtDiaChi";
             txtDiaChi.PasswordChar = '\0';
             txtDiaChi.PlaceholderText = "";
             txtDiaChi.SelectedText = "";
             txtDiaChi.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtDiaChi.Size = new Size(256, 37);
+            txtDiaChi.Size = new Size(265, 46);
             txtDiaChi.TabIndex = 25;
             // 
             // txtNgayThanhToan
@@ -306,13 +313,13 @@
             txtNgayThanhToan.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtNgayThanhToan.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtNgayThanhToan.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNgayThanhToan.Location = new Point(167, 161);
+            txtNgayThanhToan.Location = new Point(31, 398);
             txtNgayThanhToan.Name = "txtNgayThanhToan";
             txtNgayThanhToan.PasswordChar = '\0';
             txtNgayThanhToan.PlaceholderText = "";
             txtNgayThanhToan.SelectedText = "";
             txtNgayThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtNgayThanhToan.Size = new Size(250, 45);
+            txtNgayThanhToan.Size = new Size(265, 45);
             txtNgayThanhToan.TabIndex = 26;
             // 
             // txtGioThanhToan
@@ -326,13 +333,13 @@
             txtGioThanhToan.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtGioThanhToan.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtGioThanhToan.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGioThanhToan.Location = new Point(573, 161);
+            txtGioThanhToan.Location = new Point(31, 537);
             txtGioThanhToan.Name = "txtGioThanhToan";
             txtGioThanhToan.PasswordChar = '\0';
             txtGioThanhToan.PlaceholderText = "";
             txtGioThanhToan.SelectedText = "";
             txtGioThanhToan.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            txtGioThanhToan.Size = new Size(250, 45);
+            txtGioThanhToan.Size = new Size(265, 45);
             txtGioThanhToan.TabIndex = 27;
             // 
             // txtGiaTien
@@ -346,37 +353,66 @@
             txtGiaTien.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtGiaTien.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtGiaTien.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtGiaTien.Location = new Point(657, 621);
+            txtGiaTien.Location = new Point(387, 671);
             txtGiaTien.Name = "txtGiaTien";
             txtGiaTien.PasswordChar = '\0';
             txtGiaTien.PlaceholderText = "";
             txtGiaTien.SelectedText = "";
             txtGiaTien.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            txtGiaTien.Size = new Size(217, 45);
+            txtGiaTien.Size = new Size(229, 46);
             txtGiaTien.TabIndex = 29;
             // 
             // btnXuatHoaDon
             // 
+            btnXuatHoaDon.BorderRadius = 20;
             btnXuatHoaDon.CustomizableEdges = customizableEdges17;
             btnXuatHoaDon.DisabledState.BorderColor = Color.DarkGray;
             btnXuatHoaDon.DisabledState.CustomBorderColor = Color.DarkGray;
             btnXuatHoaDon.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnXuatHoaDon.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnXuatHoaDon.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnXuatHoaDon.FillColor = Color.Maroon;
+            btnXuatHoaDon.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnXuatHoaDon.ForeColor = Color.White;
-            btnXuatHoaDon.Location = new Point(589, 700);
+            btnXuatHoaDon.Location = new Point(673, 667);
             btnXuatHoaDon.Name = "btnXuatHoaDon";
             btnXuatHoaDon.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            btnXuatHoaDon.Size = new Size(282, 56);
+            btnXuatHoaDon.Size = new Size(210, 58);
             btnXuatHoaDon.TabIndex = 30;
             btnXuatHoaDon.Text = "Xuất Hóa Đơn";
             btnXuatHoaDon.Click += btnXuatHoaDon_Click;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Transparent;
+            btnExit.DisabledState.BorderColor = Color.DarkGray;
+            btnExit.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnExit.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnExit.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExit.FillColor = Color.Transparent;
+            btnExit.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnExit.ForeColor = Color.White;
+            btnExit.Image = (Image)resources.GetObject("btnExit.Image");
+            btnExit.ImageSize = new Size(35, 35);
+            btnExit.Location = new Point(868, 21);
+            btnExit.Name = "btnExit";
+            btnExit.ShadowDecoration.CustomizableEdges = customizableEdges19;
+            btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btnExit.Size = new Size(60, 45);
+            btnExit.TabIndex = 31;
+            btnExit.Click += btnExit_Click;
+            // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 20;
+            guna2Elipse1.TargetControl = this;
             // 
             // FChiTietGiaoDich
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SteelBlue;
             ClientSize = new Size(958, 785);
+            Controls.Add(btnExit);
             Controls.Add(btnXuatHoaDon);
             Controls.Add(txtGiaTien);
             Controls.Add(txtGioThanhToan);
@@ -397,6 +433,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FChiTietGiaoDich";
             Text = "FChiTietGiaoDich";
             Load += FChiTietGiaoDich_Load;
@@ -428,5 +465,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtGioThanhToan;
         private Guna.UI2.WinForms.Guna2TextBox txtGiaTien;
         private Guna.UI2.WinForms.Guna2Button btnXuatHoaDon;
+        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

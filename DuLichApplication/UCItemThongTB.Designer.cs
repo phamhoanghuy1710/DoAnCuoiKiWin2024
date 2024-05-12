@@ -60,9 +60,9 @@
             // 
             // guna2HtmlLabel3
             // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.BackColor = Color.White;
             guna2HtmlLabel3.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel3.Location = new Point(448, 23);
+            guna2HtmlLabel3.Location = new Point(521, 13);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(151, 30);
             guna2HtmlLabel3.TabIndex = 67;
@@ -72,7 +72,7 @@
             // 
             guna2HtmlLabel6.BackColor = Color.Transparent;
             guna2HtmlLabel6.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel6.Location = new Point(140, 23);
+            guna2HtmlLabel6.Location = new Point(173, 13);
             guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             guna2HtmlLabel6.Size = new Size(102, 30);
             guna2HtmlLabel6.TabIndex = 66;
@@ -89,7 +89,8 @@
             // 
             // txtTenKS
             // 
-            txtTenKS.BorderColor = Color.White;
+            txtTenKS.BackColor = Color.Transparent;
+            txtTenKS.BorderColor = Color.Transparent;
             txtTenKS.BorderThickness = 0;
             txtTenKS.CustomizableEdges = customizableEdges1;
             txtTenKS.DefaultText = "";
@@ -101,7 +102,7 @@
             txtTenKS.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             txtTenKS.ForeColor = Color.Black;
             txtTenKS.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtTenKS.Location = new Point(249, 77);
+            txtTenKS.Location = new Point(173, 106);
             txtTenKS.Margin = new Padding(4, 4, 4, 4);
             txtTenKS.Name = "txtTenKS";
             txtTenKS.PasswordChar = '\0';
@@ -109,14 +110,14 @@
             txtTenKS.ReadOnly = true;
             txtTenKS.SelectedText = "";
             txtTenKS.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtTenKS.Size = new Size(192, 31);
+            txtTenKS.Size = new Size(296, 39);
             txtTenKS.TabIndex = 63;
             // 
             // guna2HtmlLabel1
             // 
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel1.Location = new Point(140, 78);
+            guna2HtmlLabel1.Location = new Point(173, 78);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(100, 30);
             guna2HtmlLabel1.TabIndex = 62;
@@ -127,17 +128,18 @@
             picHinhAnh.CustomizableEdges = customizableEdges3;
             picHinhAnh.Image = (Image)resources.GetObject("picHinhAnh.Image");
             picHinhAnh.ImageRotate = 0F;
-            picHinhAnh.Location = new Point(31, 23);
+            picHinhAnh.Location = new Point(27, 40);
             picHinhAnh.Name = "picHinhAnh";
             picHinhAnh.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            picHinhAnh.Size = new Size(105, 104);
+            picHinhAnh.Size = new Size(114, 117);
             picHinhAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             picHinhAnh.TabIndex = 61;
             picHinhAnh.TabStop = false;
             // 
             // txtThongBao
             // 
-            txtThongBao.BorderColor = Color.White;
+            txtThongBao.BackColor = Color.Transparent;
+            txtThongBao.BorderColor = Color.Transparent;
             txtThongBao.BorderThickness = 0;
             txtThongBao.CustomizableEdges = customizableEdges5;
             txtThongBao.DefaultText = "";
@@ -146,10 +148,10 @@
             txtThongBao.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
             txtThongBao.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtThongBao.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtThongBao.Font = new Font("Calibri", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtThongBao.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             txtThongBao.ForeColor = Color.Black;
             txtThongBao.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtThongBao.Location = new Point(249, 22);
+            txtThongBao.Location = new Point(177, 40);
             txtThongBao.Margin = new Padding(4, 4, 4, 4);
             txtThongBao.Multiline = true;
             txtThongBao.Name = "txtThongBao";
@@ -158,12 +160,13 @@
             txtThongBao.ReadOnly = true;
             txtThongBao.SelectedText = "";
             txtThongBao.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtThongBao.Size = new Size(179, 44);
+            txtThongBao.Size = new Size(322, 37);
             txtThongBao.TabIndex = 68;
             // 
             // txtNgayThongBao
             // 
-            txtNgayThongBao.BorderColor = Color.White;
+            txtNgayThongBao.BackColor = Color.Transparent;
+            txtNgayThongBao.BorderColor = Color.Transparent;
             txtNgayThongBao.BorderThickness = 0;
             txtNgayThongBao.CustomizableEdges = customizableEdges7;
             txtNgayThongBao.DefaultText = "";
@@ -175,7 +178,7 @@
             txtNgayThongBao.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             txtNgayThongBao.ForeColor = Color.Black;
             txtNgayThongBao.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNgayThongBao.Location = new Point(606, 22);
+            txtNgayThongBao.Location = new Point(521, 40);
             txtNgayThongBao.Margin = new Padding(4, 4, 4, 4);
             txtNgayThongBao.Name = "txtNgayThongBao";
             txtNgayThongBao.PasswordChar = '\0';
@@ -183,14 +186,14 @@
             txtNgayThongBao.ReadOnly = true;
             txtNgayThongBao.SelectedText = "";
             txtNgayThongBao.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            txtNgayThongBao.Size = new Size(167, 31);
+            txtNgayThongBao.Size = new Size(246, 37);
             txtNgayThongBao.TabIndex = 69;
             // 
             // guna2HtmlLabel4
             // 
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel4.Location = new Point(488, 78);
+            guna2HtmlLabel4.Location = new Point(231, 153);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(98, 30);
             guna2HtmlLabel4.TabIndex = 70;
@@ -210,7 +213,7 @@
             txtMaPhong.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             txtMaPhong.ForeColor = Color.Black;
             txtMaPhong.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaPhong.Location = new Point(606, 77);
+            txtMaPhong.Location = new Point(336, 153);
             txtMaPhong.Margin = new Padding(4, 4, 4, 4);
             txtMaPhong.Name = "txtMaPhong";
             txtMaPhong.PasswordChar = '\0';
@@ -218,22 +221,23 @@
             txtMaPhong.ReadOnly = true;
             txtMaPhong.SelectedText = "";
             txtMaPhong.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            txtMaPhong.Size = new Size(122, 31);
+            txtMaPhong.Size = new Size(193, 31);
             txtMaPhong.TabIndex = 71;
             // 
             // guna2HtmlLabel5
             // 
             guna2HtmlLabel5.BackColor = Color.Transparent;
             guna2HtmlLabel5.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            guna2HtmlLabel5.Location = new Point(262, 130);
+            guna2HtmlLabel5.Location = new Point(521, 78);
             guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             guna2HtmlLabel5.Size = new Size(128, 30);
             guna2HtmlLabel5.TabIndex = 72;
-            guna2HtmlLabel5.Text = "Hết hạn ngày";
+            guna2HtmlLabel5.Text = "Ngày hết hạn";
             // 
             // txtNgayHetHan
             // 
-            txtNgayHetHan.BorderColor = Color.White;
+            txtNgayHetHan.BackColor = Color.Transparent;
+            txtNgayHetHan.BorderColor = Color.Transparent;
             txtNgayHetHan.BorderThickness = 0;
             txtNgayHetHan.CustomizableEdges = customizableEdges11;
             txtNgayHetHan.DefaultText = "";
@@ -245,7 +249,7 @@
             txtNgayHetHan.Font = new Font("Calibri", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             txtNgayHetHan.ForeColor = Color.Black;
             txtNgayHetHan.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtNgayHetHan.Location = new Point(407, 129);
+            txtNgayHetHan.Location = new Point(521, 106);
             txtNgayHetHan.Margin = new Padding(4, 4, 4, 4);
             txtNgayHetHan.Name = "txtNgayHetHan";
             txtNgayHetHan.PasswordChar = '\0';
@@ -253,7 +257,7 @@
             txtNgayHetHan.ReadOnly = true;
             txtNgayHetHan.SelectedText = "";
             txtNgayHetHan.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtNgayHetHan.Size = new Size(192, 31);
+            txtNgayHetHan.Size = new Size(246, 44);
             txtNgayHetHan.TabIndex = 73;
             // 
             // guna2Elipse1
@@ -265,6 +269,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             Controls.Add(txtNgayHetHan);
             Controls.Add(guna2HtmlLabel5);
             Controls.Add(txtMaPhong);
@@ -278,7 +283,7 @@
             Controls.Add(guna2HtmlLabel1);
             Controls.Add(picHinhAnh);
             Name = "UCItemThongTB";
-            Size = new Size(787, 175);
+            Size = new Size(802, 199);
             Load += UCItemThongTB_Load;
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).EndInit();
             ResumeLayout(false);

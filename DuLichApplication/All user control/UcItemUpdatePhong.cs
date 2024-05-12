@@ -20,6 +20,7 @@ namespace DuLichApplication.All_user_control
         private string loaiPhong;
         private string trangThai;
         public int isLuu = 0;
+        private byte[] hinhAnh;
         DBFunction fn = new DBFunction();
 
         public UcItemUpdatePhong()
@@ -27,6 +28,25 @@ namespace DuLichApplication.All_user_control
             InitializeComponent();
         }
 
+        [Category("Custom Props")]
+        public byte[] HinhAnh
+        {
+            get { return hinhAnh; }
+            set
+            {
+                this.hinhAnh = value;
+                // khi lấy lên dưới dạng byte , xài 1 cái ms truyen byte vao
+                MemoryStream ms = new MemoryStream(value);
+                if (value == null)
+                {
+                    MessageBox.Show("Không hợp lệ");
+                }
+                else
+                {
+                    this.picHinhAnh.Image = Image.FromStream(ms);
+                }
+            }
+        }
 
         [Category("Custom Props")]
         public string MaPhong
@@ -36,13 +56,8 @@ namespace DuLichApplication.All_user_control
         }
 
         [Category("Custom Props")]
-        public string TrangThai
-        {
-            get { return trangThai; }
-            set { trangThai = value; txtTrangThai.Text = value; }
-        }
+     
 
-        [Category("Custom Props")]
         public string TienIch
         {
             get { return tienIch; }
@@ -74,7 +89,7 @@ namespace DuLichApplication.All_user_control
         {
             if (isLuu == 0)
             {
-                if (txtTrangThai.Text == "Yes")
+                if (isLuu == 0)
                 {
                     txtGiaTien.ReadOnly = false;
                     txtLoaiPhong.ReadOnly = false;
